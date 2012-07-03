@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Java concepts - Techno</title>
+  <title>When to Synchronize - Techno</title>
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="They are some interesting concepts which make java more interesting. I willpresent series of articles which will explain these concepts.Concept 1, &hellip;">
+  <meta name="description" content="Whenever I write a class in java , First question comes to my mind, Do I need Synchronization here. Sometimes, when writing a class, we don&#8217;t &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sacdroid.github.com/blog/2007/10/11/java-concepts/">
+  <link rel="canonical" href="http://sacdroid.github.com/blog/2007/10/11/when-to-synchronize/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">Java Concepts</h1>
+      <h1 class="entry-title">When to Synchronize</h1>
     
     
       <p class="meta">
@@ -83,7 +83,7 @@
   
 
 
-<time datetime="2007-10-11T12:11:00+05:30" pubdate data-updated="true">Oct 11<span>th</span>, 2007</time>
+<time datetime="2007-10-11T12:56:00+05:30" pubdate data-updated="true">Oct 11<span>th</span>, 2007</time>
         
       </p>
     
@@ -91,30 +91,7 @@
 
 
 <div class="entry-content"><div class='post'>
-They are some interesting concepts which make java more interesting. I will<br />present series of articles which will explain these concepts.<br /><br />Concept 1,<br />Can you guess what will be printed on the screen?<br /><br />class Test<br />{<br />public static void main(String[] args) {<br />Test inst_test = new Test();<br />int i1 = 2000;<br />int i2 = 2000;<br />int i3 = 2;<br />int i4 = 2;<br />Integer Ithree = new Integer(2); // 1<br />Integer Ifour = new Integer(2); // 2<br />System.out.println( Ithree == Ifour );<br />inst_test.method( i3 , i4 );<br />inst_test.method( i1 , i2 );<br />}<br />public void method( Integer i , Integer eye )<br />{<br />System.out.println(i == eye );<br />}<br />}<br /><br />When I first saw this code I was confident that it will give out put as,<br />false<br />false.<br />because == compares hashCode, not the value for wrapper classes.<br /><br />But When I checked it with my IDE, Surprisingly it was giving out put as,<br />true<br />false.<br /><br />After a bit of googling I found the reason,<br /><br />Certain ranges of values of wrapper classes are stored as immutable objects by the Java Virtual Machine.<br />Normally, when the primitive types are boxed into the wrapper types, the JVM allocates memory and creates a new object. But for some special cases, the JVM reuses the same object. The following is the list of primitives stored as immutable objects:<br />* boolean values true and false<br />* All byte values<br />* short values between -128 and 127<br />* int values between -128 and 127<br />* char in the range \u0000 to \u007F</div>
-<h2>Comments</h2>
-<div class='comments'>
-<div class='comment'>
-<div class='author'>Vaibhav Tulsyan</div>
-<div class='content'>
-Awesome! :D</div>
-</div>
-<div class='comment'>
-<div class='author'>Varsha</div>
-<div class='content'>
-Thanks for this post. I was not aware of this concept for Integers.</div>
-</div>
-<div class='comment'>
-<div class='author'>Sachin6870</div>
-<div class='content'>
-== does compare hashcode,<br />but for int values between -128 and 127 hash code is same.</div>
-</div>
-<div class='comment'>
-<div class='author'>mahesh</div>
-<div class='content'>
-class Test<br />{<br />public static void main(String[] args) {<br />Test inst_test = new Test();<br />int i1 = 130;<br />int i2 = 130;<br />int i3 = 2;<br />int i4 = 2;<br />Integer Ithree = new Integer(2); // 1<br />Integer Ifour = new Integer(2); // 2<br />System.out.println( Ithree.hashCode());<br />System.out.println( Ifour.hashCode());<br />inst_test.method( i3 , i4 );<br />inst_test.method( i1 , i2 );<br />}<br />public void method( Integer i , Integer eye )<br />{<br /> System.out.println( i.hashCode() == eye.hashCode());<br /> <br /> System.out.println( i == eye );<br /><br />}<br />}<br /><br />This shows that == does not checks hashCode.Isn&#8217;t it.</div>
-</div>
-</div>
+Whenever I write a class in java , First question comes to my mind,  Do I need Synchronization here.  Sometimes, when writing a class, we don&#8217;t know if it is going to be used in a shared context or not. Should I add overhead of Synchronization  to this class?<br />  If you are in doubt I would prefer not to add Synchronization.  Because synchronization is too expensive in java. Even when a program contains only a single thread running on a single processor, a synchronized method call is still slower than an unsynchronized method call. If the synchronization actually requires maintaining the lock, the performance penalty is substantially greater, as there will be several thread switches and system calls required.</div>
 </div>
 
 
@@ -137,7 +114,7 @@ class Test<br />{<br />public static void main(String[] args) {<br />Test inst_t
   
 
 
-<time datetime="2007-10-11T12:11:00+05:30" pubdate data-updated="true">Oct 11<span>th</span>, 2007</time>
+<time datetime="2007-10-11T12:56:00+05:30" pubdate data-updated="true">Oct 11<span>th</span>, 2007</time>
       
 
 
@@ -145,7 +122,7 @@ class Test<br />{<br />public static void main(String[] args) {<br />Test inst_t
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sacdroid.github.com/blog/2007/10/11/java-concepts/" data-via="sacdroid" data-counturl="http://sacdroid.github.com/blog/2007/10/11/java-concepts/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sacdroid.github.com/blog/2007/10/11/when-to-synchronize/" data-via="sacdroid" data-counturl="http://sacdroid.github.com/blog/2007/10/11/when-to-synchronize/" >Tweet</a>
   
   
   
@@ -156,8 +133,10 @@ class Test<br />{<br />public static void main(String[] args) {<br />Test inst_t
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2007/10/11/java-concepts/" title="Previous Post: Java concepts">&laquo; Java concepts</a>
       
-        <a class="basic-alignment right" href="/blog/2007/10/11/when-to-synchronize/" title="Next Post: When to Synchronize">When to Synchronize &raquo;</a>
+      
+        <a class="basic-alignment right" href="/blog/2008/09/12/importing-oracle-dump-file-as-sysdba/" title="Next Post: Importing oracle dump file as sysdba.">Importing oracle dump file as sysdba. &raquo;</a>
       
     </p>
   </footer>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: JDKm Eclipse europa | Techno]]></title>
+  <link href="http://sacdroid.github.com/blog/categories/jdkm-eclipse-europa/atom.xml" rel="self"/>
+  <link href="http://sacdroid.github.com/"/>
+  <updated>2012-07-03T18:01:43+05:30</updated>
+  <id>http://sacdroid.github.com/</id>
+  <author>
+    <name><![CDATA[Sachin Patil]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My ubuntu (8.10) experience :)]]></title>
+    <link href="http://sacdroid.github.com/blog/2008/11/29/my-ubuntu-810-experience/"/>
+    <updated>2008-11-29T19:59:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2008/11/29/my-ubuntu-810-experience</id>
+    <content type="html"><![CDATA[<div class='post'>
+Its been 15 days today since I became completely OPEN SOURCE.  Yes, I dumped windows XP and started using Ubuntu for full time development. These days, I am busy exploring new things in Ubuntu.<br />Believe me, in these days fifteen days, I never missed my old windows XP set up. I got alternative for each application which I use in my daytoday life for FREE of Cost with full support.<br />    Its been fantastic experience so far with Linux world. Today, I am going to share my experience  during my  Open source "revolution" phase, :).<ul><li>   As I am Java developer , First thing I looked for  setting up JDK on ubuntu.  Installing JDK was straight forward. I used this link, <a href="http://dambalah.com/2007/09/21/install-java-on-ubuntu/">Install Java on Ubuntu</a>, which is very well organized and clear.<br /></li><li> Eclipse 3.3 is not available in the Ubuntu repository yet (<a href="https://bugs.launchpad.net/debian/+source/eclipse/+bug/123064">progress</a>), and I need this version because the plugins (JBoss Tools) I'm using require it.      So you need download eclipse 3.3 froe eclipse.org and unzip it to any directory. The locations I used is /opt/eclipse.<br /><br />Now configuration for /opt/eclipse. Set Up java_home,<br /><br />sudo -b gedit /opt/eclipse/java_home<br /><br />and add<br /><br />/usr/lib/jvm/java-5-sun<br /><br />to the top of the file.<br /><br />You need adjust increase stack and heap sizes for eclipse/JVM to avoid OutOfMemoryError,<br />sudo -b gedit /opt/eclipse/eclipse.ini<br />The argument Xms refers to the minimum heap size and Xmx refers to the maximum heap size.<br /><br />adjust them as your memory size.<br /><p class="line874">create executable:                                                                                         Make a bin folder in your home directory, this will be used for the startup script: <span class="anchor" id="line-189"></span><span class="anchor" id="line-190"></span><span class="anchor" id="line-191"></span></p><pre>$ mkdir ~/bin</pre><span class="anchor" id="line-192"></span><span class="anchor" id="line-193"></span><p class="line862">Next create an executable for Eclipe at <tt>~/bin/eclipse</tt> with your favorite text editor by typing <tt>vi ~/bin/eclipse</tt> or <tt>nano ~/bin/eclipse</tt> into the command line. Add the following content: <span class="anchor" id="line-194"></span><span class="anchor" id="line-195"></span><span class="anchor" id="line-196"></span><span class="anchor" id="line-197"></span><span class="anchor" id="line-198"></span><span class="anchor" id="line-199"></span><span class="anchor" id="line-200"></span></p><pre>export MOZILLA_FIVE_HOME="/usr/lib/mozilla/"<br />export ECLIPSE_HOME="$HOME/opt/eclipse"<br /><br />$ECLIPSE_HOME/eclipse $*</pre><span class="anchor" id="line-201"></span><span class="anchor" id="line-202"></span><p class="line874">Finally, allow the script to be executed: <span class="anchor" id="line-203"></span><span class="anchor" id="line-204"></span><span class="anchor" id="line-205"></span></p><pre>$ chmod +x ~/bin/eclipse</pre></li><li>To be continued<br /></li></ul></div>
+
+]]></content>
+  </entry>
+  
+</feed>
