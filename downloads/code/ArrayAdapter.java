@@ -10,7 +10,7 @@ import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
-import com.samarth.cricscore.yahoo.json.Result;
+
 
 public class ArrayAdapter<T> extends TypeAdapter<List<T>> {
 	private Class<T> adapterclass;
@@ -25,7 +25,6 @@ public class ArrayAdapter<T> extends TypeAdapter<List<T>> {
 
 		Gson gson = new GsonBuilder()
 				.registerTypeAdapterFactory(new ArrayAdapterFactory())
-				.registerTypeAdapter(Result.class, new ResultAdapter())
 				.create();
 
 		if (reader.peek() == JsonToken.BEGIN_OBJECT) {
