@@ -1,7 +1,0 @@
---- 
-layout: post
-name: script-to-start-oracle-if-it-is-not
-title: Script to start oracle if it is not running
-time: 2009-11-05 17:07:00 +05:30
----
-As part of my current job, I am working as "part time" oracle dba. Due to some known issues in oracle, our oracle server goes down. Till we upgrade to Fixed version, I had to restart oracle manually. To overcome that I wrote script will be run as cron job,<br /><br />Script:<br /><pre name="code" class="cpp"><br />#!/bin/bash<br />#<br />#<br /># Run-level Startup script for Instance<br /># It relies on the information on pmon<br />check_stat=`ps -aef |grep pmon | grep -v grep | wc -l`;<br />oracle_num=`expr $check_stat`<br />if [ $oracle_num -ne 0 ]<br />then<br /> oracle start<br />exit 16<br />fi<br /></pre><br /><br /> added this script as part of linux "cron" jobs.<br /><br />Enjoy!!!<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/3378664837135510220-287802208661360148?l=www.blog.sachinpatil.com' alt='' /></div>

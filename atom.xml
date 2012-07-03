@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Techno]]></title>
   <link href="http://sacdroid.github.com/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-02T23:02:00+05:30</updated>
+  <updated>2012-07-03T17:06:54+05:30</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Sachin Patil]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
