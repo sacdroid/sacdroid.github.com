@@ -4,7 +4,7 @@
   <title><![CDATA[Category: subversion | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/subversion/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-03T23:07:45+05:30</updated>
+  <updated>2012-07-03T23:12:26+05:30</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -22,7 +22,9 @@
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~/Utility/utilscript$ svn --version&lt;br />svn, version 1.6.5 (r38866)
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~/Utility/utilscript$ svn --version
+</span><span class='line'>svn, version 1.6.5 (r38866)
 </span><span class='line'>sachin@sachin-laptop:~$ sudo apt-get remove subversion</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Ubuntu Januty contains Subversion 1.5 in security packages, hence add jaunt package entry to your /etc/apt/sources.list,
@@ -82,10 +84,7 @@ here you go, check svn version,
 </span><span class='line'>version 1.5.4 (r33841)
 </span><span class='line'>compiled Aug  7 2009, 01:44:11</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<br /><br />Happy coding...</div>
-
-
-
+<p>Happy coding...</p>
 ]]></content>
   </entry>
   
