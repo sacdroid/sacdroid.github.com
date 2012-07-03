@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gnome applet | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/gnome-applet/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-03T18:05:46+05:30</updated>
+  <updated>2012-07-03T18:08:19+05:30</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Such huge response for CricScore gnome applet was unexpected!!]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome/"/>
+    <updated>2009-12-05T23:32:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome</id>
+    <content type="html"><![CDATA[<div class='post'>
+In fact in its just 2nd day after 1.0-alpha release of <a href="http://cricscoreapplet.sourceforge.net/">CricScore Gnome applet</a>, It has netted more than 100 downloads. Now this is a terrific figure by all means since I wrote this as utility for personal use as fun, I was not expecting it could be a professional gnome applet.<br />  I just shared this across few Linux related forums on orkut, ubuntu communities and got such huge reply. It feel good factor to me.<br />There has been very positive reply so far like this,<br /><br /> <blockquote>"Great applet! I've been looking for something like this. Just what I needed!", says Jorgo <br />  upengan78 is running it on "gentoo", he comments, "It is working as intended. Many thanks for such a nice applet. Good luck for more such applets"<br />  Ankur suggested me to make it official package, "Cann't we have your applet from official repositories ???"<br />  Kamalakar says "I am using it today for India Sri Lanka score. Good to have it on Gnome top panel."   <br />   </blockquote><br />There has been few feature requests also and few wanted to have one smiler applet for Football/Socker. I have already implemented few features in latest 1.0 release.  <br />  There are few people interested to work with me in writing an applet for Football, hopefully I will have it defiantly before FIFA2010. <br /><blockquote> Arun S.A.G wants to package this applet for Fedora, "I would like to package your applet for Fedora, i have tested it in Fedora 12 it works fine :-)".</blockquote><br />  Thanks guys for such motivation and feedbacks.  <br /> Today I released <a href="http://cricscoreapplet.sourceforge.net/">1.0 release</a>, I did not do any code changes, as it did not require, alpha release worked like charm, but I added READEME, INSTALL, COPYRIGHT file as this applet is no more personal :).<br /><br />  There are many feature requests pending on my plate. I will try to work on those in spare time.<br /><br />   Possibilities Are Endless!!!</div>
+
+
+<h2>Comments</h2>
+
+
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Sachin6870</div>
+<div class='content'>
+can you please give me more info?<br />xsession log will be helpful. <br />Also check for system requirements,<br />    *  Python 2.4 and ElementTree OR Python 2.5 (which already includes ElementTree)<br />    * python-gtk 2.10 or newer<br />    * python-gnome 2.16 or newer<br />    * python-gnome-desktop 2.16 or newer<br />    * python-notify 0.1 or newer</div>
+</div>
+<div class='comment'>
+<div class='author'>Anonymous</div>
+<div class='content'>
+hi, i installed cricscore but cannot add to panel as it gives an error &quot;The panel encountered a problem while loading OAFIID:GNOME_CricketScoreApplet&quot;. Please suggest the solution.</div>
+</div>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My First Gnome application, Cricket score applet]]></title>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/ubuntu/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-03T18:05:46+05:30</updated>
+  <updated>2012-07-03T18:08:19+05:30</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[tell your friends how many seconds are left in the decade]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/12/30/tell-your-friends-how-many-seconds-are/"/>
+    <updated>2009-12-30T21:42:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/12/30/tell-your-friends-how-many-seconds-are</id>
+    <content type="html"><![CDATA[<div class='post'>
+I got this idea from <a href="http://www.itpro.co.uk/618784/google-counting-down-the-seconds-till-the-new-year">goggle new year seconds counter</a>, I decided to set my pidgin status to showing seconds are left in the decade.<br /> After bit of goggling found a command-line program called purple-remote that allows me to automatically update the Pidgin status and message lines. The purple-remote program is included in the libpurple-bin package, make sure you have it installed.<br /><br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ sudo apt-get install libpurple-bin<br /></pre><br />Here is small script that does this trick.<br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ gedit hny.sh<br /></pre><br />add text as follows:<br /><script type="syntaxhighlighter" class="brush: py">&lt;![CDATA[<br />#!/bin/bash<br />START=$(date --date='2010-01-01 00:00:00' +%s)<br />END=$(date +%s)<br /><br />DIFF=$(( $START - $END ))<br /><br />if [ $DIFF -lt 0 ]; then<br />  msg="Happy New Year 2010"<br />else<br />  msg="$DIFF seconds to 2010"<br />fi<br /><br />echo ${msg}<br />/usr/bin/purple-remote "setstatus?status=available&message=${msg}"<br />]]&gt;</script><br />Save and make it executable as follows:<br /><br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ chmod +x hny.sh<br /></pre><br />time to run script every second with watch command.<br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ watch -n 1 ./hny.sh<br /></pre><br /><br />DONE!!!<br /><br />Screenshot:<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_A2_wLwXdBek/SzuIodeQimI/AAAAAAAACuk/U_DcOcz-GEA/s1600-h/hny.jpg"><img style="cursor:pointer; cursor:hand;width: 291px; height: 320px;" src="http://3.bp.blogspot.com/_A2_wLwXdBek/SzuIodeQimI/AAAAAAAACuk/U_DcOcz-GEA/s320/hny.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5421076805158210146" /></a><br /><br />HAPPY NEW YEAR to all.<br /><br />Update:<br />after few requests I am writng cross platform utility which will do this trick:<br /><script type="syntaxhighlighter" class="brush: java">&lt;![CDATA[<br />import java.text.SimpleDateFormat;<br />import java.util.Date;<br /><br />import org.jivesoftware.smack.XMPPConnection;<br />import org.jivesoftware.smack.packet.Presence;<br /><br />public class Test {<br /><br /> public static void main(String args[]) {<br />  XMPPConnection connection = new XMPPConnection("gmail.com");<br /><br />  Date date;<br />  try {<br />   SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yy");<br />   date = (Date) formatter.parse("01-JAN-10");<br /><br />   connection.connect();<br />   connection.login("yourgmail@gmail.com", "password");<br />   Presence presence = new Presence(Presence.Type.available);<br />   while (true) {<br />    Date today = new Date();<br />    long diff = date.getTime() - today.getTime();<br /><br />    presence.setStatus((diff / (1000)) + " seconds to 2010");<br />    presence.setPriority(24);<br />    presence.setMode(Presence.Mode.available);<br />    connection.sendPacket(presence);<br />    Thread.sleep(1000); // Sleeps for 1 seconds<br />   }<br />  } catch (Exception e) {<br />   System.out.println(e.toString());<br />  }<br /> }<br />}<br /><br />]]&gt;</script><br /><br /> You need to get the Smack API which is an open source, pure Java library for working with XMPP (clients only). The API can be downloaded from <a href=" http://www.igniterealtime.org/downloads/index.jsp">smack</a>, .Just download the appropriate libraries and put the JAR files in your classpath. If you can’t figure out how it is done, please Google your way around.<br /><br />Enjoy...</div>
+
+
+<h2>Comments</h2>
+
+
+<div class='comments'>
+<div class='comment'>
+<div class='author'>pravin</div>
+<div class='content'>
+Superb Yaar!!!</div>
+</div>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My First Gnome application, Cricket score applet]]></title>
@@ -177,17 +200,6 @@ Found best "things to do after installing Ubuntu karmic" post I've ever seen. Ta
     <id>http://sacdroid.github.com/blog/2009/04/21/ubuntu-904-jaunty-jackalope-is-coming</id>
     <content type="html"><![CDATA[<div class='post'>
 With the final release of Ubuntu 9.04 “Jaunty Jackalope” only days away (scheduled for April 23, 2009), I already installed Release Candidate.<br /><br />So, what’s new? <ul><li>GNOME 2.26.1 desktop environment (KDE 4.2.2 for Kubuntu)</li><li>Kernel packages were updated to version 2.6.28-11.14, based on Linux kernel 2.6.28.9</li><li>Faster boot times (18 seconds!!!)<br /></li><li>ext4 filesystem support</li><li>Wacom tablet support</li><li>Netbook supp</li><li>KDE bluetooth fixes!!</li></ul><a href="http://www.ubuntu.com/getubuntu/releasenotes/904overview">Ubuntu 9.0.4 Release notes</a></div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My ubuntu (8.10) experience :)]]></title>
-    <link href="http://sacdroid.github.com/blog/2008/11/29/my-ubuntu-810-experience/"/>
-    <updated>2008-11-29T19:59:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2008/11/29/my-ubuntu-810-experience</id>
-    <content type="html"><![CDATA[<div class='post'>
-Its been 15 days today since I became completely OPEN SOURCE.  Yes, I dumped windows XP and started using Ubuntu for full time development. These days, I am busy exploring new things in Ubuntu.<br />Believe me, in these days fifteen days, I never missed my old windows XP set up. I got alternative for each application which I use in my daytoday life for FREE of Cost with full support.<br />    Its been fantastic experience so far with Linux world. Today, I am going to share my experience  during my  Open source "revolution" phase, :).<ul><li>   As I am Java developer , First thing I looked for  setting up JDK on ubuntu.  Installing JDK was straight forward. I used this link, <a href="http://dambalah.com/2007/09/21/install-java-on-ubuntu/">Install Java on Ubuntu</a>, which is very well organized and clear.<br /></li><li> Eclipse 3.3 is not available in the Ubuntu repository yet (<a href="https://bugs.launchpad.net/debian/+source/eclipse/+bug/123064">progress</a>), and I need this version because the plugins (JBoss Tools) I'm using require it.      So you need download eclipse 3.3 froe eclipse.org and unzip it to any directory. The locations I used is /opt/eclipse.<br /><br />Now configuration for /opt/eclipse. Set Up java_home,<br /><br />sudo -b gedit /opt/eclipse/java_home<br /><br />and add<br /><br />/usr/lib/jvm/java-5-sun<br /><br />to the top of the file.<br /><br />You need adjust increase stack and heap sizes for eclipse/JVM to avoid OutOfMemoryError,<br />sudo -b gedit /opt/eclipse/eclipse.ini<br />The argument Xms refers to the minimum heap size and Xmx refers to the maximum heap size.<br /><br />adjust them as your memory size.<br /><p class="line874">create executable:                                                                                         Make a bin folder in your home directory, this will be used for the startup script: <span class="anchor" id="line-189"></span><span class="anchor" id="line-190"></span><span class="anchor" id="line-191"></span></p><pre>$ mkdir ~/bin</pre><span class="anchor" id="line-192"></span><span class="anchor" id="line-193"></span><p class="line862">Next create an executable for Eclipe at <tt>~/bin/eclipse</tt> with your favorite text editor by typing <tt>vi ~/bin/eclipse</tt> or <tt>nano ~/bin/eclipse</tt> into the command line. Add the following content: <span class="anchor" id="line-194"></span><span class="anchor" id="line-195"></span><span class="anchor" id="line-196"></span><span class="anchor" id="line-197"></span><span class="anchor" id="line-198"></span><span class="anchor" id="line-199"></span><span class="anchor" id="line-200"></span></p><pre>export MOZILLA_FIVE_HOME="/usr/lib/mozilla/"<br />export ECLIPSE_HOME="$HOME/opt/eclipse"<br /><br />$ECLIPSE_HOME/eclipse $*</pre><span class="anchor" id="line-201"></span><span class="anchor" id="line-202"></span><p class="line874">Finally, allow the script to be executed: <span class="anchor" id="line-203"></span><span class="anchor" id="line-204"></span><span class="anchor" id="line-205"></span></p><pre>$ chmod +x ~/bin/eclipse</pre></li><li>To be continued<br /></li></ul></div>
 
 ]]></content>
   </entry>

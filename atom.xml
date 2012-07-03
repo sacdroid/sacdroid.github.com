@@ -4,7 +4,7 @@
   <title><![CDATA[Techno]]></title>
   <link href="http://sacdroid.github.com/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-03T18:05:46+05:30</updated>
+  <updated>2012-07-03T18:08:19+05:30</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -12,6 +12,176 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Happy New Year]]></title>
+    <link href="http://sacdroid.github.com/blog/2011/01/01/happy-new-year/"/>
+    <updated>2011-01-01T15:22:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2011/01/01/happy-new-year</id>
+    <content type="html"><![CDATA[<div class='post'>
+Its been more than half year since I blogged last time. I was busy trying to settle up in my personal life. During this period, I purchased <a href="http://picasaweb.google.com/sachin6870/MyNewHome?authkey=Gv1sRgCMeO9L-Q6eT1_wE">new home</a> and also I got married on 23rd nov. So its been eventful period for me. Now I am enjoying my married life.<br />  As 2011 is beginning, I decided to restart my technical blogging. Apart from my personal life, I have tried to continue my technical evolution. Meanwhile I owned a android device, <a href="http://www.htc.com/uk/product/wildfire/overview.html">HTC Wildfire</a> and now I am quite busy with experimenting android apps and custom roms. I will try to post android experiment in coming days.  <br /><br />  Happy New Year 2011.</div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>India Gets Everything Free</div>
+<div class='content'>
+Happy New Year :)</div>
+</div>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu 10.04 Change is here!!!]]></title>
+    <link href="http://sacdroid.github.com/blog/2010/04/28/ubuntu-1004-change-is-here/"/>
+    <updated>2010-04-28T12:28:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2010/04/28/ubuntu-1004-change-is-here</id>
+    <content type="html"><![CDATA[<div class='post'>
+After six months of development, Tomorrow, the Ubuntu team will be releasing Final New Version of Ubuntu (10.04) for public. This is Ubuntu Lucid Lynx, a name that combines reflection and vigilance (lucid) the desire to conquer a predator (lynx).<br /> <br /> This release is LTS(Long Term Support),  it means technical support and security updates are provided for a period of at least three years to release &#8220;Desktop&#8221; and at least five years for version &#8220;Server&#8221;.<br /><br /> To download Ubuntu 10.04 Lucid Lynx, you can go directly to the official page: ubuntu.com (Available from Thursday, April 29 at 13:00).<br />  Upgrade from an earlier Ubuntu version can be done through a terminal make sure you back up your data.<br /><br /><script type="syntaxhighlighter" class="brush: bash">&lt;![CDATA[<br />sachin@sachin-laptop:~$ update-manager -c -d<br />]]&gt;</script><br /><br />  After upgrade to RC, I experinced something new. Firstly, there is the integration of Plymouth, the system boot graphic that is used in Fedora for quite some time now. Specifically, we are left with only one screen at startup (two cons for version 9.10) and also a boot time much faster.<br />   Canonical wished to develop a whole new identity(Change!!). A new logo (see icon at the top of the article)<br /><br />Music Store:<br />  Canonical seems to always find a profitable business model. With this in mind we now propose to purchase music tracks online, directly from the media player Rhythmbox.<br /><br />Other changes includes,<br /><br />    * Use Linux kernel 2.6.32<br />    * OpenOffice.org goes to version 3.2<br />    * Firefox 3.6<br />    * Gnome 2.30<br />    * KDE 4.4<br /><br />Ubuntu, Change is here!!!<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_A2_wLwXdBek/S9fh-hX4LtI/AAAAAAAAC3Q/x73bzX-U_E0/s1600/ubuntu-10.04-lucid-lynx-plymouth-mini.png"><img style="cursor:pointer; cursor:hand;width: 320px; height: 187px;" src="http://4.bp.blogspot.com/_A2_wLwXdBek/S9fh-hX4LtI/AAAAAAAAC3Q/x73bzX-U_E0/s320/ubuntu-10.04-lucid-lynx-plymouth-mini.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5465085137064046290" /></a></div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GNUnify 2010, My experience Day 1]]></title>
+    <link href="http://sacdroid.github.com/blog/2010/03/01/gnunify-2010-my-experience-day-1/"/>
+    <updated>2010-03-01T17:41:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2010/03/01/gnunify-2010-my-experience-day-1</id>
+    <content type="html"><![CDATA[<div class='post'>
+Last week I attended my first <a href="http://gnunify.in">GNUnify</a> Conference in Pune, it is annual event organised by <a href="http://sicsr.ac.in/">SICSR</a> an <a href="http://plug.org.in/">PLUG</a> (Pune Linux User group). It was very good experience, I got chance to listen few open source Geeks around the globe. As it is 2 days event, multiple activities were running in parallel. So missed few &#8220;interesting&#8221; talks although it was organised carefully based on tracks like Software Development, System Administration, Embedded Systems, Embedded Systems.<br /><br /> Being software developer, I decided to attain all possible Software Development related sessions. <br /><br /> So on day first, I started with &#8220;Playing with python&#8221; session by <a href="http://gnunify.in/speaker/profile/85">Kushal Das</a>. Though I have coded few applications in python already, I decided to attain this, as I have never learnt python in any classroom. It was worth, as I learnt few new things about Python which I was not aware of. <br /> <br /> After this workshop, I went for Collaborative Software Development talk by <a href="http://gnunify.in/speaker/profile/23">Senthil Kumaran</a> from CollabNet. It was really useful session for me as I had to deal with various SCM related tasks at my work. Senthil introduced <a href="http://www.redmine.org/">RedMine</a>,a project management web application. It is very flexible and written using Ruby on Rails framework, it is cross-platform and cross-database as well.<br /><br />After this session is over, I walked into another room for &#8220;MySQL Shell Scripting&#8221;, (Good thing of Gnunify is you can just walk in any room at any time). In that session I got idea how I can leverage shell scripting to automate database related daily tasks. <br /><br /> After Lunch break, I went for Embracing the Web Platform talks from Arun Ranganathan. a member of the World Wide Web Consortium (W3C) Advisory Board, and is Chair of the Khronos WebGL Working Group. Arun did more of demonstrated than talk for emerging implementations of HTML5 and other web technologies with tag line <span style="font-style:italic;">&#8220;Pictures speak more than words&#8221;</span> for which audience applauded. After this session, Web.Next talk from <a href="http://gnunify.in/speaker/profile/59">Ragavan Srinivasan</a> gave introuction to &#8220;Weave - a framework for building personalized web experiences&#8221; and Project Jetpack - reimagining Firefox extensions.<br /><br /> I ended my day 1  of GNUnify with &#8220;Next generation Wireless&#8221; which gave how me idea about Wireless networking works, I have very less knowledge about networking itself. So it was worth!!<br /><br /><br />I will write about my day 2 session soon. I gotta go now.<br /> <br />I love freedom (saw this one-liner on Few TEEs at GNUnify)</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why MS badly needs Open Source]]></title>
+    <link href="http://sacdroid.github.com/blog/2010/01/24/why-ms-badly-needs-open-source/"/>
+    <updated>2010-01-24T21:15:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2010/01/24/why-ms-badly-needs-open-source</id>
+    <content type="html"><![CDATA[<div class='post'>
+Recently MS <a href="http://news.bbc.co.uk/2/hi/technology/8460819.stm">admitted</a> flaws in IE which allows Remote code execution, it allowed recent attacks on Google&#8217;s systems that originated in China. Look at How MS struggling to update its aged Internet Explorer web browser which is very unfortunate.<br /> Lets try to understand what&#8217;s Open Source,<br /><br /> <blockquote><span style="font-style:italic;">Open Source means that the source code of the software may be copied and distributed freely according to the license it is released under.</span></blockquote><br /><br />Open Source software guarantees quality and continuity for the user, because:<br /><br />    * users are no longer dependent on the survival of the software supplier,<br />    * users can continue to develop and change the core of the acquired software,<br />    * users can benefit from successful developments by others who have (previously) used this software,<br />    * rapid bug fixing and feature development  with large community base across globe.<br /><br />The best-known open source software products are the Linux operating system, Mozilla Firefox, the Apache web server and OpenOffice.<br />  Open-sourcing products is the only way that Microsoft can move forward. Look at how many years it took for Microsoft to develop Vista, and how bad it was (Win7 is basically a repaired version of Vista). Look at it struggling to update its Windows Mobile phone OS, which now seems to be an impossible task.<br />  Microsoft will eventually have to start using open-source licenses, to which Steve Ballmer once said &#8220;a cancer&#8221;!!!<br /><br />  Be community driven rather than commercial driven!!!</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Google waving... Next Generation Emails]]></title>
+    <link href="http://sacdroid.github.com/blog/2010/01/07/google-waving-next-generation-emails/"/>
+    <updated>2010-01-07T00:06:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2010/01/07/google-waving-next-generation-emails</id>
+    <content type="html"><![CDATA[<div class='post'>
+Last sunday I got mail from Google Wave team saying,<br /><br /> <span style="font-style:italic;">&#8220;Recently, you applied for a Google Wave developer sandbox account.  Your<br />sandbox account is now ready.&#8221;</span><br /><br />and my long wait for Google Wave invitation ended. I received my google wave and sandbox invitation same time.<br /><br />So What is Google Wave?<br /> <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TbkYUGgVI/AAAAAAAACvE/9RKEOk-9oms/s1600-h/wave_icon.png"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 162px; height: 162px;" src="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TbkYUGgVI/AAAAAAAACvE/9RKEOk-9oms/s320/wave_icon.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5423701269309456722" /></a><br /> <blockquote>Google Wave is an online communication and collaboration tool that makes real-time interactions more seamless &#8211; in one place, you can communicate and collaborate using richly formatted text, photos, videos, maps, and more.</blockquote><br />  The whole idea started with the fact that Email as an invention is around 40 years old and primarily its form hasn’t changed. Engineers at Google thought, what would happen if email was invented today and that formed the basis of Google Wave.<br /><br />With out wasting much time, I started exploring Google Wave features.  As expected it is full of cool features. <br /> One of the key features of Wave is its extensibility. For example, you can create robots, which can participate in waves just like humans do (that is once they are invited in) and reply to your requests like genie.<br /> I decided to write a robot which will give cricket score updates in google wave upon request.<br />I resused python code from <a href="http://cricscoreapplet.sourceforge.net/">gnome Cricket score applet</a> and wrote goole wave robot in python by following <a href="http://code.google.com/apis/wave/extensions/robots/python-tutorial.html">this tutorial.</a><br /><br /> In no time I am ready with my first Google wave robot, cricscorewave@appspot.com,<br /><br />Screen shot 1: ,<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TjxkFdO0I/AAAAAAAACvc/zmOiURFT5MM/s1600-h/cricscorewave.jpg"><img style="cursor:pointer; cursor:hand;width: 319px; height: 320px;" src="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TjxkFdO0I/AAAAAAAACvc/zmOiURFT5MM/s320/cricscorewave.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5423710291900578626" /></a><br /><br />Screen shot 2:<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_A2_wLwXdBek/S0Tj_7lpV0I/AAAAAAAACvk/qDDlYjIRrTI/s1600-h/Screenshot-2.png"><img style="cursor:pointer; cursor:hand;width: 310px; height: 320px;" src="http://3.bp.blogspot.com/_A2_wLwXdBek/S0Tj_7lpV0I/AAAAAAAACvk/qDDlYjIRrTI/s320/Screenshot-2.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5423710538727774018" /></a><br /><br />got Google wave account? give a try,<br /><br /> * <b>How to add criscorewave robot to Google Wave? </b><br />   Add   criscorewave@appspot.com.as a contact in your Contact. Clicking on (+) button Next to Manage Contacts…<br /> * <b> Using criscorewave </b><br />   To use this robot, simply drop in its address as a new Wave participant. and send blip as &#8220;help&#8221;, you will be populated with list of commands.<br /><br />Way to go!!!</div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Anonymous</div>
+<div class='content'>
+This is so interesting &amp; I am keen to try it&#8230; especially the robot you created!  Great stuff &amp; love the blog.  Keep it up :-)</div>
+</div>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Scrolling pidgin status message]]></title>
+    <link href="http://sacdroid.github.com/blog/2010/01/02/scrolling-pidgin-status-message/"/>
+    <updated>2010-01-02T00:45:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2010/01/02/scrolling-pidgin-status-message</id>
+    <content type="html"><![CDATA[<div class='post'>
+With continuation to my earlier <a href="http://www.sachystechnoworld.co.cc/2009/12/tell-your-friends-how-many-seconds-are.html">trick</a>, I wrote another script this time in python to animate pidgin status like a news scroller on the bottom of the news channel, you can put whatever message you want.<br /><br /><script type="syntaxhighlighter" class="brush: py">&lt;![CDATA[<br /><br />#!/usr/bin/env python<br /><br />import os, sys, dbus, re<br />from random import randint<br />import time<br /><br />msg =  "Happy New Year 2010"  #change this to your status message<br /><br />program = os.path.basename(sys.argv[0])<br />from_file = 0<br />ICON = u'\u21e8 '                 # rightwards white arrow<br /><br />bus = dbus.SessionBus()<br />obj = bus.get_object("im.pidgin.purple.PurpleService", "/im/pidgin/purple/PurpleObject")<br />purple = dbus.Interface(obj, "im.pidgin.purple.PurpleInterface")<br /><br /><br />def pidgin_status(message):<br /> old_status = purple.PurpleSavedstatusGetCurrent()  # get current status<br /> status_type = purple.PurpleSavedstatusGetType(old_status) # get current status type<br /> new_status = purple.PurpleSavedstatusNew("", status_type) # create new status with old status type<br /> purple.PurpleSavedstatusSetMessage(new_status, message) # fill new status with status message<br /> purple.PurpleSavedstatusActivate(new_status)   # activate new status<br /><br /><br />i = 0<br />while True:<br />  ticker_text = msg[i:i+19] +"  " + msg[0:i]<br />  pidgin_status(ticker_text)<br />  i +=1<br />  if i == 19:<br />     i = 0<br />  time.sleep(1)<br /> <br />]]&gt;</script><br /><br />Have fun&#8230;<br /><br />Thanks,<br /><br />&#8211; Sachin</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[tell your friends how many seconds are left in the decade]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/12/30/tell-your-friends-how-many-seconds-are/"/>
+    <updated>2009-12-30T21:42:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/12/30/tell-your-friends-how-many-seconds-are</id>
+    <content type="html"><![CDATA[<div class='post'>
+I got this idea from <a href="http://www.itpro.co.uk/618784/google-counting-down-the-seconds-till-the-new-year">goggle new year seconds counter</a>, I decided to set my pidgin status to showing seconds are left in the decade.<br /> After bit of goggling found a command-line program called purple-remote that allows me to automatically update the Pidgin status and message lines. The purple-remote program is included in the libpurple-bin package, make sure you have it installed.<br /><br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ sudo apt-get install libpurple-bin<br /></pre><br />Here is small script that does this trick.<br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ gedit hny.sh<br /></pre><br />add text as follows:<br /><script type="syntaxhighlighter" class="brush: py">&lt;![CDATA[<br />#!/bin/bash<br />START=$(date --date='2010-01-01 00:00:00' +%s)<br />END=$(date +%s)<br /><br />DIFF=$(( $START - $END ))<br /><br />if [ $DIFF -lt 0 ]; then<br />  msg="Happy New Year 2010"<br />else<br />  msg="$DIFF seconds to 2010"<br />fi<br /><br />echo ${msg}<br />/usr/bin/purple-remote "setstatus?status=available&message=${msg}"<br />]]&gt;</script><br />Save and make it executable as follows:<br /><br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ chmod +x hny.sh<br /></pre><br />time to run script every second with watch command.<br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ watch -n 1 ./hny.sh<br /></pre><br /><br />DONE!!!<br /><br />Screenshot:<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_A2_wLwXdBek/SzuIodeQimI/AAAAAAAACuk/U_DcOcz-GEA/s1600-h/hny.jpg"><img style="cursor:pointer; cursor:hand;width: 291px; height: 320px;" src="http://3.bp.blogspot.com/_A2_wLwXdBek/SzuIodeQimI/AAAAAAAACuk/U_DcOcz-GEA/s320/hny.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5421076805158210146" /></a><br /><br />HAPPY NEW YEAR to all.<br /><br />Update:<br />after few requests I am writng cross platform utility which will do this trick:<br /><script type="syntaxhighlighter" class="brush: java">&lt;![CDATA[<br />import java.text.SimpleDateFormat;<br />import java.util.Date;<br /><br />import org.jivesoftware.smack.XMPPConnection;<br />import org.jivesoftware.smack.packet.Presence;<br /><br />public class Test {<br /><br /> public static void main(String args[]) {<br />  XMPPConnection connection = new XMPPConnection("gmail.com");<br /><br />  Date date;<br />  try {<br />   SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yy");<br />   date = (Date) formatter.parse("01-JAN-10");<br /><br />   connection.connect();<br />   connection.login("yourgmail@gmail.com", "password");<br />   Presence presence = new Presence(Presence.Type.available);<br />   while (true) {<br />    Date today = new Date();<br />    long diff = date.getTime() - today.getTime();<br /><br />    presence.setStatus((diff / (1000)) + " seconds to 2010");<br />    presence.setPriority(24);<br />    presence.setMode(Presence.Mode.available);<br />    connection.sendPacket(presence);<br />    Thread.sleep(1000); // Sleeps for 1 seconds<br />   }<br />  } catch (Exception e) {<br />   System.out.println(e.toString());<br />  }<br /> }<br />}<br /><br />]]&gt;</script><br /><br /> You need to get the Smack API which is an open source, pure Java library for working with XMPP (clients only). The API can be downloaded from <a href=" http://www.igniterealtime.org/downloads/index.jsp">smack</a>, .Just download the appropriate libraries and put the JAR files in your classpath. If you can’t figure out how it is done, please Google your way around.<br /><br />Enjoy&#8230;</div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>pravin</div>
+<div class='content'>
+Superb Yaar!!!</div>
+</div>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[From Java to Python, I'm loving it.]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/12/15/from-java-to-python-im-loving-it/"/>
+    <updated>2009-12-15T21:33:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/12/15/from-java-to-python-im-loving-it</id>
+    <content type="html"><![CDATA[<div class='post'>
+Its been just three months, I learnt <a href="http://www.python.org/">Python</a> (or I started learning it as there many more aspects to learn) and  I am already very fond of it. Especially I have started using python for scripting work. I automated few things using python scripts which I had to do regularly like a creating users in oracle, copying / importing oracle dumps, syncing Wiki svn log with svn sever and many more. <br />  Some might argue that you can do the same thing in shell scripts or other programming languages. You can do that  but coding in python is 5-10 times faster and <a href="http://pythonconquerstheuniverse.wordpress.com/category/java-and-python/">this article</a> gives insight comparative of Java with python.<br />  To create connection in Java, it involves three steps but with python its just one step<br /><pre name="code" class="py"><br />    conn = cx_Oracle.connect(username, password, sid)<br /></pre><br />  <br />  I am not bad-mouthing Java here. With <a href="http://java.sun.com/javaee/">JEE6</a> at doorstep, Java has progressed very well as web technologies. <br />  For now, I will be using python for writing utility scripts unless I get chance to work on real big python Project.<br />  As experienced Java programmers, I found this <a href="http://python.computersci.org/">e-book</a> very helpful for learning python <br />  Coding in python as easy as in Java, I have already written <a href="http://cricscoreapplet.sourceforge.net/">cricket live score</a> gnome applet in python which been huge success.<br /><br /> Being interpreted language Python is little bit slow. With the Java just-in-time compiler, Java is faster.</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu 10.04 First Alpha Released Today]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/12/11/ubuntu-1004-first-alpha-released-today/"/>
+    <updated>2009-12-11T09:25:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/12/11/ubuntu-1004-first-alpha-released-today</id>
+    <content type="html"><![CDATA[<div class='post'>
+After successful(?) release Ubuntu 9.10 Karmic, Canonical Ltd today announced 1st alpha release of Lucid Lynx, Ubuntu 10.04. <br />  <blockquote>The Ubuntu developers are moving quickly to bring you the absolute latest and greatest software the Open Source community has to offer. The Lucid Lynx Alpha 1 is the first alpha release of Ubuntu 10.04, bringing with it the earliest new features for the next version of Ubuntu. </blockquote><br /><br /> This release is LTS (Long Term Support. With the Long Term Support (LTS) version you get 3 years support on Ubuntu Desktop, and 5 years on Ubuntu Server. <br /><br />Key features and changes in the Lucid Lynx will be:<br /><br />    * Inclusion of Gwibber, a microblogging client.<br />    * Removal of GIMP as the image editor.<br />    * A 10 second boot time.<br />Download link is <a href="http://www.ubuntu.com/testing/lucid/alpha1">here</a><br /><br />  You can try out the Alpha release on a virtual machine and participate in the development by reporting bugs. A full system installation or a dual boot with Windows is still not recommended, as the OS is still in its alpha stage.</div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Sachin6870</div>
+<div class='content'>
+are you talking about alpha 2 release, yes it made available 2 days before.</div>
+</div>
+<div class='comment'>
+<div class='author'>joeyjuviyani</div>
+<div class='content'>
+The Ubuntu 10.04 release is near. Recently the Ubuntu 10.04 final version was made avaialble to testers for testing.It is also known as Lucid Lynx. This technology supports kernel mode-setting for Linux kernel image boot more fluid between the boot and start X server. I am a Linux- Ubuntu user and I am very much eager to get the Ubuntu 10.04. I got the information about this from:<br />http://www.techarena.in/news/27123-ubuntu-1004-lucid-lynx-made-available-testers.htm</div>
+</div>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Google Chrome for Linux Officially]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/12/09/google-chrome-for-linux-officially/"/>
+    <updated>2009-12-09T10:33:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/12/09/google-chrome-for-linux-officially</id>
+    <content type="html"><![CDATA[<div class='post'>
+Till today I was using <a href="http://www.chromium.org/">Chromium</a> custom build to get feel of Google chrome web browser which was primarily released for Windows.  Bit about chromium,<br /><br /><blockquote>Chromium is an open-source browser project that aims to build a safer, faster, and more stable way for all Internet users to experience the web. The Chromium codebase is the basis for Google’s Chrome browser.<br /></blockquote><br /><br />  But Finally Google has released GNU/Linux version <a href="http://www.google.com/chrome/intl/en/w00t.html">Google Chrome</a><br /><br /> Thanks to the many Chromium and WebKit developers who helped make Google Chrome a lean browsing machine. <br />Here are a few fun facts from us on the Google Chrome for Linux team:<br /><br /><ul><br />  <li>60,000 lines of Linux-specific code written</li><br />  <li>2,713 Linux-specific bugs fixed</li><br />  <li>12 external committers and bug editors to the Google Chrome for Linux code base</li><br />  <li>48 external code contributors</li><br /> </ul><br /><br />  Needless to say, I installed it on my laptop and using it now,<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_A2_wLwXdBek/Sx8y984SKLI/AAAAAAAACtc/cJbED91p9jQ/s1600-h/Screenshot-2.png"><img style="cursor:pointer; cursor:hand;width: 320px; height: 200px;" src="http://3.bp.blogspot.com/_A2_wLwXdBek/Sx8y984SKLI/AAAAAAAACtc/cJbED91p9jQ/s320/Screenshot-2.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5413101317018233010" /></a><br /><br /> <a href="http://www.google.com/chrome/eula.html?platform=linux&hl=en"> Give a try</a>, Ignore beta tag of release. Google’s “beta” products are more mature than the final releases of many other companies.(and that’s sad.)</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Released 1.1 version of CricScore gnome applet]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/12/09/released-11-version-of-cricscore-gnome/"/>
+    <updated>2009-12-09T00:46:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/12/09/released-11-version-of-cricscore-gnome</id>
+    <content type="html"><![CDATA[<div class='post'>
+With considering few must needed features requests, I am releasing 1.1 version of <a href="http://cricscoreapplet.sourceforge.net/">CricScore</a>, a gnome applet.<br />  So Whats new?,<br />  <ul><br />  <li>Show Score Update Preference: With this preference user can enable/disable libnotify score update.</li><br />  <li>Score Update Notification TimeOut Preference: Timeout value for notification to disappear.</li><br />  <li>Fixed to avoid notifications after match is complete</li><br />  <li>Added logging support through Logging Module.</li><br /> </ul><br /><br /> Screen Shot for Preference UI change,<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_A2_wLwXdBek/Sx6ntQlCExI/AAAAAAAACtU/V4H2zS0UZc0/s1600-h/screenshot2.jpg"><img style="cursor:pointer; cursor:hand;width: 320px; height: 197px;" src="http://4.bp.blogspot.com/_A2_wLwXdBek/Sx6ntQlCExI/AAAAAAAACtU/V4H2zS0UZc0/s320/screenshot2.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5412948198132159250" /></a><br /><br />Fun with programming!!!<br /><br />Thanks,<br /><br />&#8211; Sachin.</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Such huge response for CricScore gnome applet was unexpected!!]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome/"/>
+    <updated>2009-12-05T23:32:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome</id>
+    <content type="html"><![CDATA[<div class='post'>
+In fact in its just 2nd day after 1.0-alpha release of <a href="http://cricscoreapplet.sourceforge.net/">CricScore Gnome applet</a>, It has netted more than 100 downloads. Now this is a terrific figure by all means since I wrote this as utility for personal use as fun, I was not expecting it could be a professional gnome applet.<br />  I just shared this across few Linux related forums on orkut, ubuntu communities and got such huge reply. It feel good factor to me.<br />There has been very positive reply so far like this,<br /><br /> <blockquote>&#8220;Great applet! I&#8217;ve been looking for something like this. Just what I needed!&#8221;, says Jorgo <br />  upengan78 is running it on &#8220;gentoo&#8221;, he comments, &#8220;It is working as intended. Many thanks for such a nice applet. Good luck for more such applets&#8221;<br />  Ankur suggested me to make it official package, &#8220;Cann&#8217;t we have your applet from official repositories ???&#8221;<br />  Kamalakar says &#8220;I am using it today for India Sri Lanka score. Good to have it on Gnome top panel.&#8221;   <br />   </blockquote><br />There has been few feature requests also and few wanted to have one smiler applet for Football/Socker. I have already implemented few features in latest 1.0 release.  <br />  There are few people interested to work with me in writing an applet for Football, hopefully I will have it defiantly before FIFA2010. <br /><blockquote> Arun S.A.G wants to package this applet for Fedora, &#8220;I would like to package your applet for Fedora, i have tested it in Fedora 12 it works fine :-)&#8221;.</blockquote><br />  Thanks guys for such motivation and feedbacks.  <br /> Today I released <a href="http://cricscoreapplet.sourceforge.net/">1.0 release</a>, I did not do any code changes, as it did not require, alpha release worked like charm, but I added READEME, INSTALL, COPYRIGHT file as this applet is no more personal :).<br /><br />  There are many feature requests pending on my plate. I will try to work on those in spare time.<br /><br />   Possibilities Are Endless!!!</div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Sachin6870</div>
+<div class='content'>
+can you please give me more info?<br />xsession log will be helpful. <br />Also check for system requirements,<br />    *  Python 2.4 and ElementTree OR Python 2.5 (which already includes ElementTree)<br />    * python-gtk 2.10 or newer<br />    * python-gnome 2.16 or newer<br />    * python-gnome-desktop 2.16 or newer<br />    * python-notify 0.1 or newer</div>
+</div>
+<div class='comment'>
+<div class='author'>Anonymous</div>
+<div class='content'>
+hi, i installed cricscore but cannot add to panel as it gives an error &quot;The panel encountered a problem while loading OAFIID:GNOME_CricketScoreApplet&quot;. Please suggest the solution.</div>
+</div>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My First Gnome application, Cricket score applet]]></title>
@@ -222,126 +392,6 @@ where to download this?<br />thell us ! where is a link to software and a plan f
     <id>http://sacdroid.github.com/blog/2009/11/16/new-look-and-feel-to-my-blog</id>
     <content type="html"><![CDATA[<div class='post'>
 Y&#8217;day night,I changed the whole look and feel of this blog. Isn&#8217;t it cool?<br /><br /> I managed to add header image following this <a href="http://www.youtube.com/watch?v=PUIdl1xC5eA">video</a> and header image is captured somewhere near to GOA by one my team mate during our last trip.<br />  I edited this image to fit to header size size i.e. 1230 px X 250 px by using <a href="http://www.gimp.org/">gimp</a>. Its really powerful tool to manipulate image.<br /><br /> and background colour is changed by applying my html skills. I picked colour from header image using gimp and edited blog html (Dashboard->Layout->Edit HTML) to add this background colour to body, sidebar and header itself.<br /><br /> Finally I managed to give this nice and cool look and feel to my blog.</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Guest Additions  installation in Virtualbox @ Ubuntu Karmic]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/11/15/guest-additions-installation-in/"/>
-    <updated>2009-11-15T07:45:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/11/15/guest-additions-installation-in</id>
-    <content type="html"><![CDATA[<div class='post'>
-I installed Virtualbox on Ubuntu karmic but I ran into trouble with the Guest Additions because the download kept timing out. I solved the problem by following the weblink and manually downloading the Guest Additions disk image. I then used ‘CD/DVD mount’ from Virtualbox’s Devices menu to mount the disk image. When I tried the guest additions installation this time it worked (well, actually it worked on the second attempt so was I just lucky?).<br /><br />I earlier extracted the files/folders from the Guest Additions disk image and tried to manually move them to the lib folder where Virtualbox was searching. I was completely fooled by the permissions for this folder that said I was not the owner even though I am the &#8220;sudo&#8221;. Doubtless I’ll find out why as I explore Ubuntu!</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Script to start oracle if it is not running]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/11/05/script-to-start-oracle-if-it-is-not/"/>
-    <updated>2009-11-05T17:07:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/11/05/script-to-start-oracle-if-it-is-not</id>
-    <content type="html"><![CDATA[<div class='post'>
-As part of my current job, I am working as &#8220;part time&#8221; oracle dba. Due to some known issues in oracle, our oracle server goes down. Till we upgrade to Fixed version, I had to restart oracle manually. To overcome that I wrote script will be run as cron job,<br /><br />Script:<br /><pre name="code" class="cpp"><br />#!/bin/bash<br />#<br />#<br /># Run-level Startup script for Instance<br /># It relies on the information on pmon<br />check_stat=`ps -aef |grep pmon | grep -v grep | wc -l`;<br />oracle_num=`expr $check_stat`<br />if [ $oracle_num -ne 0 ]<br />then<br /> oracle start<br />exit 16<br />fi<br /></pre><br /><br /> added this script as part of linux &#8220;cron&#8221; jobs.<br /><br />Enjoy!!!</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Nice post on Top things to do after installing Ubuntu Linux 9.10 Karmic Koala]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/11/04/nice-post-on-top-things-to-do-after/"/>
-    <updated>2009-11-04T00:33:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/11/04/nice-post-on-top-things-to-do-after</id>
-    <content type="html"><![CDATA[<div class='post'>
-Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#8217;ve ever seen. Tagged & bookmarked & and <a href="http://www.reddit.com/tb/9z2xk/">sharing</a>. <br />Great Work <a href="http://www.reddit.com/tb/9z2xk/">Danny</a>.</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Gstreamer version mismatch after upgrade to Ubuntu 9.10.]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/11/03/gstreamer-version-mismatch-after/"/>
-    <updated>2009-11-03T12:59:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/11/03/gstreamer-version-mismatch-after</id>
-    <content type="html"><![CDATA[<div class='post'>
-Thanks/congratulations for Karmic realese to Ubuntu Dev team.<br /><br /> I was running into issues after upgrading to Ubuntu 9.10 Karmic:<br /><br /> 1) Empathy, exaile was not starting up. Issue was related to gstreamer versions.<br />  <div class="smallfont" style="margin-bottom: 2px;">Code:</div><br /><pre name="code" class="Cpp"><br />sachin@sachin-laptop:~/envista/VPN$ empathy<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstffmpeg.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstschro.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstplaybin.so': /usr/lib/gstreamer-0.10/libgstplaybin.so: undefined symbol: gst_stream_volume_get_type<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstvolume.so': /usr/lib/gstreamer-0.10/libgstvolume.so: undefined symbol: gst_stream_volume_get_type<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstpulse.so': /usr/lib/gstreamer-0.10/libgstpulse.so: undefined symbol: gst_stream_volume_get_type<br />empathy: symbol lookup error: /usr/lib/python2.6/dist-packages/gst-0.10/gst/interfaces.so: undefined symbol: gst_stream_volume_format_get_type<br />Error re-scanning registry , child terminated by signal<br />Run 'empathy --help' to see a full list of available command line options.<br /><br />(empathy:30993): empathy-WARNING **: Error in empathy init: Error re-scanning registry , child terminated by signal<br />sachin@sachin-laptop:~/envista/VPN$ exaile <br />INFO    : Loading Exaile 0.3.0.1...<br />INFO    : Loading settings...<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstffmpeg.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstschro.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstplaybin.so': /usr/lib/gstreamer-0.10/libgstplaybin.so: undefined symbol: gst_stream_volume_get_type<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstvolume.so': /usr/lib/gstreamer-0.10/libgstvolume.so: undefined symbol: gst_stream_volume_get_type<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstpulse.so': /usr/lib/gstreamer-0.10/libgstpulse.so: undefined symbol: gst_stream_volume_get_type<br />AttributeError: 'module' object has no attribute 'Element'<br />python: symbol lookup error: /usr/lib/python2.6/dist-packages/gst-0.10/gst/interfaces.so: undefined symbol: gst_stream_volume_format_get_type<br />sachin@sachin-laptop:~/envista/VPN$<br /></pre><br /><br />Reinstalling whole gstreamer packages solved issue.<br /> <br /> Remove gstreamer packages including plug ins.<br /><pre name="code" class="Cpp"><br />sudo apt-get remove gstreamer0.10-fluendo-mp3 gstreamer0.10-pitfdll gstreamer0.10-plugins-bad<br /> gstreamer0.10-plugins-bad-multiverse gstreamer0.10-plugins-base gstreamer0.10-plugins-base-apps<br /> gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-ugly-multiverse<br /></pre><br /><br />Remove references to gstreamer libs.<br /><pre name="code" class="Cpp"><br />sachin@sachin-laptop:/usr/local/lib$ sudo rm -rf libgst*<br /></pre><br /><br /> Install it back, make sure you have enabled all the source repositories. <br /><pre name="code" class="Cpp"><br />sudo apt-get install gstreamer0.10-fluendo-mp3 gstreamer0.10-pitfdll gstreamer0.10-plugins-bad <br />gstreamer0.10-plugins-bad-multiverse gstreamer0.10-plugins-base gstreamer0.10-plugins-base-apps <br />gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-ugly-multiverse<br /></pre></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu 9.10 Release Candidate  is here!!!]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/10/26/ubuntu-910-release-candidate-is-here/"/>
-    <updated>2009-10-26T11:54:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/10/26/ubuntu-910-release-candidate-is-here</id>
-    <content type="html"><![CDATA[<div class='post'>
-If you can&#8217;t wait till 29th October,  to play with new Ubuntu release,  Release Candidate is available <a href="http://fridge.ubuntu.com/node/1931">here</a>.<br /><br />It has several new features but not much exciting,<br /><br />features<br />————————<br /><br />GNOME 2.28 featuring Empathy: with this latest release, Ubuntu now uses the Empathy instant messaging service by default, introducing the Telepathy framework.<br /><br />Ubuntu Software Center: the first step in a replacement for Add/Remove Software has landed.<br /><br />New boot experience: multiple changes to look, feel and speed of the boot experience have been included in the Ubuntu 9.10 rc.<br /><br />Enjoy&#8230;</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Python for Symbian]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/10/24/python-for-symbian/"/>
-    <updated>2009-10-24T10:24:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/10/24/python-for-symbian</id>
-    <content type="html"><![CDATA[<div class='post'>
-During Diwali vacations, I learnt python language by reading &#8220;Python Programming: Introduction to Computer Science&#8221; by      John M.Zelle, Ph.D, Its well written book with some nice examples which tries to explore power of python.<br />So I decided to write some useful programs in python. I found one interesting open source project from Nokia, Py60. through which you can write python programs for your mobile.<br /><br />Nokia has done great job by introducing <a href="http://wiki.opensource.nokia.com/projects/PyS60">py60.</a>  <blockquote>   <span style="font-style: italic;">&#8220;Python for S60 is Nokia&#8217;s port of the </span><a style="font-style: italic;" href="http://python.org/" class="external text" title="http://python.org/" rel="nofollow">Python</a><span style="font-style: italic;"> language to the </span><a style="font-style: italic;" href="http://s60.com/" class="external text" title="http://s60.com/" rel="nofollow">S60</a> smartphone platform. In addition to the standard features of the Python language, PyS60 provides access to many of the phone&#8217;s uniquely smartphone-y functions, such as camera, contacts, calendar, audio recording and playing, TCP/IP and Bluetooth communications and simple telephony.&#8221;<blockquote></blockquote></blockquote>  You can use emulator or your mobile phone (S60 platform) to run/test python programs. I use my Nokia N70 to run python and so far it&#8217;s great fun! You can write the program in your computer and transfer it to your mobile phone. There is an interactive console in the mobile phone so that you can write your program directly in the mobile phone. There is another blue-tooth based console which I haven&#8217;t tried yet (my bluetooth dongle is not working, I might have reached its data transfer limit :) ).<br /><br />Currently I am working on a project which will be used find cell phone location based on GSM information provided by service provider.<br />This project will leverage scripts provided <a href="http://code.google.com/p/nokia-gsm-location-hacks/">Nokia GSM location hacks</a>, to geocode  phone location.<br />Usabilty of this application will be to find nearest useful utilities based on your location. Imagine your are in unknown city and you run out of money  and you don&#8217;t know where is the nearest ATM, this project might help you.<br />Bye for now, will update you on status of project on next week.<br /><br /><br /><br /><blockquote></blockquote></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[pYthOn]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/10/20/python/"/>
-    <updated>2009-10-20T11:36:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/10/20/python</id>
-    <content type="html"><![CDATA[<div class='post'>
-<div style="text-align: justify;">  I wanted to download few regional (marathi)  videos from youtube. I found a interesting and nicely written python script called<a href="http://bitbucket.org/rg3/youtube-dl/wiki/Home"> youtube-dl</a>.<br />This script is written in object oriented way. This made may to dig out <a href="http://www.python.org/">python</a> more.<br /><br />So I decided during this vacations I will be learning new (object oriented) scripting language, Python.<br /><br />Notes:<br />1) Swap in a statement<br />This question is very common in C, C++technical interviews, In Python, the simultaneous assignment statement offers an elegant alternative. Here is a simpler Python equivalent:<br />x, y = y, x<br />2) Indentations matters<br />Python programming blocks are grouped using indentations.<br /><br />1)<br /><pre name="code" class="Python"><br />for i in range(x):<br />  fact = fact * (x- i)<br />print fact<br /></pre><br />2)<br /><pre name="code" class="Python"><br />for i in range(x):<br /> fact = fact * (x- i)<br /> print fact<br /></pre><br /><br />Above two snippet will generate two difference outputs, In second snippet print statement is part of for loop.<br /><br />3) Range it!!<br /> Python has inbuilt function, Range, which will generate list of numbers.  There are other variations of range that can be used to produce different sequences:,<br /><pre name="code" class="Python"><br />>>> range(10)<br />[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]<br />>>> range(5,10)<br />[5, 6, 7, 8, 9]<br />>>> range(5, 10, 3)<br />[5, 8]<br /><br /></pre><br /><br />4) &#8220;Long Int&#8221; is really long:<br />   Python has new datatype, long int. A long int is not a fixed size, but expands to accommodate whatever value it holds. The only limit is<br />the amount of memory the computer has available to it.<br /><br /><br /><br /><br /><br /><br /></div></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Then you win...]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/10/19/then-you-win/"/>
-    <updated>2009-10-19T23:37:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/10/19/then-you-win</id>
-    <content type="html"><![CDATA[<div class='post'>
-“First they ignore <em>you</em>, <em>then</em> they laugh at <em>you</em>, <em>then</em> they fight <em>you</em>, <em>then you win</em>.” Mahatma Gandhi<br /><br /> No, I am not follower of Gandhiji, But he has a lots of good points like above.<br /> Recently MS has given another proof by introducing PowerShell, <span style="color: rgb(0, 0, 0);" >an object oriented shell, which is part of Windows 7. Linux has a lots of really powerful shells from its births.<br /> By introducing <a href="http://en.wikipedia.org/wiki/Windows_PowerShell">PowerShell</a>, </span> Microsoft has crowned <a href="http://www.youtube.com/watch?v=lfJiajqDk88">Linux the victor</a>.<br /><br /><br /><br /><br /><span style="color: rgb(0, 0, 0);" ><br /><br /></span></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Themes for Gnome Ubuntu]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/10/17/themes-for-gnome-ubuntu/"/>
-    <updated>2009-10-17T09:58:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/10/17/themes-for-gnome-ubuntu</id>
-    <content type="html"><![CDATA[<div class='post'>
-I recently switched gnome desktop after using KDE for one year for no special reason. KDE was good experience.<br /> Gnome has very professional look as compared to KDE. KDE is good for people who are comming from windows background.<br /> Currently I am exploring various themes in gnome. Its nice to see you can change your desktop on one click.<br /> I love dark themes. My favourites are,<br />  1) Karmic - x (This is my current theme.)<br />  2) Elegant Brit<br />  3) Mesmerized.<br /><br /> you can explore more dark themes <a href="http://www.catswhocode.com/blog/20-beautiful-dark-themes-for-gnome-and-ubuntu">here</a><br /><br /> I did not like scroll bars in firefox for some of the themes. Its too dark to get hidden with background. Workaround I found is, Just go to the add-on part of their website, and install iFox Metal for your skin.<br /><br />Enjoy<br /><br /><span style="font-weight: bold;">Update[Mon, Oct 19, 2009] : </span><span>Oops, My  favourite music player &#8220;Amarok&#8221; stoped </span><span>working in Gnome. Its known <a href="https://bugs.launchpad.net/ubuntu/+source/amarok/+bug/371360">issue</a> in Gnome for KDE apps</span><span style="font-weight: bold;">. </span><span>As always</span><span style="font-weight: bold;"> </span><span>open source communities, this issue also has work around</span><span style="font-weight: bold;"> :).  </span><span>Also Gnome has alternative player, <a href="http://www.exaile.org/">Exaile. </a><br />   Exaile looks cool and lightweight at 1st glance.<br /></span></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Linux is addictive, I'm hooked! Linux Quotes Collection]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/08/30/linux-is-addictive-im-hooked-linux/"/>
-    <updated>2009-08-30T10:32:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/08/30/linux-is-addictive-im-hooked-linux</id>
-    <content type="html"><![CDATA[<div class='post'>
-After a big break, Today, <br /><br />I will be presenting collection of Linux related quotes,<br /><br />1) In most countries selling harmful things like drugs is punishable.<br />Then howcome people can sell Microsoft software and go unpunished? (By hasku@rost.abo.fi, Hasse Skrifvars).<br /><br />2) This message was brought to you by Linux, the free unix.<br />Windows without the X is like making love without a partner.<br />Sex, Drugs & Linux Rules<br />win-nt from the people who invented edlin<br />apples have meant trouble since eden<br />Linux, the way to get rid of boot viruses<br />(By mwikholm@at8.abo.fi, MaDsen Wikholm).<br /><br />3) Avoid the Gates of Hell. Use Linux<br />(Unknown source)<br /><br />4)  linux: because a PC is a terrible thing to waste(ks @cis.ufl.edu put this on Tshirts in &#8216;93)<br /><br />5) `When you say &#8220;I wrote a program that crashed Windows&#8221;, people just stare at<br />you blankly and say &#8220;Hey, I got those with the system, *for free*&#8221;.&#8217;<br />(By Linus Torvalds).<br /><br />6) &#8220;World domination. Fast.&#8221;<br />(By Linus Torvalds)<br /><br />7) &#8220;&#8230;Unix, MS-DOS, and Windows NT (also known as the Good, the Bad, and<br />the Ugly).&#8221;<br />(By Matt Welsh)<br /><br />8) &#8220;Linux: the operating system with a CLUE&#8230; Command Line User Environment&#8221;.<br />(seen in a posting in comp.software.testing)<br /><br />9)  *** mailing list about a kernel bug ***<br />I&#8217;m an idiot.. At least this one [bug] took about 5 minutes to find..&#8221;<br />(Linus Torvalds in response to a bug report.)<br />> I&#8217;m an idiot.. At least this [bug] took about 5 minutes to find..<br />Disquieting &#8230;<br />(Gonzalo Tornaria in response to Linus Torvalds&#8217;s mailing about a kernel bug.)<br />> I&#8217;m an idiot.. At least this [bug] took about 5 minutes to find..<br />We need to find some new terms to describe the rest of us mere mortals<br />then.<br />(Craig Schlenter in response to Linus Torvalds&#8217;s mailing about a kernel bug.)<br />> I&#8217;m an idiot.. At least this [bug] took about 5 minutes to find..<br />Surely, Linus is talking about the kind of idiocy that others aspire to :-).<br />(Bruce Perens in response to Linus Torvalds&#8217;s mailing about a kernel bug.)<br />*********************************************************************<br />10)  As usual, this being a 1.3.x release, I haven&#8217;t even compiled this<br />kernel yet.  So if it works, you should be doubly impressed.<br />(Linus Torvalds, announcing kernel 1.3.3 on the linux-kernel mailing list.)<br />11) it&#8217;s a bird..<br />It&#8217;s a plane..<br />No, it&#8217;s KernelMan, faster than a speeding bullet, to your rescue.<br />Doing new kernel versions in under 5 seconds flat..<br />(Linus, in the announcement for 1.3.27)<br /><br />12) >Linux is not user-friendly.<br />It _is_ user-friendly.  It is not ignorant-friendly and idiot-friendly.<br />(Seen somewhere on the net.)<br /><br />13) &#8220;How do you power off this machine?&#8221;<br />(Linus, when upgrading linux.cs.helsinki.fi, and after using the machine<br />for several months.)<br /><br />14) Excusing bad programming is a shooting offence, no matter _what_ the<br />circumstances.<br />(Linus Torvalds, to the linux-kernel list)<br />15) If Bill Gates is the Devil then Linus Torvalds must be the Messiah.<br />(Unknown source)<br /><br />16) Vini, vidi, Linux!<br />(Unknown source)</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ubuntu 9.04 Jaunty Jackalope is coming....]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/04/21/ubuntu-904-jaunty-jackalope-is-coming/"/>
-    <updated>2009-04-21T12:06:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/04/21/ubuntu-904-jaunty-jackalope-is-coming</id>
-    <content type="html"><![CDATA[<div class='post'>
-With the final release of Ubuntu 9.04 “Jaunty Jackalope” only days away (scheduled for April 23, 2009), I already installed Release Candidate.<br /><br />So, what’s new? <ul><li>GNOME 2.26.1 desktop environment (KDE 4.2.2 for Kubuntu)</li><li>Kernel packages were updated to version 2.6.28-11.14, based on Linux kernel 2.6.28.9</li><li>Faster boot times (18 seconds!!!)<br /></li><li>ext4 filesystem support</li><li>Wacom tablet support</li><li>Netbook supp</li><li>KDE bluetooth fixes!!</li></ul><a href="http://www.ubuntu.com/getubuntu/releasenotes/904overview">Ubuntu 9.0.4 Release notes</a></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My ubuntu (8.10) experience :)]]></title>
-    <link href="http://sacdroid.github.com/blog/2008/11/29/my-ubuntu-810-experience/"/>
-    <updated>2008-11-29T19:59:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2008/11/29/my-ubuntu-810-experience</id>
-    <content type="html"><![CDATA[<div class='post'>
-Its been 15 days today since I became completely OPEN SOURCE.  Yes, I dumped windows XP and started using Ubuntu for full time development. These days, I am busy exploring new things in Ubuntu.<br />Believe me, in these days fifteen days, I never missed my old windows XP set up. I got alternative for each application which I use in my daytoday life for FREE of Cost with full support.<br />    Its been fantastic experience so far with Linux world. Today, I am going to share my experience  during my  Open source &#8220;revolution&#8221; phase, :).<ul><li>   As I am Java developer , First thing I looked for  setting up JDK on ubuntu.  Installing JDK was straight forward. I used this link, <a href="http://dambalah.com/2007/09/21/install-java-on-ubuntu/">Install Java on Ubuntu</a>, which is very well organized and clear.<br /></li><li> Eclipse 3.3 is not available in the Ubuntu repository yet (<a href="https://bugs.launchpad.net/debian/+source/eclipse/+bug/123064">progress</a>), and I need this version because the plugins (JBoss Tools) I&#8217;m using require it.      So you need download eclipse 3.3 froe eclipse.org and unzip it to any directory. The locations I used is /opt/eclipse.<br /><br />Now configuration for /opt/eclipse. Set Up java_home,<br /><br />sudo -b gedit /opt/eclipse/java_home<br /><br />and add<br /><br />/usr/lib/jvm/java-5-sun<br /><br />to the top of the file.<br /><br />You need adjust increase stack and heap sizes for eclipse/JVM to avoid OutOfMemoryError,<br />sudo -b gedit /opt/eclipse/eclipse.ini<br />The argument Xms refers to the minimum heap size and Xmx refers to the maximum heap size.<br /><br />adjust them as your memory size.<br /><p class="line874">create executable:                                                                                         Make a bin folder in your home directory, this will be used for the startup script: <span class="anchor" id="line-189"></span><span class="anchor" id="line-190"></span><span class="anchor" id="line-191"></span></p><pre>$ mkdir ~/bin</pre><span class="anchor" id="line-192"></span><span class="anchor" id="line-193"></span><p class="line862">Next create an executable for Eclipe at <tt>~/bin/eclipse</tt> with your favorite text editor by typing <tt>vi ~/bin/eclipse</tt> or <tt>nano ~/bin/eclipse</tt> into the command line. Add the following content: <span class="anchor" id="line-194"></span><span class="anchor" id="line-195"></span><span class="anchor" id="line-196"></span><span class="anchor" id="line-197"></span><span class="anchor" id="line-198"></span><span class="anchor" id="line-199"></span><span class="anchor" id="line-200"></span></p><pre>export MOZILLA_FIVE_HOME="/usr/lib/mozilla/"<br />export ECLIPSE_HOME="$HOME/opt/eclipse"<br /><br />$ECLIPSE_HOME/eclipse $*</pre><span class="anchor" id="line-201"></span><span class="anchor" id="line-202"></span><p class="line874">Finally, allow the script to be executed: <span class="anchor" id="line-203"></span><span class="anchor" id="line-204"></span><span class="anchor" id="line-205"></span></p><pre>$ chmod +x ~/bin/eclipse</pre></li><li>To be continued<br /></li></ul></div>
 ]]></content>
   </entry>
   

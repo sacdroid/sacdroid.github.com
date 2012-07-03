@@ -4,7 +4,7 @@
   <title><![CDATA[Category: python | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-03T18:05:46+05:30</updated>
+  <updated>2012-07-03T18:08:19+05:30</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Google waving... Next Generation Emails]]></title>
+    <link href="http://sacdroid.github.com/blog/2010/01/07/google-waving-next-generation-emails/"/>
+    <updated>2010-01-07T00:06:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2010/01/07/google-waving-next-generation-emails</id>
+    <content type="html"><![CDATA[<div class='post'>
+Last sunday I got mail from Google Wave team saying,<br /><br /> <span style="font-style:italic;">"Recently, you applied for a Google Wave developer sandbox account.  Your<br />sandbox account is now ready."</span><br /><br />and my long wait for Google Wave invitation ended. I received my google wave and sandbox invitation same time.<br /><br />So What is Google Wave?<br /> <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TbkYUGgVI/AAAAAAAACvE/9RKEOk-9oms/s1600-h/wave_icon.png"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 162px; height: 162px;" src="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TbkYUGgVI/AAAAAAAACvE/9RKEOk-9oms/s320/wave_icon.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5423701269309456722" /></a><br /> <blockquote>Google Wave is an online communication and collaboration tool that makes real-time interactions more seamless -- in one place, you can communicate and collaborate using richly formatted text, photos, videos, maps, and more.</blockquote><br />  The whole idea started with the fact that Email as an invention is around 40 years old and primarily its form hasn’t changed. Engineers at Google thought, what would happen if email was invented today and that formed the basis of Google Wave.<br /><br />With out wasting much time, I started exploring Google Wave features.  As expected it is full of cool features. <br /> One of the key features of Wave is its extensibility. For example, you can create robots, which can participate in waves just like humans do (that is once they are invited in) and reply to your requests like genie.<br /> I decided to write a robot which will give cricket score updates in google wave upon request.<br />I resused python code from <a href="http://cricscoreapplet.sourceforge.net/">gnome Cricket score applet</a> and wrote goole wave robot in python by following <a href="http://code.google.com/apis/wave/extensions/robots/python-tutorial.html">this tutorial.</a><br /><br /> In no time I am ready with my first Google wave robot, cricscorewave@appspot.com,<br /><br />Screen shot 1: ,<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TjxkFdO0I/AAAAAAAACvc/zmOiURFT5MM/s1600-h/cricscorewave.jpg"><img style="cursor:pointer; cursor:hand;width: 319px; height: 320px;" src="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TjxkFdO0I/AAAAAAAACvc/zmOiURFT5MM/s320/cricscorewave.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5423710291900578626" /></a><br /><br />Screen shot 2:<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_A2_wLwXdBek/S0Tj_7lpV0I/AAAAAAAACvk/qDDlYjIRrTI/s1600-h/Screenshot-2.png"><img style="cursor:pointer; cursor:hand;width: 310px; height: 320px;" src="http://3.bp.blogspot.com/_A2_wLwXdBek/S0Tj_7lpV0I/AAAAAAAACvk/qDDlYjIRrTI/s320/Screenshot-2.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5423710538727774018" /></a><br /><br />got Google wave account? give a try,<br /><br /> * <b>How to add criscorewave robot to Google Wave? </b><br />   Add   criscorewave@appspot.com.as a contact in your Contact. Clicking on (+) button Next to Manage Contacts…<br /> * <b> Using criscorewave </b><br />   To use this robot, simply drop in its address as a new Wave participant. and send blip as "help", you will be populated with list of commands.<br /><br />Way to go!!!</div>
+
+
+<h2>Comments</h2>
+
+
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Anonymous</div>
+<div class='content'>
+This is so interesting &amp; I am keen to try it... especially the robot you created!  Great stuff &amp; love the blog.  Keep it up :-)</div>
+</div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Scrolling pidgin status message]]></title>
+    <link href="http://sacdroid.github.com/blog/2010/01/02/scrolling-pidgin-status-message/"/>
+    <updated>2010-01-02T00:45:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2010/01/02/scrolling-pidgin-status-message</id>
+    <content type="html"><![CDATA[<div class='post'>
+With continuation to my earlier <a href="http://www.sachystechnoworld.co.cc/2009/12/tell-your-friends-how-many-seconds-are.html">trick</a>, I wrote another script this time in python to animate pidgin status like a news scroller on the bottom of the news channel, you can put whatever message you want.<br /><br /><script type="syntaxhighlighter" class="brush: py">&lt;![CDATA[<br /><br />#!/usr/bin/env python<br /><br />import os, sys, dbus, re<br />from random import randint<br />import time<br /><br />msg =  "Happy New Year 2010"  #change this to your status message<br /><br />program = os.path.basename(sys.argv[0])<br />from_file = 0<br />ICON = u'\u21e8 '                 # rightwards white arrow<br /><br />bus = dbus.SessionBus()<br />obj = bus.get_object("im.pidgin.purple.PurpleService", "/im/pidgin/purple/PurpleObject")<br />purple = dbus.Interface(obj, "im.pidgin.purple.PurpleInterface")<br /><br /><br />def pidgin_status(message):<br /> old_status = purple.PurpleSavedstatusGetCurrent()  # get current status<br /> status_type = purple.PurpleSavedstatusGetType(old_status) # get current status type<br /> new_status = purple.PurpleSavedstatusNew("", status_type) # create new status with old status type<br /> purple.PurpleSavedstatusSetMessage(new_status, message) # fill new status with status message<br /> purple.PurpleSavedstatusActivate(new_status)   # activate new status<br /><br /><br />i = 0<br />while True:<br />  ticker_text = msg[i:i+19] +"  " + msg[0:i]<br />  pidgin_status(ticker_text)<br />  i +=1<br />  if i == 19:<br />     i = 0<br />  time.sleep(1)<br /> <br />]]&gt;</script><br /><br />Have fun...<br /><br />Thanks,<br /><br />-- Sachin</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[From Java to Python, I'm loving it.]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/12/15/from-java-to-python-im-loving-it/"/>
+    <updated>2009-12-15T21:33:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/12/15/from-java-to-python-im-loving-it</id>
+    <content type="html"><![CDATA[<div class='post'>
+Its been just three months, I learnt <a href="http://www.python.org/">Python</a> (or I started learning it as there many more aspects to learn) and  I am already very fond of it. Especially I have started using python for scripting work. I automated few things using python scripts which I had to do regularly like a creating users in oracle, copying / importing oracle dumps, syncing Wiki svn log with svn sever and many more. <br />  Some might argue that you can do the same thing in shell scripts or other programming languages. You can do that  but coding in python is 5-10 times faster and <a href="http://pythonconquerstheuniverse.wordpress.com/category/java-and-python/">this article</a> gives insight comparative of Java with python.<br />  To create connection in Java, it involves three steps but with python its just one step<br /><pre name="code" class="py"><br />    conn = cx_Oracle.connect(username, password, sid)<br /></pre><br />  <br />  I am not bad-mouthing Java here. With <a href="http://java.sun.com/javaee/">JEE6</a> at doorstep, Java has progressed very well as web technologies. <br />  For now, I will be using python for writing utility scripts unless I get chance to work on real big python Project.<br />  As experienced Java programmers, I found this <a href="http://python.computersci.org/">e-book</a> very helpful for learning python <br />  Coding in python as easy as in Java, I have already written <a href="http://cricscoreapplet.sourceforge.net/">cricket live score</a> gnome applet in python which been huge success.<br /><br /> Being interpreted language Python is little bit slow. With the Java just-in-time compiler, Java is faster.</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My First Gnome application, Cricket score applet]]></title>
