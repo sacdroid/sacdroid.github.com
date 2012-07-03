@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Gstreamer version mismatch after upgrade to Ubuntu 9.10. - Techno</title>
+  <meta name="author" content="Sachin Patil">
+
+  
+  <meta name="description" content="Thanks/congratulations for Karmic realese to Ubuntu Dev team. I was running into issues after upgrading to Ubuntu 9.10 Karmic: 1) Empathy, exaile &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://sacdroid.github.com/blog/2009/11/03/gstreamer-version-mismatch-after/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Techno" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Techno</a></h1>
+  
+    <h2>things which came out my laptop</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:sacdroid.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Gstreamer Version Mismatch After Upgrade to Ubuntu 9.10.</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-03T12:59:00+05:30" pubdate data-updated="true">Nov 3<span>rd</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><div class='post'>
+Thanks/congratulations for Karmic realese to Ubuntu Dev team.<br /><br /> I was running into issues after upgrading to Ubuntu 9.10 Karmic:<br /><br /> 1) Empathy, exaile was not starting up. Issue was related to gstreamer versions.<br />  <div class="smallfont" style="margin-bottom: 2px;">Code:</div><br /><pre name="code" class="Cpp"><br />sachin@sachin-laptop:~/envista/VPN$ empathy<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstffmpeg.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstschro.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstplaybin.so': /usr/lib/gstreamer-0.10/libgstplaybin.so: undefined symbol: gst_stream_volume_get_type<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstvolume.so': /usr/lib/gstreamer-0.10/libgstvolume.so: undefined symbol: gst_stream_volume_get_type<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstpulse.so': /usr/lib/gstreamer-0.10/libgstpulse.so: undefined symbol: gst_stream_volume_get_type<br />empathy: symbol lookup error: /usr/lib/python2.6/dist-packages/gst-0.10/gst/interfaces.so: undefined symbol: gst_stream_volume_format_get_type<br />Error re-scanning registry , child terminated by signal<br />Run 'empathy --help' to see a full list of available command line options.<br /><br />(empathy:30993): empathy-WARNING **: Error in empathy init: Error re-scanning registry , child terminated by signal<br />sachin@sachin-laptop:~/envista/VPN$ exaile <br />INFO    : Loading Exaile 0.3.0.1...<br />INFO    : Loading settings...<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstffmpeg.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstschro.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstplaybin.so': /usr/lib/gstreamer-0.10/libgstplaybin.so: undefined symbol: gst_stream_volume_get_type<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstvolume.so': /usr/lib/gstreamer-0.10/libgstvolume.so: undefined symbol: gst_stream_volume_get_type<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstpulse.so': /usr/lib/gstreamer-0.10/libgstpulse.so: undefined symbol: gst_stream_volume_get_type<br />AttributeError: 'module' object has no attribute 'Element'<br />python: symbol lookup error: /usr/lib/python2.6/dist-packages/gst-0.10/gst/interfaces.so: undefined symbol: gst_stream_volume_format_get_type<br />sachin@sachin-laptop:~/envista/VPN$<br /></pre><br /><br />Reinstalling whole gstreamer packages solved issue.<br /> <br /> Remove gstreamer packages including plug ins.<br /><pre name="code" class="Cpp"><br />sudo apt-get remove gstreamer0.10-fluendo-mp3 gstreamer0.10-pitfdll gstreamer0.10-plugins-bad<br /> gstreamer0.10-plugins-bad-multiverse gstreamer0.10-plugins-base gstreamer0.10-plugins-base-apps<br /> gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-ugly-multiverse<br /></pre><br /><br />Remove references to gstreamer libs.<br /><pre name="code" class="Cpp"><br />sachin@sachin-laptop:/usr/local/lib$ sudo rm -rf libgst*<br /></pre><br /><br /> Install it back, make sure you have enabled all the source repositories. <br /><pre name="code" class="Cpp"><br />sudo apt-get install gstreamer0.10-fluendo-mp3 gstreamer0.10-pitfdll gstreamer0.10-plugins-bad <br />gstreamer0.10-plugins-bad-multiverse gstreamer0.10-plugins-base gstreamer0.10-plugins-base-apps <br />gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-ugly-multiverse<br /></pre></div>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Sachin Patil</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-03T12:59:00+05:30" pubdate data-updated="true">Nov 3<span>rd</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/empathy/'>empathy</a>, <a class='category' href='/blog/categories/gstreaner-version/'>gstreaner version</a>, <a class='category' href='/blog/categories/upgrade-to-karmic/'>upgrade to karmic</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sacdroid.github.com/blog/2009/11/03/gstreamer-version-mismatch-after/" data-via="sacdroid" data-counturl="http://sacdroid.github.com/blog/2009/11/03/gstreamer-version-mismatch-after/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2009/10/26/ubuntu-910-release-candidate-is-here/" title="Previous Post: Ubuntu 9.10 Release Candidate  is here!!!">&laquo; Ubuntu 9.10 Release Candidate  is here!!!</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2009/11/04/nice-post-on-top-things-to-do-after/" title="Next Post: Nice post on Top things to do after installing Ubuntu Linux 9.10 Karmic Koala">Nice post on Top things to do after installing Ubuntu Linux 9.10 Karmic Koala &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2009/11/26/my-first-gnome-application-cricket/">My First Gnome application, Cricket score applet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2009/11/25/what-will-happen-to-your-email-accounts/">What will happen to your email accounts when you die?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2009/11/25/nokias-linux-based-phone-n900/">Nokia's Linux based Phone, N900</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after/">mouse clicks in Eclipse does not work after Karmic upgrade</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2009/11/20/google-chrome-source-code-released/">Google Chrome source code released</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/sacdroid">@sacdroid</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'sacdroid',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("sacdroid", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/sacdroid" class="twitter-follow-button" data-show-count="false">Follow @sacdroid</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/sachin6870?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Sachin Patil -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

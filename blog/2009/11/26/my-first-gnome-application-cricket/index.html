@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>My First Gnome application, Cricket score applet - Techno</title>
+  <meta name="author" content="Sachin Patil">
+
+  
+  <meta name="description" content="As huge cricket fan, I wanted to have easy access to cricket scores, right at gnome-panel on Ubuntu OS, the way I see date/time. I searched for it &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://sacdroid.github.com/blog/2009/11/26/my-first-gnome-application-cricket/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Techno" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Techno</a></h1>
+  
+    <h2>things which came out my laptop</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:sacdroid.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">My First Gnome Application, Cricket Score Applet</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-26T15:40:00+05:30" pubdate data-updated="true">Nov 26<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><div class='post'>
+As huge cricket fan, I wanted to have easy access to cricket scores, right at gnome-panel on Ubuntu OS, the way I see date/time. I searched for it on Internet but could not find. So I decided to write my own a gnome-applet which will show latest score at gnome-panel.<br />  I modified this <a href="http://blog.kevinmehall.net/2009/python-gnome-panel-applet">applet</a> to show cricket score. Originally it was meant to show battery power.<br />  Cricket score applet is written in python using <a href="http://www.sachystechnoworld.co.cc/2009/10/python.html">my latest python skills</a> which makes use of <a href="http://livechat.rediff.com/sports/score/score.txt">rediff scores</a> as source.<br /><br />Screenshot: <br /> <br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_A2_wLwXdBek/Sw5brJ3YVUI/AAAAAAAACtM/Cnwf_6WgMYA/s1600/cricscore.jpg"><img style="cursor:pointer; cursor:hand;width: 320px; height: 84px;" src="http://1.bp.blogspot.com/_A2_wLwXdBek/Sw5brJ3YVUI/AAAAAAAACtM/Cnwf_6WgMYA/s320/cricscore.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5408360999459247426" /></a><br /><br /><br />This applet can be downloaded from <a href="https://sourceforge.net/projects/cricscoreapplet/">here</a>. It contains install.sh script copies the files to the necessary locations to make it show up in the applets list. You have to restart gnome display manager either by re-logging in or with this command:<br /><pre name="code" class="cpp"><br />sudo /etc/init.d/gdm restart<br /></pre><br />  <br />This is my first contribution to wonderful Linux world, hence you might find bugs. Please feel free to contact me @ sachin6870@gmail.com.<br /><br />  Enjoy!!!<br /><br /><span style="font-weight:bold;"> [Update]</span>: Few of interesting user requested me to put details step how to install this utility, here you go:<br />  <br />Download cricscore.tar.gz and navigate to that folder and run following commands, (in my case the folder &#8220;~/downloads&#8221;) and run following commands,<br /><br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/downloads$ tar xzf cricscore.tar.gz<br />sachin@sachin-laptop:~/downloads$ cd cricscore/<br />sachin@sachin-laptop:~/downloads/cricscore$ ls<br />cricketscore.py cricketscore.server install.sh<br />sachin@sachin-laptop:~/downloads/cricscore$ sudo ./install.sh<br />[sudo] password for sachin:<br /></pre><br /> This step will logout, make sure you save all your work.<br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/downloads/cricscore$ sudo /etc/init.d/gdm restart<br /></pre><br /> <br /> After re-login, Right click in an empty space on your gnome panel and select Add to Panel from the menu that appears. A small window pops open, which displays the panel applets that are installed. Find &#8220;Cricket Score Applet&#8221; in the list, click Add, and then click Close. A new icon appears on the panel.<br /><br /><span style="font-weight:bold;">[update]</span>  hosted this utility at <a href="http://cricscoreapplet.sourceforge.net/">sourceforge</a></div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Anonymous</div>
+<div class='content'>
+i am getting no module named gnomeapplet.how am i supposed to install this module</div>
+</div>
+<div class='comment'>
+<div class='author'>Somesh</div>
+<div class='content'>
+Thanks Good work !!! This is just what i was looking for.  :)</div>
+</div>
+<div class='comment'>
+<div class='author'>Anonymous</div>
+<div class='content'>
+Great job so far !<br />Kindly add libvisual alerts for 4s,6s, wickets and if possible audio alerts as well.<br /><br />&#8211;BleameR</div>
+</div>
+<div class='comment'>
+<div class='author'>Battlegarden</div>
+<div class='content'>
+Now this is a good idea! Sadly I don&#39;t use gnome though&#8230;</div>
+</div>
+<div class='comment'>
+<div class='author'>Sachin6870</div>
+<div class='content'>
+Thanks Ankur,<br />I will try to reproduce this.</div>
+</div>
+<div class='comment'>
+<div class='author'>Ankur Aggarwal</div>
+<div class='content'>
+ohk the problem is when i added it in  the panel&#8230;. no automic updation is there.To view the updated scored i have to select the match again and then new score and the same procedure goes on&#8230;&#8230;.. <br />moreover in the panel ball by baal facts like four and wicket and all also no there&#8230;&#8230;.<br />but then i run it in  shell and it works fine.<br />the problem is its not working properly in the panel but working fully in the shell.<br />that my experience<br />thankx :)</div>
+</div>
+<div class='comment'>
+<div class='author'>Sachin6870</div>
+<div class='content'>
+@Ankur,<br />  I have no idea as it is working fine for me.<br /> But this issue has been confirmed many users. if you can give me more insight it will be great helpful as you can reproduce it.<br /><br />Thanks.</div>
+</div>
+<div class='comment'>
+<div class='author'>Ankur Aggarwal</div>
+<div class='content'>
+it works ohk with the shell :) tried that in todays match&#8230;&#8230;&#8230;.<br />i m also learning python so according to u what&#39;s the problem in previous situation&#8230;&#8230;..<br />hope u will not mind in telling ur views</div>
+</div>
+<div class='comment'>
+<div class='author'>Sachin6870</div>
+<div class='content'>
+try running it in shell<br />&gt;cricketscore.py run-in-window<br />paste errors here if you get any.<br /><br />Thanks,<br /><br />&#8211; Sachin</div>
+</div>
+<div class='comment'>
+<div class='author'>Ankur Aggarwal</div>
+<div class='content'>
+hey gr8 work&#8230;.<br />but i m facing a problem it is showing the score of the selected match but not updating it&#8230;&#8230;..<br />to view thw updated score i have to go to the prefrences againg then again select the match and then the new score is visible to me&#8230;&#8230;<br />whats the problem?</div>
+</div>
+<div class='comment'>
+<div class='author'>Sachin6870</div>
+<div class='content'>
+There is no &quot;best desktop&quot;, but there is a desktop that&#39;s best for you. It&#39;s a matter of preference.<br /><br />I used KDE for a year, specially for Amarok.  But then switched to Gnome http://www.sachystechnoworld.co.cc/2009/10/themes-for-gnome-ubuntu.html.<br /> I feel gnome has much professional look and feel, KDE is good for who has switched from Windows recently.</div>
+</div>
+<div class='comment'>
+<div class='author'>Bharath</div>
+<div class='content'>
+which is best one,Gnome or KDE?</div>
+</div>
+<div class='comment'>
+<div class='author'>Dhananjay</div>
+<div class='content'>
+Hi Sachin, <br />nice to see your efforts to share your knowledge through this blog. We are proud to have a team-mate like you. All the best.<br /><br />- Dhananjay</div>
+</div>
+<div class='comment'>
+<div class='author'>Sachin6870</div>
+<div class='content'>
+No&#8230; :(.  It only works with gnome desktop. Kubuntu uses KDE.</div>
+</div>
+<div class='comment'>
+<div class='author'>Bharath</div>
+<div class='content'>
+Does it works for Kubuntu 9.10?</div>
+</div>
+<div class='comment'>
+<div class='author'>Sachin6870</div>
+<div class='content'>
+@ Amar,Atul<br />Thanks.<br />@Yoyo.<br />I will try to enhance this applet for football. do you know any such site which provides live soccer/football score like rediff scores for cricket.</div>
+</div>
+<div class='comment'>
+<div class='author'>Yoyo</div>
+<div class='content'>
+Can you make one for football =)?</div>
+</div>
+<div class='comment'>
+<div class='author'>atuls</div>
+<div class='content'>
+Hey, good catch, it seems exciting&#8230; keep it up buddy&#8230; :)</div>
+</div>
+<div class='comment'>
+<div class='author'>Amar</div>
+<div class='content'>
+Great desire&#8230; really appreciate it..</div>
+</div>
+</div>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Sachin Patil</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-26T15:40:00+05:30" pubdate data-updated="true">Nov 26<span>th</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ubuntu/'>Ubuntu</a>, <a class='category' href='/blog/categories/cricket-score/'>cricket score</a>, <a class='category' href='/blog/categories/gnome-applet/'>gnome applet</a>, <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/python/'>python</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sacdroid.github.com/blog/2009/11/26/my-first-gnome-application-cricket/" data-via="sacdroid" data-counturl="http://sacdroid.github.com/blog/2009/11/26/my-first-gnome-application-cricket/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2009/11/25/what-will-happen-to-your-email-accounts/" title="Previous Post: What will happen to your email accounts when you die?">&laquo; What will happen to your email accounts when you die?</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2009/11/26/my-first-gnome-application-cricket/">My First Gnome application, Cricket score applet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2009/11/25/what-will-happen-to-your-email-accounts/">What will happen to your email accounts when you die?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2009/11/25/nokias-linux-based-phone-n900/">Nokia's Linux based Phone, N900</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after/">mouse clicks in Eclipse does not work after Karmic upgrade</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2009/11/20/google-chrome-source-code-released/">Google Chrome source code released</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/sacdroid">@sacdroid</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'sacdroid',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("sacdroid", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/sacdroid" class="twitter-follow-button" data-show-count="false">Follow @sacdroid</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/sachin6870?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Sachin Patil -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

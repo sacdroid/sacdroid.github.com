@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: post install | Techno]]></title>
+  <link href="http://sacdroid.github.com/blog/categories/post-install/atom.xml" rel="self"/>
+  <link href="http://sacdroid.github.com/"/>
+  <updated>2012-07-03T18:05:46+05:30</updated>
+  <id>http://sacdroid.github.com/</id>
+  <author>
+    <name><![CDATA[Sachin Patil]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Nice post on Top things to do after installing Ubuntu Linux 9.10 Karmic Koala]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/11/04/nice-post-on-top-things-to-do-after/"/>
+    <updated>2009-11-04T00:33:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/11/04/nice-post-on-top-things-to-do-after</id>
+    <content type="html"><![CDATA[<div class='post'>
+Found best "things to do after installing Ubuntu karmic" post I've ever seen. Tagged & bookmarked & and <a href="http://www.reddit.com/tb/9z2xk/">sharing</a>. <br />Great Work <a href="http://www.reddit.com/tb/9z2xk/">Danny</a>.</div>
+
+]]></content>
+  </entry>
+  
+</feed>
