@@ -1,4 +1,4 @@
-package com.samarth.cricscore.util;
+package com.blog.util;;
 
 import java.lang.reflect.ParameterizedType;
 import java.util.List;

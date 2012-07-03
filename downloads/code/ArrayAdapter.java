@@ -1,4 +1,4 @@
-package com.samarth.cricscore.util;
+package com.blog.util;
 
 import java.io.IOException;
 import java.util.ArrayList;
