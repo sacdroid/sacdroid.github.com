@@ -9,7 +9,7 @@
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="I have a problem with gson deserialization. Incoming json looks like this {&#8220;roles&#8221;:{&#8220;name&#8221;:&#8221;bla&#8221; &#8220;perm&# &hellip;">
+  <meta name="description" content="I had a problem with GSON deserialization. JSON data which I was trying to parse using GSON looks like this {&#8220;matches&#8221;:{&#8220;matchId&# &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -93,9 +93,16 @@
   </header>
 
 
-  <div class="entry-content"><p>I have a problem with gson deserialization. Incoming json looks like this {&#8220;roles&#8221;:{&#8220;name&#8221;:&#8221;bla&#8221; &#8220;perm&#8221; : &#8220;bla&#8221;}} or when there is more roles available it looks like this {&#8220;roles&#8221;:[{&#8220;name&#8221;:&#8221;bla&#8221; &#8220;perm&#8221; : &#8220;bla&#8221;}{&#8220;name&#8221;:&#8221;hihi&#8221; &#8220;perm&#8221; : &#8220;hihi&#8221;}]}. So first time parameter roles is an object and second time it&#8217;s an array of objects.</p>
+  <div class="entry-content"><p>I had a problem with GSON deserialization. JSON data which I was trying to parse using GSON looks like this {&#8220;matches&#8221;:{&#8220;matchId&#8221;:&#8221;bla&#8221; &#8220;score&#8221; : &#8220;bla&#8221;}} or when there is more roles available it looks like this {&#8220;matches&#8221;:[{&#8220;matchId&#8221;:&#8221;bla&#8221; &#8220;score&#8221; : &#8220;bla&#8221;}{&#8220;matchId&#8221;:&#8221;hihi&#8221; &#8220;score&#8221; : &#8220;hihi&#8221;}]}. So sometimes
+matches comes as &#8220;Object&#8221; or &#8220;ARRAY&#8221; depending upon number of matches available.</p>
 
-<p>Problem occures when my java class has field Role[] roles; and in json parametr roles is just one object exception is thrown &#8220;Expected BEGIN_ARRAY but was BEGIN_OBJECT&#8221;.</p>
+<p>GSON fails to parse this in to my Custom class which has field List<Match> matches; when JSON data comes with matches as &#8220;Object&#8221; format, it throws exception &#8220;Expected BEGIN_ARRAY but was BEGIN_OBJECT&#8221;.</p>
+
+<p>I understand Source JSON data it self is bogus, Correct fix should be at JSON generator which should always return ARRAY format for array objects irrespective of number of objects being sent.</p>
+
+<p>Unfortunately I don&#8217;t have access to JSON response generator, so I decided to write own TypeAdapter which handles the single instance case, deserializes it and then transform into an List and set it on the field, making it uniform.</p>
+
+<p>Following is implementation of ArrayTypeAdapter</p>
 
 <figure class='code'><figcaption><span> (ArrayAdapter.java)</span> <a href='/downloads/code/ArrayAdapter.java'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -273,6 +280,8 @@
 </span><span class='line'>
 </span><span class='line'><span class="o">}</span>
 </span></code></pre></td></tr></table></div></figure>
+
+
 
 </div>
   
