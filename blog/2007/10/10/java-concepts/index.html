@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Techno</title>
+  <title>Java concepts - Techno</title>
   <meta name="author" content="Sachin Patil">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sacdroid.github.com/">
+  <link rel="canonical" href="http://sacdroid.github.com/blog/2007/10/10/java-concepts/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -62,15 +62,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2007/10/10/java-concepts/">Java Concepts</a></h1>
+      <h1 class="entry-title">Java Concepts</h1>
     
     
       <p class="meta">
@@ -93,7 +90,7 @@
   </header>
 
 
-  <div class="entry-content"><div class='post'>
+<div class="entry-content"><div class='post'>
 They are some interesting concepts which make java more interesting. I will<br />present series of articles which will explain these concepts.<br /><br />Concept 1,<br />Can you guess what will be printed on the screen?<br /><br />class Test<br />{<br />public static void main(String[] args) {<br />Test inst_test = new Test();<br />int i1 = 2000;<br />int i2 = 2000;<br />int i3 = 2;<br />int i4 = 2;<br />Integer Ithree = new Integer(2); // 1<br />Integer Ifour = new Integer(2); // 2<br />System.out.println( Ithree == Ifour );<br />inst_test.method( i3 , i4 );<br />inst_test.method( i1 , i2 );<br />}<br />public void method( Integer i , Integer eye )<br />{<br />System.out.println(i == eye );<br />}<br />}<br /><br />When I first saw this code I was confident that it will give out put as,<br />false<br />false.<br />because == compares hashCode, not the value for wrapper classes.<br /><br />But When I checked it with my IDE, Surprisingly it was giving out put as,<br />true<br />false.<br /><br />After a bit of googling I found the reason,<br /><br />Certain ranges of values of wrapper classes are stored as immutable objects by the Java Virtual Machine.<br />Normally, when the primitive types are boxed into the wrapper types, the JVM allocates memory and creates a new object. But for some special cases, the JVM reuses the same object. The following is the list of primitives stored as immutable objects:<br />* boolean values true and false<br />* All byte values<br />* short values between -128 and 127<br />* int values between -128 and 127<br />* char in the range \u0000 to \u007F</div>
 <h2>Comments</h2>
 <div class='comments'>
@@ -119,18 +116,53 @@ class Test<br />{<br />public static void main(String[] args) {<br />Test inst_t
 </div>
 </div>
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Sachin Patil</span></span>
+
+      
+
+
+
+
+
+
+
+
   
 
 
-    </article>
+<time datetime="2007-10-10T00:00:00+05:30" pubdate data-updated="true">Oct 10<span>th</span>, 2007</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
   
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sacdroid.github.com/blog/2007/10/10/java-concepts/" data-via="sacdroid" data-counturl="http://sacdroid.github.com/blog/2007/10/10/java-concepts/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
 </div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -147,7 +179,7 @@ class Test<br />{<br />public static void main(String[] args) {<br />Test inst_t
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/sacdroid">@sacdroid</a> on GitHub
@@ -177,7 +209,7 @@ class Test<br />{<br />public static void main(String[] args) {<br />Test inst_t
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -205,6 +237,7 @@ class Test<br />{<br />public static void main(String[] args) {<br />Test inst_t
 
   
 </aside>
+
 
     </div>
   </div>
