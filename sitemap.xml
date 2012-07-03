@@ -151,6 +151,12 @@
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
+        <loc>
+            http://sacdroid.github.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic/
+        </loc>
+        <lastmod>2012-07-03T18:10:19+05:30</lastmod>
+    </url>
+    <url>
         <loc>http://sacdroid.github.com/blog/2010/01/24/why-ms-badly-needs-open-source/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
@@ -168,10 +174,10 @@
     </url>
     <url>
         <loc>http://sacdroid.github.com/</loc>
-        <lastmod>2012-07-03T18:04:03+05:30</lastmod>
+        <lastmod>2012-07-03T18:10:19+05:30</lastmod>
     </url>
     <url>
         <loc>http://sacdroid.github.com/blog/archives/</loc>
-        <lastmod>2012-07-03T18:04:03+05:30</lastmod>
+        <lastmod>2012-07-03T18:10:19+05:30</lastmod>
     </url>
 </urlset>
