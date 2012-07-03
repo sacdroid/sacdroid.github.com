@@ -4,7 +4,7 @@
   <title><![CDATA[Techno]]></title>
   <link href="http://sacdroid.github.com/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-03T18:03:16+05:30</updated>
+  <updated>2012-07-03T18:04:22+05:30</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu 9.04 Jaunty Jackalope is coming....]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/04/21/ubuntu-904-jaunty-jackalope-is-coming/"/>
+    <updated>2009-04-21T12:06:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/04/21/ubuntu-904-jaunty-jackalope-is-coming</id>
+    <content type="html"><![CDATA[<div class='post'>
+With the final release of Ubuntu 9.04 “Jaunty Jackalope” only days away (scheduled for April 23, 2009), I already installed Release Candidate.<br /><br />So, what’s new? <ul><li>GNOME 2.26.1 desktop environment (KDE 4.2.2 for Kubuntu)</li><li>Kernel packages were updated to version 2.6.28-11.14, based on Linux kernel 2.6.28.9</li><li>Faster boot times (18 seconds!!!)<br /></li><li>ext4 filesystem support</li><li>Wacom tablet support</li><li>Netbook supp</li><li>KDE bluetooth fixes!!</li></ul><a href="http://www.ubuntu.com/getubuntu/releasenotes/904overview">Ubuntu 9.0.4 Release notes</a></div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My ubuntu (8.10) experience :)]]></title>

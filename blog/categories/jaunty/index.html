@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My ubuntu (8.10) experience :) - Techno</title>
+  <title>Category: Jaunty - Techno</title>
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="Its been 15 days today since I became completely OPEN SOURCE. Yes, I dumped windows XP and started using Ubuntu for full time development. These &hellip;">
+  <meta name="description" content="Category: Jaunty">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sacdroid.github.com/blog/2008/11/29/my-ubuntu-810-experience/">
+  <link rel="canonical" href="http://sacdroid.github.comblog/categories/jaunty/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -63,89 +63,35 @@
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">My Ubuntu (8.10) Experience :)</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-11-29T19:59:00+05:30" pubdate data-updated="true">Nov 29<span>th</span>, 2008</time>
-        
-      </p>
+    <h1 class="entry-title">Category: Jaunty</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-<div class="entry-content"><div class='post'>
-Its been 15 days today since I became completely OPEN SOURCE.  Yes, I dumped windows XP and started using Ubuntu for full time development. These days, I am busy exploring new things in Ubuntu.<br />Believe me, in these days fifteen days, I never missed my old windows XP set up. I got alternative for each application which I use in my daytoday life for FREE of Cost with full support.<br />    Its been fantastic experience so far with Linux world. Today, I am going to share my experience  during my  Open source &#8220;revolution&#8221; phase, :).<ul><li>   As I am Java developer , First thing I looked for  setting up JDK on ubuntu.  Installing JDK was straight forward. I used this link, <a href="http://dambalah.com/2007/09/21/install-java-on-ubuntu/">Install Java on Ubuntu</a>, which is very well organized and clear.<br /></li><li> Eclipse 3.3 is not available in the Ubuntu repository yet (<a href="https://bugs.launchpad.net/debian/+source/eclipse/+bug/123064">progress</a>), and I need this version because the plugins (JBoss Tools) I&#8217;m using require it.      So you need download eclipse 3.3 froe eclipse.org and unzip it to any directory. The locations I used is /opt/eclipse.<br /><br />Now configuration for /opt/eclipse. Set Up java_home,<br /><br />sudo -b gedit /opt/eclipse/java_home<br /><br />and add<br /><br />/usr/lib/jvm/java-5-sun<br /><br />to the top of the file.<br /><br />You need adjust increase stack and heap sizes for eclipse/JVM to avoid OutOfMemoryError,<br />sudo -b gedit /opt/eclipse/eclipse.ini<br />The argument Xms refers to the minimum heap size and Xmx refers to the maximum heap size.<br /><br />adjust them as your memory size.<br /><p class="line874">create executable:                                                                                         Make a bin folder in your home directory, this will be used for the startup script: <span class="anchor" id="line-189"></span><span class="anchor" id="line-190"></span><span class="anchor" id="line-191"></span></p><pre>$ mkdir ~/bin</pre><span class="anchor" id="line-192"></span><span class="anchor" id="line-193"></span><p class="line862">Next create an executable for Eclipe at <tt>~/bin/eclipse</tt> with your favorite text editor by typing <tt>vi ~/bin/eclipse</tt> or <tt>nano ~/bin/eclipse</tt> into the command line. Add the following content: <span class="anchor" id="line-194"></span><span class="anchor" id="line-195"></span><span class="anchor" id="line-196"></span><span class="anchor" id="line-197"></span><span class="anchor" id="line-198"></span><span class="anchor" id="line-199"></span><span class="anchor" id="line-200"></span></p><pre>export MOZILLA_FIVE_HOME="/usr/lib/mozilla/"<br />export ECLIPSE_HOME="$HOME/opt/eclipse"<br /><br />$ECLIPSE_HOME/eclipse $*</pre><span class="anchor" id="line-201"></span><span class="anchor" id="line-202"></span><p class="line874">Finally, allow the script to be executed: <span class="anchor" id="line-203"></span><span class="anchor" id="line-204"></span><span class="anchor" id="line-205"></span></p><pre>$ chmod +x ~/bin/eclipse</pre></li><li>To be continued<br /></li></ul></div>
+
+  
+  <h2>2009</h2>
+
+<article>
+  
+<h1><a href="/blog/2009/04/21/ubuntu-904-jaunty-jackalope-is-coming/">Ubuntu 9.04 Jaunty Jackalope is coming....</a></h1>
+<time datetime="2009-04-21T12:06:00+05:30" pubdate><span class='month'>Apr</span> <span class='day'>21</span> <span class='year'>2009</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/jaunty/'>Jaunty</a>, <a class='category' href='/blog/categories/kubuntu/'>Kubuntu</a>, <a class='category' href='/blog/categories/ubuntu/'>Ubuntu</a></span>
+</footer>
+
+
+</article>
+
 </div>
 
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Sachin Patil</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-11-29T19:59:00+05:30" pubdate data-updated="true">Nov 29<span>th</span>, 2008</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/jdkm-eclipse-europa/'>JDKm Eclipse europa</a>, <a class='category' href='/blog/categories/ubuntu/'>Ubuntu</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sacdroid.github.com/blog/2008/11/29/my-ubuntu-810-experience/" data-via="sacdroid" data-counturl="http://sacdroid.github.com/blog/2008/11/29/my-ubuntu-810-experience/" >Tweet</a>
-  
-  
-  
-    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2008/10/10/use-maven-2-to-download-dependency/" title="Previous Post: Use Maven 2 to download dependency sources">&laquo; Use Maven 2 to download dependency sources</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2009/04/21/ubuntu-904-jaunty-jackalope-is-coming/" title="Next Post: Ubuntu 9.04 Jaunty Jackalope is coming....">Ubuntu 9.04 Jaunty Jackalope is coming.... &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
 </div>
