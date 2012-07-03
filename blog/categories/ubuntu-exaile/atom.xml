@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ubuntu. Exaile | Techno]]></title>
+  <link href="http://sacdroid.github.com/blog/categories/ubuntu-exaile/atom.xml" rel="self"/>
+  <link href="http://sacdroid.github.com/"/>
+  <updated>2012-07-03T18:05:12+05:30</updated>
+  <id>http://sacdroid.github.com/</id>
+  <author>
+    <name><![CDATA[Sachin Patil]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Themes for Gnome Ubuntu]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/10/17/themes-for-gnome-ubuntu/"/>
+    <updated>2009-10-17T09:58:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/10/17/themes-for-gnome-ubuntu</id>
+    <content type="html"><![CDATA[<div class='post'>
+I recently switched gnome desktop after using KDE for one year for no special reason. KDE was good experience.<br /> Gnome has very professional look as compared to KDE. KDE is good for people who are comming from windows background.<br /> Currently I am exploring various themes in gnome. Its nice to see you can change your desktop on one click.<br /> I love dark themes. My favourites are,<br />  1) Karmic - x (This is my current theme.)<br />  2) Elegant Brit<br />  3) Mesmerized.<br /><br /> you can explore more dark themes <a href="http://www.catswhocode.com/blog/20-beautiful-dark-themes-for-gnome-and-ubuntu">here</a><br /><br /> I did not like scroll bars in firefox for some of the themes. Its too dark to get hidden with background. Workaround I found is, Just go to the add-on part of their website, and install iFox Metal for your skin.<br /><br />Enjoy<br /><br /><span style="font-weight: bold;">Update[Mon, Oct 19, 2009] : </span><span>Oops, My  favourite music player "Amarok" stoped </span><span>working in Gnome. Its known <a href="https://bugs.launchpad.net/ubuntu/+source/amarok/+bug/371360">issue</a> in Gnome for KDE apps</span><span style="font-weight: bold;">. </span><span>As always</span><span style="font-weight: bold;"> </span><span>open source communities, this issue also has work around</span><span style="font-weight: bold;"> :).  </span><span>Also Gnome has alternative player, <a href="http://www.exaile.org/">Exaile. </a><br />   Exaile looks cool and lightweight at 1st glance.<br /></span></div>
+
+]]></content>
+  </entry>
+  
+</feed>

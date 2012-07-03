@@ -4,7 +4,7 @@
   <title><![CDATA[Techno]]></title>
   <link href="http://sacdroid.github.com/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-03T18:04:22+05:30</updated>
+  <updated>2012-07-03T18:05:12+05:30</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu 9.10 Release Candidate  is here!!!]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/10/26/ubuntu-910-release-candidate-is-here/"/>
+    <updated>2009-10-26T11:54:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/10/26/ubuntu-910-release-candidate-is-here</id>
+    <content type="html"><![CDATA[<div class='post'>
+If you can&#8217;t wait till 29th October,  to play with new Ubuntu release,  Release Candidate is available <a href="http://fridge.ubuntu.com/node/1931">here</a>.<br /><br />It has several new features but not much exciting,<br /><br />features<br />————————<br /><br />GNOME 2.28 featuring Empathy: with this latest release, Ubuntu now uses the Empathy instant messaging service by default, introducing the Telepathy framework.<br /><br />Ubuntu Software Center: the first step in a replacement for Add/Remove Software has landed.<br /><br />New boot experience: multiple changes to look, feel and speed of the boot experience have been included in the Ubuntu 9.10 rc.<br /><br />Enjoy&#8230;</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Python for Symbian]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/10/24/python-for-symbian/"/>
+    <updated>2009-10-24T10:24:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/10/24/python-for-symbian</id>
+    <content type="html"><![CDATA[<div class='post'>
+During Diwali vacations, I learnt python language by reading &#8220;Python Programming: Introduction to Computer Science&#8221; by      John M.Zelle, Ph.D, Its well written book with some nice examples which tries to explore power of python.<br />So I decided to write some useful programs in python. I found one interesting open source project from Nokia, Py60. through which you can write python programs for your mobile.<br /><br />Nokia has done great job by introducing <a href="http://wiki.opensource.nokia.com/projects/PyS60">py60.</a>  <blockquote>   <span style="font-style: italic;">&#8220;Python for S60 is Nokia&#8217;s port of the </span><a style="font-style: italic;" href="http://python.org/" class="external text" title="http://python.org/" rel="nofollow">Python</a><span style="font-style: italic;"> language to the </span><a style="font-style: italic;" href="http://s60.com/" class="external text" title="http://s60.com/" rel="nofollow">S60</a> smartphone platform. In addition to the standard features of the Python language, PyS60 provides access to many of the phone&#8217;s uniquely smartphone-y functions, such as camera, contacts, calendar, audio recording and playing, TCP/IP and Bluetooth communications and simple telephony.&#8221;<blockquote></blockquote></blockquote>  You can use emulator or your mobile phone (S60 platform) to run/test python programs. I use my Nokia N70 to run python and so far it&#8217;s great fun! You can write the program in your computer and transfer it to your mobile phone. There is an interactive console in the mobile phone so that you can write your program directly in the mobile phone. There is another blue-tooth based console which I haven&#8217;t tried yet (my bluetooth dongle is not working, I might have reached its data transfer limit :) ).<br /><br />Currently I am working on a project which will be used find cell phone location based on GSM information provided by service provider.<br />This project will leverage scripts provided <a href="http://code.google.com/p/nokia-gsm-location-hacks/">Nokia GSM location hacks</a>, to geocode  phone location.<br />Usabilty of this application will be to find nearest useful utilities based on your location. Imagine your are in unknown city and you run out of money  and you don&#8217;t know where is the nearest ATM, this project might help you.<br />Bye for now, will update you on status of project on next week.<br /><br /><br /><br /><blockquote></blockquote></div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[pYthOn]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/10/20/python/"/>
+    <updated>2009-10-20T11:36:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/10/20/python</id>
+    <content type="html"><![CDATA[<div class='post'>
+<div style="text-align: justify;">  I wanted to download few regional (marathi)  videos from youtube. I found a interesting and nicely written python script called<a href="http://bitbucket.org/rg3/youtube-dl/wiki/Home"> youtube-dl</a>.<br />This script is written in object oriented way. This made may to dig out <a href="http://www.python.org/">python</a> more.<br /><br />So I decided during this vacations I will be learning new (object oriented) scripting language, Python.<br /><br />Notes:<br />1) Swap in a statement<br />This question is very common in C, C++technical interviews, In Python, the simultaneous assignment statement offers an elegant alternative. Here is a simpler Python equivalent:<br />x, y = y, x<br />2) Indentations matters<br />Python programming blocks are grouped using indentations.<br /><br />1)<br /><pre name="code" class="Python"><br />for i in range(x):<br />  fact = fact * (x- i)<br />print fact<br /></pre><br />2)<br /><pre name="code" class="Python"><br />for i in range(x):<br /> fact = fact * (x- i)<br /> print fact<br /></pre><br /><br />Above two snippet will generate two difference outputs, In second snippet print statement is part of for loop.<br /><br />3) Range it!!<br /> Python has inbuilt function, Range, which will generate list of numbers.  There are other variations of range that can be used to produce different sequences:,<br /><pre name="code" class="Python"><br />>>> range(10)<br />[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]<br />>>> range(5,10)<br />[5, 6, 7, 8, 9]<br />>>> range(5, 10, 3)<br />[5, 8]<br /><br /></pre><br /><br />4) &#8220;Long Int&#8221; is really long:<br />   Python has new datatype, long int. A long int is not a fixed size, but expands to accommodate whatever value it holds. The only limit is<br />the amount of memory the computer has available to it.<br /><br /><br /><br /><br /><br /><br /></div></div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Then you win...]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/10/19/then-you-win/"/>
+    <updated>2009-10-19T23:37:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/10/19/then-you-win</id>
+    <content type="html"><![CDATA[<div class='post'>
+“First they ignore <em>you</em>, <em>then</em> they laugh at <em>you</em>, <em>then</em> they fight <em>you</em>, <em>then you win</em>.” Mahatma Gandhi<br /><br /> No, I am not follower of Gandhiji, But he has a lots of good points like above.<br /> Recently MS has given another proof by introducing PowerShell, <span style="color: rgb(0, 0, 0);" >an object oriented shell, which is part of Windows 7. Linux has a lots of really powerful shells from its births.<br /> By introducing <a href="http://en.wikipedia.org/wiki/Windows_PowerShell">PowerShell</a>, </span> Microsoft has crowned <a href="http://www.youtube.com/watch?v=lfJiajqDk88">Linux the victor</a>.<br /><br /><br /><br /><br /><span style="color: rgb(0, 0, 0);" ><br /><br /></span></div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Themes for Gnome Ubuntu]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/10/17/themes-for-gnome-ubuntu/"/>
+    <updated>2009-10-17T09:58:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/10/17/themes-for-gnome-ubuntu</id>
+    <content type="html"><![CDATA[<div class='post'>
+I recently switched gnome desktop after using KDE for one year for no special reason. KDE was good experience.<br /> Gnome has very professional look as compared to KDE. KDE is good for people who are comming from windows background.<br /> Currently I am exploring various themes in gnome. Its nice to see you can change your desktop on one click.<br /> I love dark themes. My favourites are,<br />  1) Karmic - x (This is my current theme.)<br />  2) Elegant Brit<br />  3) Mesmerized.<br /><br /> you can explore more dark themes <a href="http://www.catswhocode.com/blog/20-beautiful-dark-themes-for-gnome-and-ubuntu">here</a><br /><br /> I did not like scroll bars in firefox for some of the themes. Its too dark to get hidden with background. Workaround I found is, Just go to the add-on part of their website, and install iFox Metal for your skin.<br /><br />Enjoy<br /><br /><span style="font-weight: bold;">Update[Mon, Oct 19, 2009] : </span><span>Oops, My  favourite music player &#8220;Amarok&#8221; stoped </span><span>working in Gnome. Its known <a href="https://bugs.launchpad.net/ubuntu/+source/amarok/+bug/371360">issue</a> in Gnome for KDE apps</span><span style="font-weight: bold;">. </span><span>As always</span><span style="font-weight: bold;"> </span><span>open source communities, this issue also has work around</span><span style="font-weight: bold;"> :).  </span><span>Also Gnome has alternative player, <a href="http://www.exaile.org/">Exaile. </a><br />   Exaile looks cool and lightweight at 1st glance.<br /></span></div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Linux is addictive, I'm hooked! Linux Quotes Collection]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/08/30/linux-is-addictive-im-hooked-linux/"/>
+    <updated>2009-08-30T10:32:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/08/30/linux-is-addictive-im-hooked-linux</id>
+    <content type="html"><![CDATA[<div class='post'>
+After a big break, Today, <br /><br />I will be presenting collection of Linux related quotes,<br /><br />1) In most countries selling harmful things like drugs is punishable.<br />Then howcome people can sell Microsoft software and go unpunished? (By hasku@rost.abo.fi, Hasse Skrifvars).<br /><br />2) This message was brought to you by Linux, the free unix.<br />Windows without the X is like making love without a partner.<br />Sex, Drugs & Linux Rules<br />win-nt from the people who invented edlin<br />apples have meant trouble since eden<br />Linux, the way to get rid of boot viruses<br />(By mwikholm@at8.abo.fi, MaDsen Wikholm).<br /><br />3) Avoid the Gates of Hell. Use Linux<br />(Unknown source)<br /><br />4)  linux: because a PC is a terrible thing to waste(ks @cis.ufl.edu put this on Tshirts in &#8216;93)<br /><br />5) `When you say &#8220;I wrote a program that crashed Windows&#8221;, people just stare at<br />you blankly and say &#8220;Hey, I got those with the system, *for free*&#8221;.&#8217;<br />(By Linus Torvalds).<br /><br />6) &#8220;World domination. Fast.&#8221;<br />(By Linus Torvalds)<br /><br />7) &#8220;&#8230;Unix, MS-DOS, and Windows NT (also known as the Good, the Bad, and<br />the Ugly).&#8221;<br />(By Matt Welsh)<br /><br />8) &#8220;Linux: the operating system with a CLUE&#8230; Command Line User Environment&#8221;.<br />(seen in a posting in comp.software.testing)<br /><br />9)  *** mailing list about a kernel bug ***<br />I&#8217;m an idiot.. At least this one [bug] took about 5 minutes to find..&#8221;<br />(Linus Torvalds in response to a bug report.)<br />> I&#8217;m an idiot.. At least this [bug] took about 5 minutes to find..<br />Disquieting &#8230;<br />(Gonzalo Tornaria in response to Linus Torvalds&#8217;s mailing about a kernel bug.)<br />> I&#8217;m an idiot.. At least this [bug] took about 5 minutes to find..<br />We need to find some new terms to describe the rest of us mere mortals<br />then.<br />(Craig Schlenter in response to Linus Torvalds&#8217;s mailing about a kernel bug.)<br />> I&#8217;m an idiot.. At least this [bug] took about 5 minutes to find..<br />Surely, Linus is talking about the kind of idiocy that others aspire to :-).<br />(Bruce Perens in response to Linus Torvalds&#8217;s mailing about a kernel bug.)<br />*********************************************************************<br />10)  As usual, this being a 1.3.x release, I haven&#8217;t even compiled this<br />kernel yet.  So if it works, you should be doubly impressed.<br />(Linus Torvalds, announcing kernel 1.3.3 on the linux-kernel mailing list.)<br />11) it&#8217;s a bird..<br />It&#8217;s a plane..<br />No, it&#8217;s KernelMan, faster than a speeding bullet, to your rescue.<br />Doing new kernel versions in under 5 seconds flat..<br />(Linus, in the announcement for 1.3.27)<br /><br />12) >Linux is not user-friendly.<br />It _is_ user-friendly.  It is not ignorant-friendly and idiot-friendly.<br />(Seen somewhere on the net.)<br /><br />13) &#8220;How do you power off this machine?&#8221;<br />(Linus, when upgrading linux.cs.helsinki.fi, and after using the machine<br />for several months.)<br /><br />14) Excusing bad programming is a shooting offence, no matter _what_ the<br />circumstances.<br />(Linus Torvalds, to the linux-kernel list)<br />15) If Bill Gates is the Devil then Linus Torvalds must be the Messiah.<br />(Unknown source)<br /><br />16) Vini, vidi, Linux!<br />(Unknown source)</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ubuntu 9.04 Jaunty Jackalope is coming....]]></title>

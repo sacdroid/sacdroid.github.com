@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: py60 | Techno]]></title>
+  <link href="http://sacdroid.github.com/blog/categories/py60/atom.xml" rel="self"/>
+  <link href="http://sacdroid.github.com/"/>
+  <updated>2012-07-03T18:05:12+05:30</updated>
+  <id>http://sacdroid.github.com/</id>
+  <author>
+    <name><![CDATA[Sachin Patil]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Python for Symbian]]></title>
+    <link href="http://sacdroid.github.com/blog/2009/10/24/python-for-symbian/"/>
+    <updated>2009-10-24T10:24:00+05:30</updated>
+    <id>http://sacdroid.github.com/blog/2009/10/24/python-for-symbian</id>
+    <content type="html"><![CDATA[<div class='post'>
+During Diwali vacations, I learnt python language by reading "Python Programming: Introduction to Computer Science" by      John M.Zelle, Ph.D, Its well written book with some nice examples which tries to explore power of python.<br />So I decided to write some useful programs in python. I found one interesting open source project from Nokia, Py60. through which you can write python programs for your mobile.<br /><br />Nokia has done great job by introducing <a href="http://wiki.opensource.nokia.com/projects/PyS60">py60.</a>  <blockquote>   <span style="font-style: italic;">"Python for S60 is Nokia's port of the </span><a style="font-style: italic;" href="http://python.org/" class="external text" title="http://python.org/" rel="nofollow">Python</a><span style="font-style: italic;"> language to the </span><a style="font-style: italic;" href="http://s60.com/" class="external text" title="http://s60.com/" rel="nofollow">S60</a> smartphone platform. In addition to the standard features of the Python language, PyS60 provides access to many of the phone's uniquely smartphone-y functions, such as camera, contacts, calendar, audio recording and playing, TCP/IP and Bluetooth communications and simple telephony."<blockquote></blockquote></blockquote>  You can use emulator or your mobile phone (S60 platform) to run/test python programs. I use my Nokia N70 to run python and so far it's great fun! You can write the program in your computer and transfer it to your mobile phone. There is an interactive console in the mobile phone so that you can write your program directly in the mobile phone. There is another blue-tooth based console which I haven't tried yet (my bluetooth dongle is not working, I might have reached its data transfer limit :) ).<br /><br />Currently I am working on a project which will be used find cell phone location based on GSM information provided by service provider.<br />This project will leverage scripts provided <a href="http://code.google.com/p/nokia-gsm-location-hacks/">Nokia GSM location hacks</a>, to geocode  phone location.<br />Usabilty of this application will be to find nearest useful utilities based on your location. Imagine your are in unknown city and you run out of money  and you don't know where is the nearest ATM, this project might help you.<br />Bye for now, will update you on status of project on next week.<br /><br /><br /><br /><blockquote></blockquote></div>
+
+]]></content>
+  </entry>
+  
+</feed>
