@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: post install | Techno]]></title>
-  <link href="http://sachinpatil.com/blog/categories/post-install/atom.xml" rel="self"/>
-  <link href="http://sachinpatil.com/"/>
-  <updated>2012-07-03T23:22:31+05:30</updated>
-  <id>http://sachinpatil.com/</id>
+  <link href="http://sacdroid.github.com/blog/categories/post-install/atom.xml" rel="self"/>
+  <link href="http://sacdroid.github.com/"/>
+  <updated>2012-07-04T01:30:39+05:30</updated>
+  <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Nice post on Top things to do after installing Ubuntu Linux 9.10 Karmic Koala]]></title>
-    <link href="http://sachinpatil.com/blog/2009/11/04/nice-post-on-top-things-to-do-after/"/>
+    <link href="http://sacdroid.github.com/blog/2009/11/04/nice-post-on-top-things-to-do-after/"/>
     <updated>2009-11-04T00:33:00+05:30</updated>
-    <id>http://sachinpatil.com/blog/2009/11/04/nice-post-on-top-things-to-do-after</id>
+    <id>http://sacdroid.github.com/blog/2009/11/04/nice-post-on-top-things-to-do-after</id>
     <content type="html"><![CDATA[<div class='post'>
 Found best "things to do after installing Ubuntu karmic" post I've ever seen. Tagged & bookmarked & and <a href="http://www.reddit.com/tb/9z2xk/">sharing</a>. <br />Great Work <a href="http://www.reddit.com/tb/9z2xk/">Danny</a>.</div>
 

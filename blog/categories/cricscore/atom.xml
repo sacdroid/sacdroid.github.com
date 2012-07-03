@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: cricscore | Techno]]></title>
-  <link href="http://sachinpatil.com/blog/categories/cricscore/atom.xml" rel="self"/>
-  <link href="http://sachinpatil.com/"/>
-  <updated>2012-07-03T23:22:31+05:30</updated>
-  <id>http://sachinpatil.com/</id>
+  <link href="http://sacdroid.github.com/blog/categories/cricscore/atom.xml" rel="self"/>
+  <link href="http://sacdroid.github.com/"/>
+  <updated>2012-07-04T01:30:39+05:30</updated>
+  <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Such huge response for CricScore gnome applet was unexpected!!]]></title>
-    <link href="http://sachinpatil.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome/"/>
+    <link href="http://sacdroid.github.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome/"/>
     <updated>2009-12-05T23:32:00+05:30</updated>
-    <id>http://sachinpatil.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome</id>
+    <id>http://sacdroid.github.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome</id>
     <content type="html"><![CDATA[<div class='post'>
 In fact in its just 2nd day after 1.0-alpha release of <a href="http://cricscoreapplet.sourceforge.net/">CricScore Gnome applet</a>, It has netted more than 100 downloads. Now this is a terrific figure by all means since I wrote this as utility for personal use as fun, I was not expecting it could be a professional gnome applet.<br />  I just shared this across few Linux related forums on orkut, ubuntu communities and got such huge reply. It feel good factor to me.<br />There has been very positive reply so far like this,<br /><br /> <blockquote>"Great applet! I've been looking for something like this. Just what I needed!", says Jorgo <br />  upengan78 is running it on "gentoo", he comments, "It is working as intended. Many thanks for such a nice applet. Good luck for more such applets"<br />  Ankur suggested me to make it official package, "Cann't we have your applet from official repositories ???"<br />  Kamalakar says "I am using it today for India Sri Lanka score. Good to have it on Gnome top panel."   <br />   </blockquote><br />There has been few feature requests also and few wanted to have one smiler applet for Football/Socker. I have already implemented few features in latest 1.0 release.  <br />  There are few people interested to work with me in writing an applet for Football, hopefully I will have it defiantly before FIFA2010. <br /><blockquote> Arun S.A.G wants to package this applet for Fedora, "I would like to package your applet for Fedora, i have tested it in Fedora 12 it works fine :-)".</blockquote><br />  Thanks guys for such motivation and feedbacks.  <br /> Today I released <a href="http://cricscoreapplet.sourceforge.net/">1.0 release</a>, I did not do any code changes, as it did not require, alpha release worked like charm, but I added READEME, INSTALL, COPYRIGHT file as this applet is no more personal :).<br /><br />  There are many feature requests pending on my plate. I will try to work on those in spare time.<br /><br />   Possibilities Are Endless!!!</div>
 

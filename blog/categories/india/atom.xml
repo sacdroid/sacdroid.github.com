@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: india | Techno]]></title>
-  <link href="http://sachinpatil.com/blog/categories/india/atom.xml" rel="self"/>
-  <link href="http://sachinpatil.com/"/>
-  <updated>2012-07-03T23:22:31+05:30</updated>
-  <id>http://sachinpatil.com/</id>
+  <link href="http://sacdroid.github.com/blog/categories/india/atom.xml" rel="self"/>
+  <link href="http://sacdroid.github.com/"/>
+  <updated>2012-07-04T01:30:39+05:30</updated>
+  <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Nokia's Linux based Phone, N900]]></title>
-    <link href="http://sachinpatil.com/blog/2009/11/25/nokias-linux-based-phone-n900/"/>
+    <link href="http://sacdroid.github.com/blog/2009/11/25/nokias-linux-based-phone-n900/"/>
     <updated>2009-11-25T13:02:00+05:30</updated>
-    <id>http://sachinpatil.com/blog/2009/11/25/nokias-linux-based-phone-n900</id>
+    <id>http://sacdroid.github.com/blog/2009/11/25/nokias-linux-based-phone-n900</id>
     <content type="html"><![CDATA[<div class='post'>
 Nokia has recently <a href="http://www.nokia.com/press/press-releases/showpressrelease?newsid=1337594">released</a> Linux based phone, <a href="http://en.wikipedia.org/wiki/Nokia_N900">N900</a>.<br /><br />   It uses Maemo as Linux distribution  which is a very old distribution . This is very very older to android. Checkout <a href="http://maemo.org/.">Maemo</a>.<br /> It may not even get launched in India. Nokia has stated "selected markets" in their press release. No tablet has been officially released by them in the past also here, which is bad news for Indian linux fans</div>
 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: JSON | Techno]]></title>
-  <link href="http://sachinpatil.com/blog/categories/json/atom.xml" rel="self"/>
-  <link href="http://sachinpatil.com/"/>
-  <updated>2012-07-03T23:22:31+05:30</updated>
-  <id>http://sachinpatil.com/</id>
+  <link href="http://sacdroid.github.com/blog/categories/json/atom.xml" rel="self"/>
+  <link href="http://sacdroid.github.com/"/>
+  <updated>2012-07-04T01:30:39+05:30</updated>
+  <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Expected BEGIN_ARRAY but was BEGIN_OBJECT]]></title>
-    <link href="http://sachinpatil.com/blog/2012/07/03/gson/"/>
+    <link href="http://sacdroid.github.com/blog/2012/07/03/gson/"/>
     <updated>2012-07-03T19:54:00+05:30</updated>
-    <id>http://sachinpatil.com/blog/2012/07/03/gson</id>
+    <id>http://sacdroid.github.com/blog/2012/07/03/gson</id>
     <content type="html"><![CDATA[<p>I had a problem with <a href="http://code.google.com/p/google-gson/">Google GSON </a>  deserialization. JSON data which I was trying to parse using GSON library looks like this {"matches":{"matchId":"bla" "score" : "bla"}} and when there is more roles available it looks like this {"matches":[{"matchId":"bla" "score" : "bla"}{"matchId":"hihi" "score" : "hihi"}]}. So sometimes
 "matches" data comes as "Object" or "ARRAY" format depending upon number of matches available.</p>
 

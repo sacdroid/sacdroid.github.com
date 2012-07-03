@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: auto start | Techno]]></title>
-  <link href="http://sachinpatil.com/blog/categories/auto-start/atom.xml" rel="self"/>
-  <link href="http://sachinpatil.com/"/>
-  <updated>2012-07-03T23:22:31+05:30</updated>
-  <id>http://sachinpatil.com/</id>
+  <link href="http://sacdroid.github.com/blog/categories/auto-start/atom.xml" rel="self"/>
+  <link href="http://sacdroid.github.com/"/>
+  <updated>2012-07-04T01:30:39+05:30</updated>
+  <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Script to start oracle if it is not running]]></title>
-    <link href="http://sachinpatil.com/blog/2009/11/05/script-to-start-oracle-if-it-is-not/"/>
+    <link href="http://sacdroid.github.com/blog/2009/11/05/script-to-start-oracle-if-it-is-not/"/>
     <updated>2009-11-05T17:07:00+05:30</updated>
-    <id>http://sachinpatil.com/blog/2009/11/05/script-to-start-oracle-if-it-is-not</id>
+    <id>http://sacdroid.github.com/blog/2009/11/05/script-to-start-oracle-if-it-is-not</id>
     <content type="html"><![CDATA[<div class='post'>
 As part of my current job, I am working as "part time" oracle dba. Due to some known issues in oracle, our oracle server goes down. Till we upgrade to Fixed version, I had to restart oracle manually. To overcome that I wrote script will be run as cron job,<br /><br />Script:<br /><pre name="code" class="cpp"><br />#!/bin/bash<br />#<br />#<br /># Run-level Startup script for Instance<br /># It relies on the information on pmon<br />check_stat=`ps -aef |grep pmon | grep -v grep | wc -l`;<br />oracle_num=`expr $check_stat`<br />if [ $oracle_num -ne 0 ]<br />then<br /> oracle start<br />exit 16<br />fi<br /></pre><br /><br /> added this script as part of linux "cron" jobs.<br /><br />Enjoy!!!</div>
 
