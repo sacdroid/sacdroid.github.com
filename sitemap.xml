@@ -1,187 +1,163 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://sacdroid.github.com/blog/2007/10/11/java-concepts/</loc>
+        <loc>http://sachinpatil.com/blog/2007/10/11/java-concepts/</loc>
         <lastmod>2012-07-03T18:00:33+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2007/10/11/when-to-synchronize/</loc>
+        <loc>http://sachinpatil.com/blog/2007/10/11/when-to-synchronize/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2008/09/12/importing-oracle-dump-file-as-sysdba/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2008/09/12/importing-oracle-dump-file-as-sysdba/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2008/10/10/use-maven-2-to-download-dependency/</loc>
+        <loc>http://sachinpatil.com/blog/2008/10/10/use-maven-2-to-download-dependency/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2008/11/29/my-ubuntu-810-experience/</loc>
+        <loc>http://sachinpatil.com/blog/2008/11/29/my-ubuntu-810-experience/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2009/04/21/ubuntu-904-jaunty-jackalope-is-coming/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2009/04/21/ubuntu-904-jaunty-jackalope-is-coming/</loc>
         <lastmod>2012-07-03T18:04:03+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/08/30/linux-is-addictive-im-hooked-linux/</loc>
+        <loc>http://sachinpatil.com/blog/2009/08/30/linux-is-addictive-im-hooked-linux/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/10/17/themes-for-gnome-ubuntu/</loc>
+        <loc>http://sachinpatil.com/blog/2009/10/17/themes-for-gnome-ubuntu/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/10/19/then-you-win/</loc>
+        <loc>http://sachinpatil.com/blog/2009/10/19/then-you-win/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/10/20/python/</loc>
+        <loc>http://sachinpatil.com/blog/2009/10/20/python/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/10/24/python-for-symbian/</loc>
+        <loc>http://sachinpatil.com/blog/2009/10/24/python-for-symbian/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2009/10/26/ubuntu-910-release-candidate-is-here/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2009/10/26/ubuntu-910-release-candidate-is-here/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/11/03/gstreamer-version-mismatch-after/</loc>
+        <loc>http://sachinpatil.com/blog/2009/11/03/gstreamer-version-mismatch-after/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/11/04/nice-post-on-top-things-to-do-after/</loc>
+        <loc>http://sachinpatil.com/blog/2009/11/04/nice-post-on-top-things-to-do-after/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/11/05/script-to-start-oracle-if-it-is-not/</loc>
+        <loc>http://sachinpatil.com/blog/2009/11/05/script-to-start-oracle-if-it-is-not/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/11/15/guest-additions-installation-in/</loc>
+        <loc>http://sachinpatil.com/blog/2009/11/15/guest-additions-installation-in/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/11/16/new-look-and-feel-to-my-blog/</loc>
+        <loc>http://sachinpatil.com/blog/2009/11/16/new-look-and-feel-to-my-blog/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2009/11/18/sixthsense-interface-to-go-open-source/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2009/11/18/sixthsense-interface-to-go-open-source/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/11/20/east-vs-west-myths-that-mystify/</loc>
+        <loc>http://sachinpatil.com/blog/2009/11/20/east-vs-west-myths-that-mystify/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/11/20/google-chrome-source-code-released/</loc>
+        <loc>http://sachinpatil.com/blog/2009/11/20/google-chrome-source-code-released/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/11/25/nokias-linux-based-phone-n900/</loc>
+        <loc>http://sachinpatil.com/blog/2009/11/25/nokias-linux-based-phone-n900/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2009/11/25/what-will-happen-to-your-email-accounts/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2009/11/25/what-will-happen-to-your-email-accounts/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/11/26/my-first-gnome-application-cricket/</loc>
+        <loc>http://sachinpatil.com/blog/2009/11/26/my-first-gnome-application-cricket/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2009/12/09/released-11-version-of-cricscore-gnome/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2009/12/09/released-11-version-of-cricscore-gnome/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/12/09/google-chrome-for-linux-officially/</loc>
+        <loc>http://sachinpatil.com/blog/2009/12/09/google-chrome-for-linux-officially/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2009/12/11/ubuntu-1004-first-alpha-released-today/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2009/12/11/ubuntu-1004-first-alpha-released-today/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2009/12/15/from-java-to-python-im-loving-it/</loc>
+        <loc>http://sachinpatil.com/blog/2009/12/15/from-java-to-python-im-loving-it/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2009/12/30/tell-your-friends-how-many-seconds-are/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2009/12/30/tell-your-friends-how-many-seconds-are/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2010/01/02/scrolling-pidgin-status-message/</loc>
+        <loc>http://sachinpatil.com/blog/2010/01/02/scrolling-pidgin-status-message/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2010/01/07/google-waving-next-generation-emails/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2010/01/07/google-waving-next-generation-emails/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>
-            http://sacdroid.github.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic/
-        </loc>
+        <loc>http://sachinpatil.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic/</loc>
         <lastmod>2012-07-03T23:12:19+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2010/01/24/why-ms-badly-needs-open-source/</loc>
+        <loc>http://sachinpatil.com/blog/2010/01/24/why-ms-badly-needs-open-source/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2010/03/01/gnunify-2010-my-experience-day-1/</loc>
+        <loc>http://sachinpatil.com/blog/2010/03/01/gnunify-2010-my-experience-day-1/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2010/04/28/ubuntu-1004-change-is-here/</loc>
+        <loc>http://sachinpatil.com/blog/2010/04/28/ubuntu-1004-change-is-here/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2011/01/01/happy-new-year/</loc>
+        <loc>http://sachinpatil.com/blog/2011/01/01/happy-new-year/</loc>
         <lastmod>2012-07-03T17:58:26+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/2012/07/03/gson/</loc>
+        <loc>http://sachinpatil.com/blog/2012/07/03/gson/</loc>
         <lastmod>2012-07-03T22:40:08+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/</loc>
+        <loc>http://sachinpatil.com/</loc>
         <lastmod>2012-07-03T23:12:19+05:30</lastmod>
     </url>
     <url>
-        <loc>http://sacdroid.github.com/blog/archives/</loc>
+        <loc>http://sachinpatil.com/blog/archives/</loc>
         <lastmod>2012-07-03T23:12:19+05:30</lastmod>
     </url>
 </urlset>

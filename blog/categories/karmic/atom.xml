@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: karmic | Techno]]></title>
-  <link href="http://sacdroid.github.com/blog/categories/karmic/atom.xml" rel="self"/>
-  <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-03T23:12:26+05:30</updated>
-  <id>http://sacdroid.github.com/</id>
+  <link href="http://sachinpatil.com/blog/categories/karmic/atom.xml" rel="self"/>
+  <link href="http://sachinpatil.com/"/>
+  <updated>2012-07-03T23:22:31+05:30</updated>
+  <id>http://sachinpatil.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Install Subversion 1.5 on Ubuntu Karmic]]></title>
-    <link href="http://sacdroid.github.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic/"/>
+    <link href="http://sachinpatil.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic/"/>
     <updated>2010-01-15T12:04:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic</id>
+    <id>http://sachinpatil.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic</id>
     <content type="html"><![CDATA[<p>Ubuntu Karmic includes 1.6.x version of Subversion but our source control server is not upgraded to 1.6. Its still in 1.5 version. Don't ask me why I am interested in older versions of things, Mainly I work with remote team and SVN server is also hosted remotely hence I'm forced to consider downgrading my version of subversion so that my local working copy wont get corrupted.<br /><br />First remove 1.6 version of svn from karmic installation,</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -90,9 +90,9 @@ here you go, check svn version,
   
   <entry>
     <title type="html"><![CDATA[mouse clicks in Eclipse does not work after Karmic upgrade]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after/"/>
+    <link href="http://sachinpatil.com/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after/"/>
     <updated>2009-11-24T15:03:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after</id>
+    <id>http://sachinpatil.com/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after</id>
     <content type="html"><![CDATA[<div class='post'>
 After upgrade to Ubuntu Karmic, mouse clicks stopped in <a href="http://www.eclipse.org/">eclipse</a>, my favourite IDE, mainly for submit buttons. Until today I used keyboard as alternative, but it was bit frustrating. <br /><br />  This issue raised because karmic brings version 2.18 of GTK+ to the desktop. GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, the GTK+ is suitable for projects ranging from small one-off tools to complete application suites.<br /><br />Eclipse assume that they can just operate on the X windows corresponding to their GDK windows without ever telling GDK, which causes some widgets to exhibit weird behaviour. <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287307">Bug 287307</a> was filed with the Eclipse foundation and this is fixed for the upcoming 3.6 release.<br /><br />Fortunately, the GTK+ people provide a switch to turn off the client side windows. So to work around the bug with Eclipse pre-3.6, just make sure you set environment variable GDK_NATIVE_WINDOWS=1  <br /> I created simple eclipse launcher script which will set this variable.<br /><br /><pre name="code" class="cpp"><br />#!/bin/sh<br />export GDK_NATIVE_WINDOWS=1<br />/home/sachin/opt/eclipse3.5/eclipse<br /><br /></pre><br /><br />and added it to /usr/bin.<br /><br />  Happy coding!!!</div>
 
@@ -123,9 +123,9 @@ Thanks...<br />Worked for me too.</div>
   
   <entry>
     <title type="html"><![CDATA[Themes for Gnome Ubuntu]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/10/17/themes-for-gnome-ubuntu/"/>
+    <link href="http://sachinpatil.com/blog/2009/10/17/themes-for-gnome-ubuntu/"/>
     <updated>2009-10-17T09:58:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/10/17/themes-for-gnome-ubuntu</id>
+    <id>http://sachinpatil.com/blog/2009/10/17/themes-for-gnome-ubuntu</id>
     <content type="html"><![CDATA[<div class='post'>
 I recently switched gnome desktop after using KDE for one year for no special reason. KDE was good experience.<br /> Gnome has very professional look as compared to KDE. KDE is good for people who are comming from windows background.<br /> Currently I am exploring various themes in gnome. Its nice to see you can change your desktop on one click.<br /> I love dark themes. My favourites are,<br />  1) Karmic - x (This is my current theme.)<br />  2) Elegant Brit<br />  3) Mesmerized.<br /><br /> you can explore more dark themes <a href="http://www.catswhocode.com/blog/20-beautiful-dark-themes-for-gnome-and-ubuntu">here</a><br /><br /> I did not like scroll bars in firefox for some of the themes. Its too dark to get hidden with background. Workaround I found is, Just go to the add-on part of their website, and install iFox Metal for your skin.<br /><br />Enjoy<br /><br /><span style="font-weight: bold;">Update[Mon, Oct 19, 2009] : </span><span>Oops, My  favourite music player "Amarok" stoped </span><span>working in Gnome. Its known <a href="https://bugs.launchpad.net/ubuntu/+source/amarok/+bug/371360">issue</a> in Gnome for KDE apps</span><span style="font-weight: bold;">. </span><span>As always</span><span style="font-weight: bold;"> </span><span>open source communities, this issue also has work around</span><span style="font-weight: bold;"> :).  </span><span>Also Gnome has alternative player, <a href="http://www.exaile.org/">Exaile. </a><br />   Exaile looks cool and lightweight at 1st glance.<br /></span></div>
 

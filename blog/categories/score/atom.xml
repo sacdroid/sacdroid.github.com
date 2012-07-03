@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: score | Techno]]></title>
-  <link href="http://sacdroid.github.com/blog/categories/score/atom.xml" rel="self"/>
-  <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-03T23:12:26+05:30</updated>
-  <id>http://sacdroid.github.com/</id>
+  <link href="http://sachinpatil.com/blog/categories/score/atom.xml" rel="self"/>
+  <link href="http://sachinpatil.com/"/>
+  <updated>2012-07-03T23:22:31+05:30</updated>
+  <id>http://sachinpatil.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Google waving... Next Generation Emails]]></title>
-    <link href="http://sacdroid.github.com/blog/2010/01/07/google-waving-next-generation-emails/"/>
+    <link href="http://sachinpatil.com/blog/2010/01/07/google-waving-next-generation-emails/"/>
     <updated>2010-01-07T00:06:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2010/01/07/google-waving-next-generation-emails</id>
+    <id>http://sachinpatil.com/blog/2010/01/07/google-waving-next-generation-emails</id>
     <content type="html"><![CDATA[<div class='post'>
 Last sunday I got mail from Google Wave team saying,<br /><br /> <span style="font-style:italic;">"Recently, you applied for a Google Wave developer sandbox account.  Your<br />sandbox account is now ready."</span><br /><br />and my long wait for Google Wave invitation ended. I received my google wave and sandbox invitation same time.<br /><br />So What is Google Wave?<br /> <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TbkYUGgVI/AAAAAAAACvE/9RKEOk-9oms/s1600-h/wave_icon.png"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;width: 162px; height: 162px;" src="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TbkYUGgVI/AAAAAAAACvE/9RKEOk-9oms/s320/wave_icon.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5423701269309456722" /></a><br /> <blockquote>Google Wave is an online communication and collaboration tool that makes real-time interactions more seamless -- in one place, you can communicate and collaborate using richly formatted text, photos, videos, maps, and more.</blockquote><br />  The whole idea started with the fact that Email as an invention is around 40 years old and primarily its form hasn’t changed. Engineers at Google thought, what would happen if email was invented today and that formed the basis of Google Wave.<br /><br />With out wasting much time, I started exploring Google Wave features.  As expected it is full of cool features. <br /> One of the key features of Wave is its extensibility. For example, you can create robots, which can participate in waves just like humans do (that is once they are invited in) and reply to your requests like genie.<br /> I decided to write a robot which will give cricket score updates in google wave upon request.<br />I resused python code from <a href="http://cricscoreapplet.sourceforge.net/">gnome Cricket score applet</a> and wrote goole wave robot in python by following <a href="http://code.google.com/apis/wave/extensions/robots/python-tutorial.html">this tutorial.</a><br /><br /> In no time I am ready with my first Google wave robot, cricscorewave@appspot.com,<br /><br />Screen shot 1: ,<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TjxkFdO0I/AAAAAAAACvc/zmOiURFT5MM/s1600-h/cricscorewave.jpg"><img style="cursor:pointer; cursor:hand;width: 319px; height: 320px;" src="http://2.bp.blogspot.com/_A2_wLwXdBek/S0TjxkFdO0I/AAAAAAAACvc/zmOiURFT5MM/s320/cricscorewave.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5423710291900578626" /></a><br /><br />Screen shot 2:<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_A2_wLwXdBek/S0Tj_7lpV0I/AAAAAAAACvk/qDDlYjIRrTI/s1600-h/Screenshot-2.png"><img style="cursor:pointer; cursor:hand;width: 310px; height: 320px;" src="http://3.bp.blogspot.com/_A2_wLwXdBek/S0Tj_7lpV0I/AAAAAAAACvk/qDDlYjIRrTI/s320/Screenshot-2.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5423710538727774018" /></a><br /><br />got Google wave account? give a try,<br /><br /> * <b>How to add criscorewave robot to Google Wave? </b><br />   Add   criscorewave@appspot.com.as a contact in your Contact. Clicking on (+) button Next to Manage Contacts…<br /> * <b> Using criscorewave </b><br />   To use this robot, simply drop in its address as a new Wave participant. and send blip as "help", you will be populated with list of commands.<br /><br />Way to go!!!</div>
 

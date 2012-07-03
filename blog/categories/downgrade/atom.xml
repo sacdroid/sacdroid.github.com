@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: downgrade | Techno]]></title>
-  <link href="http://sacdroid.github.com/blog/categories/downgrade/atom.xml" rel="self"/>
-  <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-03T23:12:26+05:30</updated>
-  <id>http://sacdroid.github.com/</id>
+  <link href="http://sachinpatil.com/blog/categories/downgrade/atom.xml" rel="self"/>
+  <link href="http://sachinpatil.com/"/>
+  <updated>2012-07-03T23:22:31+05:30</updated>
+  <id>http://sachinpatil.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Install Subversion 1.5 on Ubuntu Karmic]]></title>
-    <link href="http://sacdroid.github.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic/"/>
+    <link href="http://sachinpatil.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic/"/>
     <updated>2010-01-15T12:04:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic</id>
+    <id>http://sachinpatil.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic</id>
     <content type="html"><![CDATA[<p>Ubuntu Karmic includes 1.6.x version of Subversion but our source control server is not upgraded to 1.6. Its still in 1.5 version. Don't ask me why I am interested in older versions of things, Mainly I work with remote team and SVN server is also hosted remotely hence I'm forced to consider downgrading my version of subversion so that my local working copy wont get corrupted.<br /><br />First remove 1.6 version of svn from karmic installation,</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
