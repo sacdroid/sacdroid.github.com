@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javahl | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/javahl/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-26T17:55:21-04:00</updated>
+  <updated>2012-07-26T17:57:11-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -18,7 +18,7 @@
     <link href="http://sacdroid.github.com/blog/2012/07/26/failed-to-load-javahl-library/"/>
     <updated>2012-07-26T12:27:00-04:00</updated>
     <id>http://sacdroid.github.com/blog/2012/07/26/failed-to-load-javahl-library</id>
-    <content type="html"><![CDATA[<p> Today after upgrading eclipse to juno(4.0) and installing subclipse 1.6, I got following error on Ubuntu 12.04 installtion,
+    <content type="html"><![CDATA[<p> Today after upgrading eclipse to juno(4.2) and installing subclipse 1.6, I got following error on Ubuntu 12.04 installtion,
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
