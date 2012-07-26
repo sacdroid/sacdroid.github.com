@@ -4,7 +4,7 @@
   <title><![CDATA[Category: svn | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/svn/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-26T12:53:10-04:00</updated>
+  <updated>2012-07-26T12:56:50-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -56,7 +56,7 @@
 
 <p>I found that javahl library location has been changed to "/usr/lib/x86_64-linux-gnu/jni" on ubuntu 64 (12.04) using find command</p>
 
-<p>So updated ECLIPSE_HOM/eclipse.ini file from
+<p>So updated java.library.path location in ECLIPSE_HOM/eclipse.ini file from
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>-Djava.library.path=/usr/lib/jni</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
