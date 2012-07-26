@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Scrolling pidgin status message - Techno</title>
+  <title>Released 1.1 version of CricScore gnome applet - Techno</title>
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="With continuation to my earlier trick, I wrote another script this time in python to animate pidgin status like a news scroller on the bottom of the &hellip;">
+  <meta name="description" content="With considering few must needed features requests, I am releasing 1.1 version of CricScore, a gnome applet. So Whats new?, Show Score Update &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sacdroid.github.com/blog/2010/01/02/scrolling-pidgin-status-message/">
+  <link rel="canonical" href="http://sacdroid.github.com/blog/2009/12/08/released-11-version-of-cricscore-gnome/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">Scrolling Pidgin Status Message</h1>
+      <h1 class="entry-title">Released 1.1 Version of CricScore Gnome Applet</h1>
     
     
       <p class="meta">
@@ -83,7 +83,7 @@
   
 
 
-<time datetime="2010-01-02T00:45:00+05:30" pubdate data-updated="true">Jan 2<span>nd</span>, 2010</time>
+<time datetime="2009-12-08T14:16:00-05:00" pubdate data-updated="true">Dec 8<span>th</span>, 2009</time>
         
       </p>
     
@@ -91,7 +91,7 @@
 
 
 <div class="entry-content"><div class='post'>
-With continuation to my earlier <a href="http://www.sachystechnoworld.co.cc/2009/12/tell-your-friends-how-many-seconds-are.html">trick</a>, I wrote another script this time in python to animate pidgin status like a news scroller on the bottom of the news channel, you can put whatever message you want.<br /><br /><script type="syntaxhighlighter" class="brush: py"><![CDATA[<br /><br />#!/usr/bin/env python<br /><br />import os, sys, dbus, re<br />from random import randint<br />import time<br /><br />msg =  "Happy New Year 2010"  #change this to your status message<br /><br />program = os.path.basename(sys.argv[0])<br />from_file = 0<br />ICON = u'\u21e8 '                 # rightwards white arrow<br /><br />bus = dbus.SessionBus()<br />obj = bus.get_object("im.pidgin.purple.PurpleService", "/im/pidgin/purple/PurpleObject")<br />purple = dbus.Interface(obj, "im.pidgin.purple.PurpleInterface")<br /><br /><br />def pidgin_status(message):<br /> old_status = purple.PurpleSavedstatusGetCurrent()  # get current status<br /> status_type = purple.PurpleSavedstatusGetType(old_status) # get current status type<br /> new_status = purple.PurpleSavedstatusNew("", status_type) # create new status with old status type<br /> purple.PurpleSavedstatusSetMessage(new_status, message) # fill new status with status message<br /> purple.PurpleSavedstatusActivate(new_status)   # activate new status<br /><br /><br />i = 0<br />while True:<br />  ticker_text = msg[i:i+19] +"  " + msg[0:i]<br />  pidgin_status(ticker_text)<br />  i +=1<br />  if i == 19:<br />     i = 0<br />  time.sleep(1)<br /> <br />]]></script><br /><br />Have fun&#8230;<br /><br />Thanks,<br /><br />&#8211; Sachin</div>
+With considering few must needed features requests, I am releasing 1.1 version of <a href="http://cricscoreapplet.sourceforge.net/">CricScore</a>, a gnome applet.<br />  So Whats new?,<br />  <ul><br />  <li>Show Score Update Preference: With this preference user can enable/disable libnotify score update.</li><br />  <li>Score Update Notification TimeOut Preference: Timeout value for notification to disappear.</li><br />  <li>Fixed to avoid notifications after match is complete</li><br />  <li>Added logging support through Logging Module.</li><br /> </ul><br /><br /> Screen Shot for Preference UI change,<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_A2_wLwXdBek/Sx6ntQlCExI/AAAAAAAACtU/V4H2zS0UZc0/s1600-h/screenshot2.jpg"><img style="cursor:pointer; cursor:hand;width: 320px; height: 197px;" src="http://4.bp.blogspot.com/_A2_wLwXdBek/Sx6ntQlCExI/AAAAAAAACtU/V4H2zS0UZc0/s320/screenshot2.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5412948198132159250" /></a><br /><br />Fun with programming!!!<br /><br />Thanks,<br /><br />&#8211; Sachin.</div>
 </div>
 
 
@@ -114,21 +114,15 @@ With continuation to my earlier <a href="http://www.sachystechnoworld.co.cc/2009
   
 
 
-<time datetime="2010-01-02T00:45:00+05:30" pubdate data-updated="true">Jan 2<span>nd</span>, 2010</time>
+<time datetime="2009-12-08T14:16:00-05:00" pubdate data-updated="true">Dec 8<span>th</span>, 2009</time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/auto/'>auto</a>, <a class='category' href='/blog/categories/pidgin/'>pidgin</a>, <a class='category' href='/blog/categories/python/'>python</a>, <a class='category' href='/blog/categories/status/'>status</a>, <a class='category' href='/blog/categories/update/'>update</a>
-  
-</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sacdroid.github.com/blog/2010/01/02/scrolling-pidgin-status-message/" data-via="sacdroid" data-counturl="http://sacdroid.github.com/blog/2010/01/02/scrolling-pidgin-status-message/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sacdroid.github.com/blog/2009/12/08/released-11-version-of-cricscore-gnome/" data-via="sacdroid" data-counturl="http://sacdroid.github.com/blog/2009/12/08/released-11-version-of-cricscore-gnome/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -141,10 +135,10 @@ With continuation to my earlier <a href="http://www.sachystechnoworld.co.cc/2009
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2009/12/30/tell-your-friends-how-many-seconds-are/" title="Previous Post: tell your friends how many seconds are left in the decade">&laquo; tell your friends how many seconds are left in the decade</a>
+        <a class="basic-alignment left" href="/blog/2009/12/05/such-huge-response-for-cricscore-gnome/" title="Previous Post: Such huge response for CricScore gnome applet was unexpected!!">&laquo; Such huge response for CricScore gnome applet was unexpected!!</a>
       
       
-        <a class="basic-alignment right" href="/blog/2010/01/07/google-waving-next-generation-emails/" title="Next Post: Google waving... Next Generation Emails">Google waving... Next Generation Emails &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2009/12/09/google-chrome-for-linux-officially/" title="Next Post: Google Chrome for Linux Officially">Google Chrome for Linux Officially &raquo;</a>
       
     </p>
   </footer>
@@ -157,6 +151,10 @@ With continuation to my earlier <a href="http://www.sachystechnoworld.co.cc/2009
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/07/26/failed-to-load-javahl-library/">Failed to load JavaHL Library</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/07/03/gson/">Expected BEGIN_ARRAY but was BEGIN_OBJECT</a>
@@ -172,10 +170,6 @@ With continuation to my earlier <a href="http://www.sachystechnoworld.co.cc/2009
     
       <li class="post">
         <a href="/blog/2010/03/01/gnunify-2010-my-experience-day-1/">GNUnify 2010, My experience Day 1</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2010/01/24/why-ms-badly-needs-open-source/">Why MS badly needs Open Source</a>
       </li>
     
   </ul>

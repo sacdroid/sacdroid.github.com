@@ -9,7 +9,13 @@
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="I had a problem with Google GSON deserialization. JSON data which I was trying to parse using GSON library looks like this {&#8220;matches&#8221;:{&# &hellip;">
+  <meta name="description" content="Today after upgrading eclipse to juno(4.0) and installing subclipse 1.6, I got following error on Ubuntu 12.04 installtion, 1
+2
+3
+4
+5
+6
+Failed to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +76,82 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2012/07/26/failed-to-load-javahl-library/">Failed to Load JavaHL Library</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-26T12:27:00-04:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/07/26/failed-to-load-javahl-library/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p> Today after upgrading eclipse to juno(4.0) and installing subclipse 1.6, I got following error on Ubuntu 12.04 installtion,</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Failed to load JavaHL Library.
+</span><span class='line'>    These are the errors that were encountered:
+</span><span class='line'>    no libsvnjavahl-1 in java.library.path
+</span><span class='line'>    no svnjavahl-1 in java.library.path
+</span><span class='line'>    no svnjavahl in java.library.path
+</span><span class='line'>    java.library.path = /usr/lib/jni:/lib</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I run into this error every time I upgrade eclipse due to subclipse needs javahl library. Usually a fix is to install javahl from ubuntu repo,</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install libsvn-java</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But this did not fix the issue, I got same error after restarting eclipse.</p>
+
+<p>After using f &#8220;find&#8221; command, I found that javahl library location has been changed to &#8220;/usr/lib/x86_64-linux-gnu/jni&#8221; on ubuntu 64 (12.04).</p>
+
+<p>So updated ECLIPSE_HOM/eclipse.ini file from</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-Djava.library.path=/usr/lib/jni</span></code></pre></td></tr></table></div></figure>
+
+
+<p>to</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-Djava.library.path=/usr/lib/x86_64-linux-gnu/jni</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and that did the trick!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2012/07/03/gson/">Expected BEGIN_ARRAY but Was BEGIN_OBJECT</a></h1>
     
     
@@ -86,7 +168,7 @@
   
 
 
-<time datetime="2012-07-03T19:54:00+05:30" pubdate data-updated="true">Jul 3<span>rd</span>, 2012</time>
+<time datetime="2012-07-03T19:54:00-04:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2012</time>
         
          | <a href="/blog/2012/07/03/gson/#disqus_thread">Comments</a>
         
@@ -319,7 +401,7 @@
   
 
 
-<time datetime="2011-01-01T15:22:00+05:30" pubdate data-updated="true">Jan 1<span>st</span>, 2011</time>
+<time datetime="2011-01-01T04:52:00-05:00" pubdate data-updated="true">Jan 1<span>st</span>, 2011</time>
         
       </p>
     
@@ -364,7 +446,7 @@ Happy New Year :)</div>
   
 
 
-<time datetime="2010-04-28T12:28:00+05:30" pubdate data-updated="true">Apr 28<span>th</span>, 2010</time>
+<time datetime="2010-04-28T02:58:00-04:00" pubdate data-updated="true">Apr 28<span>th</span>, 2010</time>
         
       </p>
     
@@ -401,7 +483,7 @@ After six months of development, Tomorrow, the Ubuntu team will be releasing Fin
   
 
 
-<time datetime="2010-03-01T17:41:00+05:30" pubdate data-updated="true">Mar 1<span>st</span>, 2010</time>
+<time datetime="2010-03-01T07:11:00-05:00" pubdate data-updated="true">Mar 1<span>st</span>, 2010</time>
         
       </p>
     
@@ -438,7 +520,7 @@ Last week I attended my first <a href="http://gnunify.in">GNUnify</a> Conference
   
 
 
-<time datetime="2010-01-24T21:15:00+05:30" pubdate data-updated="true">Jan 24<span>th</span>, 2010</time>
+<time datetime="2010-01-24T10:45:00-05:00" pubdate data-updated="true">Jan 24<span>th</span>, 2010</time>
         
       </p>
     
@@ -475,7 +557,7 @@ Recently MS <a href="http://news.bbc.co.uk/2/hi/technology/8460819.stm">admitted
   
 
 
-<time datetime="2010-01-15T12:04:00+05:30" pubdate data-updated="true">Jan 15<span>th</span>, 2010</time>
+<time datetime="2010-01-15T01:34:00-05:00" pubdate data-updated="true">Jan 15<span>th</span>, 2010</time>
         
       </p>
     
@@ -561,7 +643,7 @@ Happy coding&#8230;
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2010/01/07/google-waving-next-generation-emails/">Google Waving&#8230; Next Generation Emails</a></h1>
+      <h1 class="entry-title"><a href="/blog/2010/01/06/google-waving-next-generation-emails/">Google Waving&#8230; Next Generation Emails</a></h1>
     
     
       <p class="meta">
@@ -577,7 +659,7 @@ Happy coding&#8230;
   
 
 
-<time datetime="2010-01-07T00:06:00+05:30" pubdate data-updated="true">Jan 7<span>th</span>, 2010</time>
+<time datetime="2010-01-06T13:36:00-05:00" pubdate data-updated="true">Jan 6<span>th</span>, 2010</time>
         
       </p>
     
@@ -606,7 +688,7 @@ This is so interesting &amp; I am keen to try it&#8230; especially the robot you
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2010/01/02/scrolling-pidgin-status-message/">Scrolling Pidgin Status Message</a></h1>
+      <h1 class="entry-title"><a href="/blog/2010/01/01/scrolling-pidgin-status-message/">Scrolling Pidgin Status Message</a></h1>
     
     
       <p class="meta">
@@ -622,7 +704,7 @@ This is so interesting &amp; I am keen to try it&#8230; especially the robot you
   
 
 
-<time datetime="2010-01-02T00:45:00+05:30" pubdate data-updated="true">Jan 2<span>nd</span>, 2010</time>
+<time datetime="2010-01-01T14:15:00-05:00" pubdate data-updated="true">Jan 1<span>st</span>, 2010</time>
         
       </p>
     
@@ -659,7 +741,7 @@ With continuation to my earlier <a href="http://www.sachystechnoworld.co.cc/2009
   
 
 
-<time datetime="2009-12-30T21:42:00+05:30" pubdate data-updated="true">Dec 30<span>th</span>, 2009</time>
+<time datetime="2009-12-30T11:12:00-05:00" pubdate data-updated="true">Dec 30<span>th</span>, 2009</time>
         
       </p>
     
@@ -683,43 +765,6 @@ Superb Yaar!!!</div>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/12/15/from-java-to-python-im-loving-it/">From Java to Python, I&#8217;m Loving It.</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-12-15T21:33:00+05:30" pubdate data-updated="true">Dec 15<span>th</span>, 2009</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-Its been just three months, I learnt <a href="http://www.python.org/">Python</a> (or I started learning it as there many more aspects to learn) and  I am already very fond of it. Especially I have started using python for scripting work. I automated few things using python scripts which I had to do regularly like a creating users in oracle, copying / importing oracle dumps, syncing Wiki svn log with svn sever and many more. <br />  Some might argue that you can do the same thing in shell scripts or other programming languages. You can do that  but coding in python is 5-10 times faster and <a href="http://pythonconquerstheuniverse.wordpress.com/category/java-and-python/">this article</a> gives insight comparative of Java with python.<br />  To create connection in Java, it involves three steps but with python its just one step<br /><pre name="code" class="py"><br />    conn = cx_Oracle.connect(username, password, sid)<br /></pre><br />  <br />  I am not bad-mouthing Java here. With <a href="http://java.sun.com/javaee/">JEE6</a> at doorstep, Java has progressed very well as web technologies. <br />  For now, I will be using python for writing utility scripts unless I get chance to work on real big python Project.<br />  As experienced Java programmers, I found this <a href="http://python.computersci.org/">e-book</a> very helpful for learning python <br />  Coding in python as easy as in Java, I have already written <a href="http://cricscoreapplet.sourceforge.net/">cricket live score</a> gnome applet in python which been huge success.<br /><br /> Being interpreted language Python is little bit slow. With the Java just-in-time compiler, Java is faster.</div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -735,6 +780,10 @@ Its been just three months, I learnt <a href="http://www.python.org/">Python</a>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/26/failed-to-load-javahl-library/">Failed to load JavaHL Library</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/03/gson/">Expected BEGIN_ARRAY but was BEGIN_OBJECT</a>
       </li>
     
@@ -748,10 +797,6 @@ Its been just three months, I learnt <a href="http://www.python.org/">Python</a>
     
       <li class="post">
         <a href="/blog/2010/03/01/gnunify-2010-my-experience-day-1/">GNUnify 2010, My experience Day 1</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2010/01/24/why-ms-badly-needs-open-source/">Why MS badly needs Open Source</a>
       </li>
     
   </ul>

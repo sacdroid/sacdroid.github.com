@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: subclipse | Techno]]></title>
+  <link href="http://sacdroid.github.com/blog/categories/subclipse/atom.xml" rel="self"/>
+  <link href="http://sacdroid.github.com/"/>
+  <updated>2012-07-26T12:49:06-04:00</updated>
+  <id>http://sacdroid.github.com/</id>
+  <author>
+    <name><![CDATA[Sachin Patil]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Failed to load JavaHL Library]]></title>
+    <link href="http://sacdroid.github.com/blog/2012/07/26/failed-to-load-javahl-library/"/>
+    <updated>2012-07-26T12:27:00-04:00</updated>
+    <id>http://sacdroid.github.com/blog/2012/07/26/failed-to-load-javahl-library</id>
+    <content type="html"><![CDATA[<p> Today after upgrading eclipse to juno(4.0) and installing subclipse 1.6, I got following error on Ubuntu 12.04 installtion,
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Failed to load JavaHL Library.&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>These are the errors that were encountered:
+</span><span class='line'>no libsvnjavahl-1 in java.library.path
+</span><span class='line'>no svnjavahl-1 in java.library.path
+</span><span class='line'>no svnjavahl in java.library.path
+</span><span class='line'>java.library.path = /usr/lib/jni:/lib
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>I run into this error every time I upgrade eclipse due to subclipse needs javahl library. Usually a fix is to install javahl from ubuntu repo,
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>sudo apt-get install libsvn-java&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>But this did not fix the issue, I got same error after restarting eclipse.</p>
+
+<p>After using f "find" command, I found that javahl library location has been changed to "/usr/lib/x86_64-linux-gnu/jni" on ubuntu 64 (12.04).</p>
+
+<p>So updated ECLIPSE_HOM/eclipse.ini file from
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-Djava.library.path=/usr/lib/jni</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>to
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-Djava.library.path=/usr/lib/x86_64-linux-gnu/jni</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>and that did the trick!</p>
+]]></content>
+  </entry>
+  
+</feed>

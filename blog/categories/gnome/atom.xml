@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gnome | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/gnome/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-04T03:49:04+05:30</updated>
+  <updated>2012-07-26T12:49:06-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Such huge response for CricScore gnome applet was unexpected!!]]></title>
     <link href="http://sacdroid.github.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome/"/>
-    <updated>2009-12-05T23:32:00+05:30</updated>
+    <updated>2009-12-05T13:02:00-05:00</updated>
     <id>http://sacdroid.github.com/blog/2009/12/05/such-huge-response-for-cricscore-gnome</id>
     <content type="html"><![CDATA[<div class='post'>
 In fact in its just 2nd day after 1.0-alpha release of <a href="http://cricscoreapplet.sourceforge.net/">CricScore Gnome applet</a>, It has netted more than 100 downloads. Now this is a terrific figure by all means since I wrote this as utility for personal use as fun, I was not expecting it could be a professional gnome applet.<br />  I just shared this across few Linux related forums on orkut, ubuntu communities and got such huge reply. It feel good factor to me.<br />There has been very positive reply so far like this,<br /><br /> <blockquote>"Great applet! I've been looking for something like this. Just what I needed!", says Jorgo <br />  upengan78 is running it on "gentoo", he comments, "It is working as intended. Many thanks for such a nice applet. Good luck for more such applets"<br />  Ankur suggested me to make it official package, "Cann't we have your applet from official repositories ???"<br />  Kamalakar says "I am using it today for India Sri Lanka score. Good to have it on Gnome top panel."   <br />   </blockquote><br />There has been few feature requests also and few wanted to have one smiler applet for Football/Socker. I have already implemented few features in latest 1.0 release.  <br />  There are few people interested to work with me in writing an applet for Football, hopefully I will have it defiantly before FIFA2010. <br /><blockquote> Arun S.A.G wants to package this applet for Fedora, "I would like to package your applet for Fedora, i have tested it in Fedora 12 it works fine :-)".</blockquote><br />  Thanks guys for such motivation and feedbacks.  <br /> Today I released <a href="http://cricscoreapplet.sourceforge.net/">1.0 release</a>, I did not do any code changes, as it did not require, alpha release worked like charm, but I added READEME, INSTALL, COPYRIGHT file as this applet is no more personal :).<br /><br />  There are many feature requests pending on my plate. I will try to work on those in spare time.<br /><br />   Possibilities Are Endless!!!</div>
@@ -44,7 +44,7 @@ hi, i installed cricscore but cannot add to panel as it gives an error &quot;The
   <entry>
     <title type="html"><![CDATA[mouse clicks in Eclipse does not work after Karmic upgrade]]></title>
     <link href="http://sacdroid.github.com/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after/"/>
-    <updated>2009-11-24T15:03:00+05:30</updated>
+    <updated>2009-11-24T04:33:00-05:00</updated>
     <id>http://sacdroid.github.com/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after</id>
     <content type="html"><![CDATA[<div class='post'>
 After upgrade to Ubuntu Karmic, mouse clicks stopped in <a href="http://www.eclipse.org/">eclipse</a>, my favourite IDE, mainly for submit buttons. Until today I used keyboard as alternative, but it was bit frustrating. <br /><br />  This issue raised because karmic brings version 2.18 of GTK+ to the desktop. GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, the GTK+ is suitable for projects ranging from small one-off tools to complete application suites.<br /><br />Eclipse assume that they can just operate on the X windows corresponding to their GDK windows without ever telling GDK, which causes some widgets to exhibit weird behaviour. <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287307">Bug 287307</a> was filed with the Eclipse foundation and this is fixed for the upcoming 3.6 release.<br /><br />Fortunately, the GTK+ people provide a switch to turn off the client side windows. So to work around the bug with Eclipse pre-3.6, just make sure you set environment variable GDK_NATIVE_WINDOWS=1  <br /> I created simple eclipse launcher script which will set this variable.<br /><br /><pre name="code" class="cpp"><br />#!/bin/sh<br />export GDK_NATIVE_WINDOWS=1<br />/home/sachin/opt/eclipse3.5/eclipse<br /><br /></pre><br /><br />and added it to /usr/bin.<br /><br />  Happy coding!!!</div>
@@ -77,7 +77,7 @@ Thanks...<br />Worked for me too.</div>
   <entry>
     <title type="html"><![CDATA[Themes for Gnome Ubuntu]]></title>
     <link href="http://sacdroid.github.com/blog/2009/10/17/themes-for-gnome-ubuntu/"/>
-    <updated>2009-10-17T09:58:00+05:30</updated>
+    <updated>2009-10-17T00:28:00-04:00</updated>
     <id>http://sacdroid.github.com/blog/2009/10/17/themes-for-gnome-ubuntu</id>
     <content type="html"><![CDATA[<div class='post'>
 I recently switched gnome desktop after using KDE for one year for no special reason. KDE was good experience.<br /> Gnome has very professional look as compared to KDE. KDE is good for people who are comming from windows background.<br /> Currently I am exploring various themes in gnome. Its nice to see you can change your desktop on one click.<br /> I love dark themes. My favourites are,<br />  1) Karmic - x (This is my current theme.)<br />  2) Elegant Brit<br />  3) Mesmerized.<br /><br /> you can explore more dark themes <a href="http://www.catswhocode.com/blog/20-beautiful-dark-themes-for-gnome-and-ubuntu">here</a><br /><br /> I did not like scroll bars in firefox for some of the themes. Its too dark to get hidden with background. Workaround I found is, Just go to the add-on part of their website, and install iFox Metal for your skin.<br /><br />Enjoy<br /><br /><span style="font-weight: bold;">Update[Mon, Oct 19, 2009] : </span><span>Oops, My  favourite music player "Amarok" stoped </span><span>working in Gnome. Its known <a href="https://bugs.launchpad.net/ubuntu/+source/amarok/+bug/371360">issue</a> in Gnome for KDE apps</span><span style="font-weight: bold;">. </span><span>As always</span><span style="font-weight: bold;"> </span><span>open source communities, this issue also has work around</span><span style="font-weight: bold;"> :).  </span><span>Also Gnome has alternative player, <a href="http://www.exaile.org/">Exaile. </a><br />   Exaile looks cool and lightweight at 1st glance.<br /></span></div>

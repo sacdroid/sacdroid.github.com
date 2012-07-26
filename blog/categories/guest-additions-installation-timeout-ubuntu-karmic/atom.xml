@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Guest Additions  installation timeout ubuntu karmic | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/guest-additions-installation-timeout-ubuntu-karmic/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-04T03:49:04+05:30</updated>
+  <updated>2012-07-26T12:49:06-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Guest Additions  installation in Virtualbox @ Ubuntu Karmic]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/11/15/guest-additions-installation-in/"/>
-    <updated>2009-11-15T07:45:00+05:30</updated>
-    <id>http://sacdroid.github.com/blog/2009/11/15/guest-additions-installation-in</id>
+    <link href="http://sacdroid.github.com/blog/2009/11/14/guest-additions-installation-in/"/>
+    <updated>2009-11-14T21:15:00-05:00</updated>
+    <id>http://sacdroid.github.com/blog/2009/11/14/guest-additions-installation-in</id>
     <content type="html"><![CDATA[<div class='post'>
 I installed Virtualbox on Ubuntu karmic but I ran into trouble with the Guest Additions because the download kept timing out. I solved the problem by following the weblink and manually downloading the Guest Additions disk image. I then used ‘CD/DVD mount’ from Virtualbox’s Devices menu to mount the disk image. When I tried the guest additions installation this time it worked (well, actually it worked on the second attempt so was I just lucky?).<br /><br />I earlier extracted the files/folders from the Guest Additions disk image and tried to manually move them to the lib folder where Virtualbox was searching. I was completely fooled by the permissions for this folder that said I was not the owner even though I am the "sudo". Doubtless I’ll find out why as I explore Ubuntu!</div>
 

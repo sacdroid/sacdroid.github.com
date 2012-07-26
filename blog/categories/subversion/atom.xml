@@ -4,7 +4,7 @@
   <title><![CDATA[Category: subversion | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/subversion/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-04T03:49:04+05:30</updated>
+  <updated>2012-07-26T12:49:06-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Install Subversion 1.5 on Ubuntu Karmic]]></title>
     <link href="http://sacdroid.github.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic/"/>
-    <updated>2010-01-15T12:04:00+05:30</updated>
+    <updated>2010-01-15T01:34:00-05:00</updated>
     <id>http://sacdroid.github.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic</id>
     <content type="html"><![CDATA[<p>Ubuntu Karmic includes 1.6.x version of Subversion but our source control server is not upgraded to 1.6. Its still in 1.5 version. Don't ask me why I am interested in older versions of things, Mainly I work with remote team and SVN server is also hosted remotely hence I'm forced to consider downgrading my version of subversion so that my local working copy wont get corrupted.<br /><br />First remove 1.6 version of svn from karmic installation,</p>
 

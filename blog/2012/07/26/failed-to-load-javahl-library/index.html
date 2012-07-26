@@ -5,13 +5,17 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Nice post on Top things to do after installing Ubuntu Linux 9.10 Karmic Koala - Techno</title>
+  <title>Failed to load JavaHL Library - Techno</title>
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="
-Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#8217;ve ever seen. Tagged & bookmarked & and sharing. Great Work Danny.
-">
+  <meta name="description" content="Today after upgrading eclipse to juno(4.0) and installing subclipse 1.6, I got following error on Ubuntu 12.04 installtion, 1
+2
+3
+4
+5
+6
+Failed to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +24,7 @@ Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#821
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sacdroid.github.com/blog/2009/11/04/nice-post-on-top-things-to-do-after/">
+  <link rel="canonical" href="http://sacdroid.github.com/blog/2012/07/26/failed-to-load-javahl-library/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -69,7 +73,7 @@ Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#821
   
   <header>
     
-      <h1 class="entry-title">Nice Post on Top Things to Do After Installing Ubuntu Linux 9.10 Karmic Koala</h1>
+      <h1 class="entry-title">Failed to Load JavaHL Library</h1>
     
     
       <p class="meta">
@@ -85,15 +89,54 @@ Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#821
   
 
 
-<time datetime="2009-11-04T00:33:00+05:30" pubdate data-updated="true">Nov 4<span>th</span>, 2009</time>
+<time datetime="2012-07-26T12:27:00-04:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><div class='post'>
-Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#8217;ve ever seen. Tagged & bookmarked & and <a href="http://www.reddit.com/tb/9z2xk/">sharing</a>. <br />Great Work <a href="http://www.reddit.com/tb/9z2xk/">Danny</a>.</div>
+<div class="entry-content"><p> Today after upgrading eclipse to juno(4.0) and installing subclipse 1.6, I got following error on Ubuntu 12.04 installtion,</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Failed to load JavaHL Library.
+</span><span class='line'>    These are the errors that were encountered:
+</span><span class='line'>    no libsvnjavahl-1 in java.library.path
+</span><span class='line'>    no svnjavahl-1 in java.library.path
+</span><span class='line'>    no svnjavahl in java.library.path
+</span><span class='line'>    java.library.path = /usr/lib/jni:/lib</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I run into this error every time I upgrade eclipse due to subclipse needs javahl library. Usually a fix is to install javahl from ubuntu repo,</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install libsvn-java</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But this did not fix the issue, I got same error after restarting eclipse.</p>
+
+<p>After using f &#8220;find&#8221; command, I found that javahl library location has been changed to &#8220;/usr/lib/x86_64-linux-gnu/jni&#8221; on ubuntu 64 (12.04).</p>
+
+<p>So updated ECLIPSE_HOM/eclipse.ini file from</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-Djava.library.path=/usr/lib/jni</span></code></pre></td></tr></table></div></figure>
+
+
+<p>to</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-Djava.library.path=/usr/lib/x86_64-linux-gnu/jni</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and that did the trick!</p>
 </div>
 
 
@@ -116,12 +159,12 @@ Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#821
   
 
 
-<time datetime="2009-11-04T00:33:00+05:30" pubdate data-updated="true">Nov 4<span>th</span>, 2009</time>
+<time datetime="2012-07-26T12:27:00-04:00" pubdate data-updated="true">Jul 26<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/ubuntu/'>Ubuntu</a>, <a class='category' href='/blog/categories/post-install/'>post install</a>
+    <a class='category' href='/blog/categories/ubuntu-12-04/'>Ubuntu 12.04</a>, <a class='category' href='/blog/categories/eclipse/'>eclipse</a>, <a class='category' href='/blog/categories/java/'>java</a>, <a class='category' href='/blog/categories/javahl/'>javahl</a>, <a class='category' href='/blog/categories/subclipse/'>subclipse</a>, <a class='category' href='/blog/categories/svn/'>svn</a>
   
 </span>
 
@@ -130,7 +173,7 @@ Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#821
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sacdroid.github.com/blog/2009/11/04/nice-post-on-top-things-to-do-after/" data-via="sacdroid" data-counturl="http://sacdroid.github.com/blog/2009/11/04/nice-post-on-top-things-to-do-after/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://sacdroid.github.com/blog/2012/07/26/failed-to-load-javahl-library/" data-via="sacdroid" data-counturl="http://sacdroid.github.com/blog/2012/07/26/failed-to-load-javahl-library/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -143,14 +186,18 @@ Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#821
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2009/11/03/gstreamer-version-mismatch-after/" title="Previous Post: Gstreamer version mismatch after upgrade to Ubuntu 9.10.">&laquo; Gstreamer version mismatch after upgrade to Ubuntu 9.10.</a>
+        <a class="basic-alignment left" href="/blog/2012/07/03/gson/" title="Previous Post: Expected BEGIN_ARRAY but was BEGIN_OBJECT">&laquo; Expected BEGIN_ARRAY but was BEGIN_OBJECT</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2009/11/05/script-to-start-oracle-if-it-is-not/" title="Next Post: Script to start oracle if it is not running">Script to start oracle if it is not running &raquo;</a>
       
     </p>
   </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -159,6 +206,10 @@ Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#821
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/07/26/failed-to-load-javahl-library/">Failed to load JavaHL Library</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/07/03/gson/">Expected BEGIN_ARRAY but was BEGIN_OBJECT</a>
@@ -174,10 +225,6 @@ Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#821
     
       <li class="post">
         <a href="/blog/2010/03/01/gnunify-2010-my-experience-day-1/">GNUnify 2010, My experience Day 1</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2010/01/24/why-ms-badly-needs-open-source/">Why MS badly needs Open Source</a>
       </li>
     
   </ul>
@@ -255,6 +302,22 @@ Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#821
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'sacdroid';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://sacdroid.github.com/blog/2012/07/26/failed-to-load-javahl-library/';
+        var disqus_url = 'http://sacdroid.github.com/blog/2012/07/26/failed-to-load-javahl-library/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
