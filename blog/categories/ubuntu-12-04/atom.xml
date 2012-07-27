@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ubuntu 12.04 | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/ubuntu-12-04/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-26T17:57:11-04:00</updated>
+  <updated>2012-07-26T20:10:55-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -54,7 +54,7 @@
 
 <p>But this time it did not fix the issue, I got same error after restarting eclipse.</p>
 
-<p>I found that javahl library location has been changed to "/usr/lib/x86_64-linux-gnu/jni" on ubuntu 64 (12.04) using find command</p>
+<p>I found that javahl library location has been changed to  on ubuntu 64 (12.04) using find command</p>
 
 <p>So updated java.library.path location in ECLIPSE_HOM/eclipse.ini file from
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
