@@ -9,7 +9,7 @@
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="I had a problem with Google GSON deserialization. JSON data which I was trying to parse using GSON library looks like this {&#8220;matches&#8221;:{&# &hellip;">
+  <meta name="description" content="I had a problem with Google GSON deserialization. JSON data which I was trying to parse using GSON library looks like this {"matches":{"matchId":"bla &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,7 +105,7 @@
   </header>
 
 
-<div class="entry-content"><p>I had a problem with <a href="http://code.google.com/p/google-gson/">Google GSON </a>  deserialization. JSON data which I was trying to parse using GSON library looks like this {&#8220;matches&#8221;:{&#8220;matchId&#8221;:&#8221;bla&#8221; &#8220;score&#8221; : &#8220;bla&#8221;}} and when there is more roles available it looks like this {&#8220;matches&#8221;:[{&#8220;matchId&#8221;:&#8221;bla&#8221; &#8220;score&#8221; : &#8220;bla&#8221;}{&#8220;matchId&#8221;:&#8221;hihi&#8221; &#8220;score&#8221; : &#8220;hihi&#8221;}]}. So sometimes
+<div class="entry-content"><p>I had a problem with <a href="http://code.google.com/p/google-gson/">Google GSON </a>  deserialization. JSON data which I was trying to parse using GSON library looks like this <code>{"matches":{"matchId":"bla" "score" : "bla"}}</code> and when there is more roles available it looks like this <code>{"matches":[{"matchId":"bla" "score" : "bla"}{"matchId":"hihi" "score" : "hihi"}]}</code>. So sometimes
 &#8220;matches&#8221; data comes as &#8220;Object&#8221; or &#8220;ARRAY&#8221; format depending upon number of matches available.</p>
 
 <p>GSON fails as expected to parse this in to Java class which has field of type List class, When JSON data comes with matches as &#8220;Object&#8221; format, it throws exception &#8220;Expected BEGIN_ARRAY but was BEGIN_OBJECT&#8221;.</p>

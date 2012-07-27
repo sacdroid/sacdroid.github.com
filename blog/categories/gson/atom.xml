@@ -4,7 +4,7 @@
   <title><![CDATA[Category: GSON | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/gson/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-26T20:33:42-04:00</updated>
+  <updated>2012-07-26T20:50:54-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -18,7 +18,7 @@
     <link href="http://sacdroid.github.com/blog/2012/07/03/gson/"/>
     <updated>2012-07-03T19:54:00-04:00</updated>
     <id>http://sacdroid.github.com/blog/2012/07/03/gson</id>
-    <content type="html"><![CDATA[<p>I had a problem with <a href="http://code.google.com/p/google-gson/">Google GSON </a>  deserialization. JSON data which I was trying to parse using GSON library looks like this {"matches":{"matchId":"bla" "score" : "bla"}} and when there is more roles available it looks like this {"matches":[{"matchId":"bla" "score" : "bla"}{"matchId":"hihi" "score" : "hihi"}]}. So sometimes
+    <content type="html"><![CDATA[<p>I had a problem with <a href="http://code.google.com/p/google-gson/">Google GSON </a>  deserialization. JSON data which I was trying to parse using GSON library looks like this <code>{"matches":{"matchId":"bla" "score" : "bla"}}</code> and when there is more roles available it looks like this <code>{"matches":[{"matchId":"bla" "score" : "bla"}{"matchId":"hihi" "score" : "hihi"}]}</code>. So sometimes
 "matches" data comes as "Object" or "ARRAY" format depending upon number of matches available.</p>
 
 <p>GSON fails as expected to parse this in to Java class which has field of type List class, When JSON data comes with matches as "Object" format, it throws exception "Expected BEGIN_ARRAY but was BEGIN_OBJECT".</p>
