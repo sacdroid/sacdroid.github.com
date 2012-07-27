@@ -138,9 +138,9 @@ Failed to &hellip;">
 
 <p>But this time it did not fix the issue, I got same error after restarting eclipse.</p>
 
-<p>I found that javahl library location has been changed to ${ /usr/lib/x86_64-linux-gnu/jni } on ubuntu 64 (12.04) using find command</p>
+<p>I found that javahl library location has been changed to <code>/usr/lib/x86_64-linux-gnu/jni</code> on ubuntu 64 (12.04) using find command</p>
 
-<p>So updated java.library.path location in ECLIPSE_HOM/eclipse.ini file from</p>
+<p>So updated java.library.path location in <code>ECLIPSE_HOM/eclipse.ini</code> file from</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>-Djava.library.path=/usr/lib/jni</span></code></pre></td></tr></table></div></figure>
