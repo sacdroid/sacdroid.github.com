@@ -9,7 +9,7 @@
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="Its been just three months, I learnt Python (or I started learning it as there many more aspects to learn) and I am already very fond of it. &hellip;">
+  <meta name="description" content="I got this idea from goggle new year seconds counter, I decided to set my pidgin status to showing seconds are left in the decade. After bit of &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,51 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/12/30/tell-your-friends-how-many-seconds-are/">Tell Your Friends How Many Seconds Are Left in the Decade</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-12-30T11:12:00-05:00" pubdate data-updated="true">Dec 30<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+I got this idea from <a href="http://www.itpro.co.uk/618784/google-counting-down-the-seconds-till-the-new-year">goggle new year seconds counter</a>, I decided to set my pidgin status to showing seconds are left in the decade.<br /> After bit of goggling found a command-line program called purple-remote that allows me to automatically update the Pidgin status and message lines. The purple-remote program is included in the libpurple-bin package, make sure you have it installed.<br /><br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ sudo apt-get install libpurple-bin<br /></pre><br />Here is small script that does this trick.<br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ gedit hny.sh<br /></pre><br />add text as follows:<br /><script type="syntaxhighlighter" class="brush: py"><![CDATA[<br />#!/bin/bash<br />START=$(date --date='2010-01-01 00:00:00' +%s)<br />END=$(date +%s)<br /><br />DIFF=$(( $START - $END ))<br /><br />if [ $DIFF -lt 0 ]; then<br />  msg="Happy New Year 2010"<br />else<br />  msg="$DIFF seconds to 2010"<br />fi<br /><br />echo ${msg}<br />/usr/bin/purple-remote "setstatus?status=available&message=${msg}"<br />]]></script><br />Save and make it executable as follows:<br /><br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ chmod +x hny.sh<br /></pre><br />time to run script every second with watch command.<br /><pre name="code" class="cpp"><br />sachin@sachin-laptop:~/Utility$ watch -n 1 ./hny.sh<br /></pre><br /><br />DONE!!!<br /><br />Screenshot:<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_A2_wLwXdBek/SzuIodeQimI/AAAAAAAACuk/U_DcOcz-GEA/s1600-h/hny.jpg"><img style="cursor:pointer; cursor:hand;width: 291px; height: 320px;" src="http://3.bp.blogspot.com/_A2_wLwXdBek/SzuIodeQimI/AAAAAAAACuk/U_DcOcz-GEA/s320/hny.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5421076805158210146" /></a><br /><br />HAPPY NEW YEAR to all.<br /><br />Update:<br />after few requests I am writng cross platform utility which will do this trick:<br /><script type="syntaxhighlighter" class="brush: java"><![CDATA[<br />import java.text.SimpleDateFormat;<br />import java.util.Date;<br /><br />import org.jivesoftware.smack.XMPPConnection;<br />import org.jivesoftware.smack.packet.Presence;<br /><br />public class Test {<br /><br /> public static void main(String args[]) {<br />  XMPPConnection connection = new XMPPConnection("gmail.com");<br /><br />  Date date;<br />  try {<br />   SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yy");<br />   date = (Date) formatter.parse("01-JAN-10");<br /><br />   connection.connect();<br />   connection.login("yourgmail@gmail.com", "password");<br />   Presence presence = new Presence(Presence.Type.available);<br />   while (true) {<br />    Date today = new Date();<br />    long diff = date.getTime() - today.getTime();<br /><br />    presence.setStatus((diff / (1000)) + " seconds to 2010");<br />    presence.setPriority(24);<br />    presence.setMode(Presence.Mode.available);<br />    connection.sendPacket(presence);<br />    Thread.sleep(1000); // Sleeps for 1 seconds<br />   }<br />  } catch (Exception e) {<br />   System.out.println(e.toString());<br />  }<br /> }<br />}<br /><br />]]></script><br /><br /> You need to get the Smack API which is an open source, pure Java library for working with XMPP (clients only). The API can be downloaded from <a href=" http://www.igniterealtime.org/downloads/index.jsp">smack</a>, .Just download the appropriate libraries and put the JAR files in your classpath. If you can’t figure out how it is done, please Google your way around.<br /><br />Enjoy&#8230;</div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>pravin</div>
+<div class='content'>
+Superb Yaar!!!</div>
+</div>
+</div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -553,51 +598,6 @@ Thanks&#8230;<br />Worked for me too.</div>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/11/20/google-chrome-source-code-released/">Google Chrome Source Code Released</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-11-20T07:45:00-05:00" pubdate data-updated="true">Nov 20<span>th</span>, 2009</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-  Google has released the <a href="http://news.cnet.com/8301-30684_3-10401524-265.html">source code </a>for Chrome OS on Thursday. Although it is another Linux distrubtion, the applications will be running on Google&#8217;s browser, Chrome.
-<br />
-<br /><object width="364" height="280"><param name="movie" value="http://www.cnet.com/av/video/flv/universalPlayer/universalSmall.swf" /><param name="wmode" value="transparent" /><param name="allowFullScreen" value="true" /><param name="FlashVars" value="playerType=embedded&type=id&value=50079786" /><embed src="http://www.cnet.com/av/video/flv/universalPlayer/universalSmall.swf" type="application/x-shockwave-flash" wmode="transparent" width="364" height="280" allowFullScreen="true" FlashVars="playerType=embedded&type=id&value=50079786" /></object>
-<br />
-<br />Also my favourite Linux distribution &#8220;Ubuntu&#8221;’s commercial sponsor Canonical contributing engineering to Google under contract for this OS. <a href="http://blog.canonical.com/?p=294">Chris Kenyon  VP of OEM Services, Canonical&#8217;s Blog</a>
-<br />
-<br /> Go Linux go!!!
-<br />
-<br /></div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -620,6 +620,10 @@ Thanks&#8230;<br />Worked for me too.</div>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/31/eclipse-juno-rememberer-previously-open-file-tabs-under-visible-tabs/">Eclipse Juno : Rememberer previously open file tabs under visible tabs</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/26/failed-to-load-javahl-library/">Failed to load JavaHL Library</a>
       </li>
     
@@ -633,10 +637,6 @@ Thanks&#8230;<br />Worked for me too.</div>
     
       <li class="post">
         <a href="/blog/2010/04/28/ubuntu-1004-change-is-here/">Ubuntu 10.04 Change is here!!!</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2010/03/01/gnunify-2010-my-experience-day-1/">GNUnify 2010, My experience Day 1</a>
       </li>
     
   </ul>

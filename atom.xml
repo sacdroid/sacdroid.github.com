@@ -4,7 +4,7 @@
   <title><![CDATA[Techno]]></title>
   <link href="http://sacdroid.github.com/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-26T20:58:43-04:00</updated>
+  <updated>2012-07-31T14:31:34-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Eclipse Juno : Rememberer previously open file tabs under visible tabs]]></title>
+    <link href="http://sacdroid.github.com/blog/2012/07/31/eclipse-juno-rememberer-previously-open-file-tabs-under-visible-tabs/"/>
+    <updated>2012-07-31T14:15:00-04:00</updated>
+    <id>http://sacdroid.github.com/blog/2012/07/31/eclipse-juno-rememberer-previously-open-file-tabs-under-visible-tabs</id>
+    <content type="html"><![CDATA[<p>If you tried Eclipse Juno, you may see strange behaviour with open tabs in editors. Juno has stopped retaining open file tabs tabs. If you open new file using &#8220;Ctrl Shift R&#8221;, it closes last active file . This behaviour is started in Juno.</p>
+
+<p>If you take a look in the preferences, in the appearance section, you won’t find anything related to this.</p>
+
+<p>The good news is that I found fix, rather work around :). Go to Preferences -> General -> Appearance and switch to the Classic theme. Yes, switching theme solved this issue.</p>
+
+<p>I am still looking for correct fix, let me know if any one find one.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Failed to load JavaHL Library]]></title>
@@ -662,24 +677,6 @@ Thanks a lot. Made my day.<br /><br />Igor</div>
 Thanks&#8230;<br />Worked for me too.</div>
 </div>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Google Chrome source code released]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/11/20/google-chrome-source-code-released/"/>
-    <updated>2009-11-20T07:45:00-05:00</updated>
-    <id>http://sacdroid.github.com/blog/2009/11/20/google-chrome-source-code-released</id>
-    <content type="html"><![CDATA[<div class='post'>
-  Google has released the <a href="http://news.cnet.com/8301-30684_3-10401524-265.html">source code </a>for Chrome OS on Thursday. Although it is another Linux distrubtion, the applications will be running on Google&#8217;s browser, Chrome.
-<br />
-<br /><object width="364" height="280"><param name="movie" value="http://www.cnet.com/av/video/flv/universalPlayer/universalSmall.swf" /><param name="wmode" value="transparent" /><param name="allowFullScreen" value="true" /><param name="FlashVars" value="playerType=embedded&type=id&value=50079786" /><embed src="http://www.cnet.com/av/video/flv/universalPlayer/universalSmall.swf" type="application/x-shockwave-flash" wmode="transparent" width="364" height="280" allowFullScreen="true" FlashVars="playerType=embedded&type=id&value=50079786" /></object>
-<br />
-<br />Also my favourite Linux distribution &#8220;Ubuntu&#8221;’s commercial sponsor Canonical contributing engineering to Google under contract for this OS. <a href="http://blog.canonical.com/?p=294">Chris Kenyon  VP of OEM Services, Canonical&#8217;s Blog</a>
-<br />
-<br /> Go Linux go!!!
-<br />
-<br /></div>
 ]]></content>
   </entry>
   

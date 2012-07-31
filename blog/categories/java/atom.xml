@@ -4,7 +4,7 @@
   <title><![CDATA[Category: java | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/java/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-26T20:58:43-04:00</updated>
+  <updated>2012-07-31T14:31:34-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Eclipse Juno : Rememberer previously open file tabs under visible tabs]]></title>
+    <link href="http://sacdroid.github.com/blog/2012/07/31/eclipse-juno-rememberer-previously-open-file-tabs-under-visible-tabs/"/>
+    <updated>2012-07-31T14:15:00-04:00</updated>
+    <id>http://sacdroid.github.com/blog/2012/07/31/eclipse-juno-rememberer-previously-open-file-tabs-under-visible-tabs</id>
+    <content type="html"><![CDATA[<p>If you tried Eclipse Juno, you may see strange behaviour with open tabs in editors. Juno has stopped retaining open file tabs tabs. If you open new file using "Ctrl Shift R", it closes last active file . This behaviour is started in Juno.</p>
+
+<p>If you take a look in the preferences, in the appearance section, you won’t find anything related to this.</p>
+
+<p>The good news is that I found fix, rather work around :). Go to Preferences -> General -> Appearance and switch to the Classic theme. Yes, switching theme solved this issue.</p>
+
+<p>I am still looking for correct fix, let me know if any one find one.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Failed to load JavaHL Library]]></title>

@@ -181,15 +181,21 @@
         <lastmod>2012-07-26T20:33:36-04:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://sacdroid.github.com/blog/2012/07/31/eclipse-juno-rememberer-previously-open-file-tabs-under-visible-tabs/
+        </loc>
+        <lastmod>2012-07-31T14:31:19-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://sacdroid.github.com/about/</loc>
         <lastmod>2012-07-26T14:43:27-04:00</lastmod>
     </url>
     <url>
         <loc>http://sacdroid.github.com/</loc>
-        <lastmod>2012-07-26T20:50:49-04:00</lastmod>
+        <lastmod>2012-07-31T14:31:19-04:00</lastmod>
     </url>
     <url>
         <loc>http://sacdroid.github.com/blog/archives/</loc>
-        <lastmod>2012-07-26T20:50:49-04:00</lastmod>
+        <lastmod>2012-07-31T14:31:19-04:00</lastmod>
     </url>
 </urlset>
