@@ -4,7 +4,7 @@
   <title><![CDATA[Techno]]></title>
   <link href="http://sacdroid.github.com/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-08-06T16:56:18-04:00</updated>
+  <updated>2012-08-06T17:01:45-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -24,7 +24,8 @@
 
 <p> Cricscoredroid is back in Google Play now with lots UI improvements. Cricscoredroid now features Android HOLO dark theme and Honeycomb styled Action Bar using <a href="http://www.holoeverywhere.com/">HoloEverywhere</a>  and <a href="http://actionbarsherlock.com/">ActionBarSherlock</a> . What this library does is that if you’re using your app in a device with Android 2.x, it gives you an ActionBar that is a copy of the real Honeycomb ActionBar, thanks to <a href="http://jakewharton.com/">Jake Wharton</a> , a guy who created this library.</p>
 
-<p> Screenshots of cricscoredroid with new Holo Dark theme,</p>
+<p> It is available on  <a href="https://play.google.com/store/apps/details?id=com.samarth.cricscorereturn">Google Play</a> .
+Use and rate it on google play!. Screenshots of cricscoredroid with new Holo Dark theme,</p>
 
 <p><img class="left" src="https://dl.dropbox.com/u/43663434/screenshot-1344279841977.png"></p>
 
@@ -37,8 +38,7 @@
 <br/>
 
 
-<p>It is available on  <a href="https://play.google.com/store/apps/details?id=com.samarth.cricscorereturn">Google Play</a> .
-Use it and rate!</p>
+<p>Have fun!</p>
 ]]></content>
   </entry>
   
