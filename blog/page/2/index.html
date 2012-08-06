@@ -9,7 +9,7 @@
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="I got this idea from goggle new year seconds counter, I decided to set my pidgin status to showing seconds are left in the decade. After bit of &hellip;">
+  <meta name="description" content="With continuation to my earlier trick, I wrote another script this time in python to animate pidgin status like a news scroller on the bottom of the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,43 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/01/01/scrolling-pidgin-status-message/">Scrolling Pidgin Status Message</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-01T14:15:00-05:00" pubdate data-updated="true">Jan 1<span>st</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+With continuation to my earlier <a href="http://www.sachystechnoworld.co.cc/2009/12/tell-your-friends-how-many-seconds-are.html">trick</a>, I wrote another script this time in python to animate pidgin status like a news scroller on the bottom of the news channel, you can put whatever message you want.<br /><br /><script type="syntaxhighlighter" class="brush: py"><![CDATA[<br /><br />#!/usr/bin/env python<br /><br />import os, sys, dbus, re<br />from random import randint<br />import time<br /><br />msg =  "Happy New Year 2010"  #change this to your status message<br /><br />program = os.path.basename(sys.argv[0])<br />from_file = 0<br />ICON = u'\u21e8 '                 # rightwards white arrow<br /><br />bus = dbus.SessionBus()<br />obj = bus.get_object("im.pidgin.purple.PurpleService", "/im/pidgin/purple/PurpleObject")<br />purple = dbus.Interface(obj, "im.pidgin.purple.PurpleInterface")<br /><br /><br />def pidgin_status(message):<br /> old_status = purple.PurpleSavedstatusGetCurrent()  # get current status<br /> status_type = purple.PurpleSavedstatusGetType(old_status) # get current status type<br /> new_status = purple.PurpleSavedstatusNew("", status_type) # create new status with old status type<br /> purple.PurpleSavedstatusSetMessage(new_status, message) # fill new status with status message<br /> purple.PurpleSavedstatusActivate(new_status)   # activate new status<br /><br /><br />i = 0<br />while True:<br />  ticker_text = msg[i:i+19] +"  " + msg[0:i]<br />  pidgin_status(ticker_text)<br />  i +=1<br />  if i == 19:<br />     i = 0<br />  time.sleep(1)<br /> <br />]]></script><br /><br />Have fun&#8230;<br /><br />Thanks,<br /><br />&#8211; Sachin</div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -543,61 +580,6 @@ Nokia has recently <a href="http://www.nokia.com/press/press-releases/showpressr
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after/">Mouse Clicks in Eclipse Does Not Work After Karmic Upgrade</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-11-24T04:33:00-05:00" pubdate data-updated="true">Nov 24<span>th</span>, 2009</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-After upgrade to Ubuntu Karmic, mouse clicks stopped in <a href="http://www.eclipse.org/">eclipse</a>, my favourite IDE, mainly for submit buttons. Until today I used keyboard as alternative, but it was bit frustrating. <br /><br />  This issue raised because karmic brings version 2.18 of GTK+ to the desktop. GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, the GTK+ is suitable for projects ranging from small one-off tools to complete application suites.<br /><br />Eclipse assume that they can just operate on the X windows corresponding to their GDK windows without ever telling GDK, which causes some widgets to exhibit weird behaviour. <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287307">Bug 287307</a> was filed with the Eclipse foundation and this is fixed for the upcoming 3.6 release.<br /><br />Fortunately, the GTK+ people provide a switch to turn off the client side windows. So to work around the bug with Eclipse pre-3.6, just make sure you set environment variable GDK_NATIVE_WINDOWS=1  <br /> I created simple eclipse launcher script which will set this variable.<br /><br /><pre name="code" class="cpp"><br />#!/bin/sh<br />export GDK_NATIVE_WINDOWS=1<br />/home/sachin/opt/eclipse3.5/eclipse<br /><br /></pre><br /><br />and added it to /usr/bin.<br /><br />  Happy coding!!!</div>
-<h2>Comments</h2>
-<div class='comments'>
-<div class='comment'>
-<div class='author'>Anonymous</div>
-<div class='content'>
-Thanks Sachin!!!<br />I have been puzzling over this for a long time!!!  With your help, this finally worked!!!<br />Thank you again!</div>
-</div>
-<div class='comment'>
-<div class='author'>Anonymous</div>
-<div class='content'>
-Thanks a lot. Made my day.<br /><br />Igor</div>
-</div>
-<div class='comment'>
-<div class='author'>Heryy</div>
-<div class='content'>
-Thanks&#8230;<br />Worked for me too.</div>
-</div>
-</div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -620,6 +602,10 @@ Thanks&#8230;<br />Worked for me too.</div>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/08/06/criscoredroid-is-back/">Criscoredroid- Live Cricket is back</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/31/eclipse-juno-rememberer-previously-open-file-tabs-under-visible-tabs/">Eclipse Juno : Rememberer previously open file tabs under visible tabs</a>
       </li>
     
@@ -633,10 +619,6 @@ Thanks&#8230;<br />Worked for me too.</div>
     
       <li class="post">
         <a href="/blog/2011/01/01/happy-new-year/">Happy New Year</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2010/04/28/ubuntu-1004-change-is-here/">Ubuntu 10.04 Change is here!!!</a>
       </li>
     
   </ul>

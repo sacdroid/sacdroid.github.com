@@ -9,7 +9,7 @@
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="I wanted to download few regional (marathi) videos from youtube. I found a interesting and nicely written python script called youtube-dl.This &hellip;">
+  <meta name="description" content="During Diwali vacations, I learnt python language by reading &#8220;Python Programming: Introduction to Computer Science&#8221; by John M.Zelle, Ph. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,43 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/10/24/python-for-symbian/">Python for Symbian</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-10-24T00:54:00-04:00" pubdate data-updated="true">Oct 24<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+During Diwali vacations, I learnt python language by reading &#8220;Python Programming: Introduction to Computer Science&#8221; by      John M.Zelle, Ph.D, Its well written book with some nice examples which tries to explore power of python.<br />So I decided to write some useful programs in python. I found one interesting open source project from Nokia, Py60. through which you can write python programs for your mobile.<br /><br />Nokia has done great job by introducing <a href="http://wiki.opensource.nokia.com/projects/PyS60">py60.</a>  <blockquote>   <span style="font-style: italic;">&#8220;Python for S60 is Nokia&#8217;s port of the </span><a style="font-style: italic;" href="http://python.org/" class="external text" title="http://python.org/" rel="nofollow">Python</a><span style="font-style: italic;"> language to the </span><a style="font-style: italic;" href="http://s60.com/" class="external text" title="http://s60.com/" rel="nofollow">S60</a> smartphone platform. In addition to the standard features of the Python language, PyS60 provides access to many of the phone&#8217;s uniquely smartphone-y functions, such as camera, contacts, calendar, audio recording and playing, TCP/IP and Bluetooth communications and simple telephony.&#8221;<blockquote></blockquote></blockquote>  You can use emulator or your mobile phone (S60 platform) to run/test python programs. I use my Nokia N70 to run python and so far it&#8217;s great fun! You can write the program in your computer and transfer it to your mobile phone. There is an interactive console in the mobile phone so that you can write your program directly in the mobile phone. There is another blue-tooth based console which I haven&#8217;t tried yet (my bluetooth dongle is not working, I might have reached its data transfer limit :) ).<br /><br />Currently I am working on a project which will be used find cell phone location based on GSM information provided by service provider.<br />This project will leverage scripts provided <a href="http://code.google.com/p/nokia-gsm-location-hacks/">Nokia GSM location hacks</a>, to geocode  phone location.<br />Usabilty of this application will be to find nearest useful utilities based on your location. Imagine your are in unknown city and you run out of money  and you don&#8217;t know where is the nearest ATM, this project might help you.<br />Bye for now, will update you on status of project on next week.<br /><br /><br /><br /><blockquote></blockquote></div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -419,69 +456,9 @@ Whenever I write a class in java , First question comes to my mind,  Do I need S
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2007/10/11/java-concepts/">Java Concepts</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-10-11T02:41:00-04:00" pubdate data-updated="true">Oct 11<span>th</span>, 2007</time>
-        
-         | <a href="/blog/2007/10/11/java-concepts/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-They are some interesting concepts which make java more interesting. I will<br />present series of articles which will explain these concepts.<br /><br />Concept 1,<br />Can you guess what will be printed on the screen?<br /><br />class Test<br />{<br />public static void main(String[] args) {<br />Test inst_test = new Test();<br />int i1 = 2000;<br />int i2 = 2000;<br />int i3 = 2;<br />int i4 = 2;<br />Integer Ithree = new Integer(2); // 1<br />Integer Ifour = new Integer(2); // 2<br />System.out.println( Ithree == Ifour );<br />inst_test.method( i3 , i4 );<br />inst_test.method( i1 , i2 );<br />}<br />public void method( Integer i , Integer eye )<br />{<br />System.out.println(i == eye );<br />}<br />}<br /><br />When I first saw this code I was confident that it will give out put as,<br />false<br />false.<br />because == compares hashCode, not the value for wrapper classes.<br /><br />But When I checked it with my IDE, Surprisingly it was giving out put as,<br />true<br />false.<br /><br />After a bit of googling I found the reason,<br /><br />Certain ranges of values of wrapper classes are stored as immutable objects by the Java Virtual Machine.<br />Normally, when the primitive types are boxed into the wrapper types, the JVM allocates memory and creates a new object. But for some special cases, the JVM reuses the same object. The following is the list of primitives stored as immutable objects:<br />* boolean values true and false<br />* All byte values<br />* short values between -128 and 127<br />* int values between -128 and 127<br />* char in the range \u0000 to \u007F</div>
-<h2>Comments</h2>
-<div class='comments'>
-<div class='comment'>
-<div class='author'>Vaibhav Tulsyan</div>
-<div class='content'>
-Awesome! :D</div>
-</div>
-<div class='comment'>
-<div class='author'>Varsha</div>
-<div class='content'>
-Thanks for this post. I was not aware of this concept for Integers.</div>
-</div>
-<div class='comment'>
-<div class='author'>Sachin6870</div>
-<div class='content'>
-== does compare hashcode,<br />but for int values between -128 and 127 hash code is same.</div>
-</div>
-<div class='comment'>
-<div class='author'>mahesh</div>
-<div class='content'>
-class Test<br />{<br />public static void main(String[] args) {<br />Test inst_test = new Test();<br />int i1 = 130;<br />int i2 = 130;<br />int i3 = 2;<br />int i4 = 2;<br />Integer Ithree = new Integer(2); // 1<br />Integer Ifour = new Integer(2); // 2<br />System.out.println( Ithree.hashCode());<br />System.out.println( Ifour.hashCode());<br />inst_test.method( i3 , i4 );<br />inst_test.method( i1 , i2 );<br />}<br />public void method( Integer i , Integer eye )<br />{<br /> System.out.println( i.hashCode() == eye.hashCode());<br /> <br /> System.out.println( i == eye );<br /><br />}<br />}<br /><br />This shows that == does not checks hashCode.Isn&#8217;t it.</div>
-</div>
-</div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/5/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -501,6 +478,10 @@ class Test<br />{<br />public static void main(String[] args) {<br />Test inst_t
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/08/06/criscoredroid-is-back/">Criscoredroid- Live Cricket is back</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/31/eclipse-juno-rememberer-previously-open-file-tabs-under-visible-tabs/">Eclipse Juno : Rememberer previously open file tabs under visible tabs</a>
       </li>
     
@@ -514,10 +495,6 @@ class Test<br />{<br />public static void main(String[] args) {<br />Test inst_t
     
       <li class="post">
         <a href="/blog/2011/01/01/happy-new-year/">Happy New Year</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2010/04/28/ubuntu-1004-change-is-here/">Ubuntu 10.04 Change is here!!!</a>
       </li>
     
   </ul>

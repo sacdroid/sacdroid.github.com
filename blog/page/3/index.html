@@ -9,7 +9,7 @@
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="Google has released the source code for Chrome OS on Thursday. Although it is another Linux distrubtion, the applications will be running on Google &hellip;">
+  <meta name="description" content="After upgrade to Ubuntu Karmic, mouse clicks stopped in eclipse, my favourite IDE, mainly for submit buttons. Until today I used keyboard as &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,61 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after/">Mouse Clicks in Eclipse Does Not Work After Karmic Upgrade</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-24T04:33:00-05:00" pubdate data-updated="true">Nov 24<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+After upgrade to Ubuntu Karmic, mouse clicks stopped in <a href="http://www.eclipse.org/">eclipse</a>, my favourite IDE, mainly for submit buttons. Until today I used keyboard as alternative, but it was bit frustrating. <br /><br />  This issue raised because karmic brings version 2.18 of GTK+ to the desktop. GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, the GTK+ is suitable for projects ranging from small one-off tools to complete application suites.<br /><br />Eclipse assume that they can just operate on the X windows corresponding to their GDK windows without ever telling GDK, which causes some widgets to exhibit weird behaviour. <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287307">Bug 287307</a> was filed with the Eclipse foundation and this is fixed for the upcoming 3.6 release.<br /><br />Fortunately, the GTK+ people provide a switch to turn off the client side windows. So to work around the bug with Eclipse pre-3.6, just make sure you set environment variable GDK_NATIVE_WINDOWS=1  <br /> I created simple eclipse launcher script which will set this variable.<br /><br /><pre name="code" class="cpp"><br />#!/bin/sh<br />export GDK_NATIVE_WINDOWS=1<br />/home/sachin/opt/eclipse3.5/eclipse<br /><br /></pre><br /><br />and added it to /usr/bin.<br /><br />  Happy coding!!!</div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Anonymous</div>
+<div class='content'>
+Thanks Sachin!!!<br />I have been puzzling over this for a long time!!!  With your help, this finally worked!!!<br />Thank you again!</div>
+</div>
+<div class='comment'>
+<div class='author'>Anonymous</div>
+<div class='content'>
+Thanks a lot. Made my day.<br /><br />Igor</div>
+</div>
+<div class='comment'>
+<div class='author'>Heryy</div>
+<div class='content'>
+Thanks&#8230;<br />Worked for me too.</div>
+</div>
+</div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -427,43 +482,6 @@ If you can&#8217;t wait till 29th October,  to play with new Ubuntu release,  Re
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/10/24/python-for-symbian/">Python for Symbian</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-10-24T00:54:00-04:00" pubdate data-updated="true">Oct 24<span>th</span>, 2009</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-During Diwali vacations, I learnt python language by reading &#8220;Python Programming: Introduction to Computer Science&#8221; by      John M.Zelle, Ph.D, Its well written book with some nice examples which tries to explore power of python.<br />So I decided to write some useful programs in python. I found one interesting open source project from Nokia, Py60. through which you can write python programs for your mobile.<br /><br />Nokia has done great job by introducing <a href="http://wiki.opensource.nokia.com/projects/PyS60">py60.</a>  <blockquote>   <span style="font-style: italic;">&#8220;Python for S60 is Nokia&#8217;s port of the </span><a style="font-style: italic;" href="http://python.org/" class="external text" title="http://python.org/" rel="nofollow">Python</a><span style="font-style: italic;"> language to the </span><a style="font-style: italic;" href="http://s60.com/" class="external text" title="http://s60.com/" rel="nofollow">S60</a> smartphone platform. In addition to the standard features of the Python language, PyS60 provides access to many of the phone&#8217;s uniquely smartphone-y functions, such as camera, contacts, calendar, audio recording and playing, TCP/IP and Bluetooth communications and simple telephony.&#8221;<blockquote></blockquote></blockquote>  You can use emulator or your mobile phone (S60 platform) to run/test python programs. I use my Nokia N70 to run python and so far it&#8217;s great fun! You can write the program in your computer and transfer it to your mobile phone. There is an interactive console in the mobile phone so that you can write your program directly in the mobile phone. There is another blue-tooth based console which I haven&#8217;t tried yet (my bluetooth dongle is not working, I might have reached its data transfer limit :) ).<br /><br />Currently I am working on a project which will be used find cell phone location based on GSM information provided by service provider.<br />This project will leverage scripts provided <a href="http://code.google.com/p/nokia-gsm-location-hacks/">Nokia GSM location hacks</a>, to geocode  phone location.<br />Usabilty of this application will be to find nearest useful utilities based on your location. Imagine your are in unknown city and you run out of money  and you don&#8217;t know where is the nearest ATM, this project might help you.<br />Bye for now, will update you on status of project on next week.<br /><br /><br /><br /><blockquote></blockquote></div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -486,6 +504,10 @@ During Diwali vacations, I learnt python language by reading &#8220;Python Progr
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/08/06/criscoredroid-is-back/">Criscoredroid- Live Cricket is back</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/31/eclipse-juno-rememberer-previously-open-file-tabs-under-visible-tabs/">Eclipse Juno : Rememberer previously open file tabs under visible tabs</a>
       </li>
     
@@ -499,10 +521,6 @@ During Diwali vacations, I learnt python language by reading &#8220;Python Progr
     
       <li class="post">
         <a href="/blog/2011/01/01/happy-new-year/">Happy New Year</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2010/04/28/ubuntu-1004-change-is-here/">Ubuntu 10.04 Change is here!!!</a>
       </li>
     
   </ul>

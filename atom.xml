@@ -4,7 +4,7 @@
   <title><![CDATA[Techno]]></title>
   <link href="http://sacdroid.github.com/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-07-31T14:36:06-04:00</updated>
+  <updated>2012-08-06T16:38:01-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Criscoredroid- Live Cricket is back]]></title>
+    <link href="http://sacdroid.github.com/blog/2012/08/06/criscoredroid-is-back/"/>
+    <updated>2012-08-06T16:14:00-04:00</updated>
+    <id>http://sacdroid.github.com/blog/2012/08/06/criscoredroid-is-back</id>
+    <content type="html"><![CDATA[<p>During last cricket world cup, I developed cricket score android application named as cricscoredroid. I had taken this application off from android market for 6 months as there was not free score provider was available after world cup.</p>
+
+<p> Cricscoredroid was very popular during cricket world cup, it had 4.5 rating in android market and was installed by more than 25k users within 2 months of its release. Reason of its popularity was its very simple and fastest in android market. Also it has some unique notification features.</p>
+
+<p> Cricscoredroid is back in Google Play now with lots UI improvements. Cricscoredroid now features Android HOLO dark theme and Honeycomb styled Action Bar using <a href="http://www.holoeverywhere.com/">HoloEverywhere</a>  and <a href="http://actionbarsherlock.com/">ActionBarSherlock</a> . What this library does is that if you’re using your app in a device with Android 2.x, it gives you an ActionBar that is a copy of the real Honeycomb ActionBar, thanks to <a href="http://jakewharton.com/">Jake Wharton</a> , a guy who created this library.</p>
+
+<p> Screenshots of cricscoredroid with new Holo Dark theme,</p>
+
+<p><img src="https://dl.dropbox.com/u/43663434/screenshot-1344279841977.png"></p>
+
+<p><img src="https://dl.dropbox.com/u/43663434/screenshot-1344279861540.png"></p>
+
+<p><img src="https://dl.dropbox.com/u/43663434/screenshot-1344279980813.png"></p>
+
+<p>It is available on Google Play.
+Use it and rate!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Eclipse Juno : Rememberer previously open file tabs under visible tabs]]></title>
@@ -649,34 +673,6 @@ Are you wondering about what will happen to your email/chat accounts once you di
     <id>http://sacdroid.github.com/blog/2009/11/25/nokias-linux-based-phone-n900</id>
     <content type="html"><![CDATA[<div class='post'>
 Nokia has recently <a href="http://www.nokia.com/press/press-releases/showpressrelease?newsid=1337594">released</a> Linux based phone, <a href="http://en.wikipedia.org/wiki/Nokia_N900">N900</a>.<br /><br />   It uses Maemo as Linux distribution  which is a very old distribution . This is very very older to android. Checkout <a href="http://maemo.org/.">Maemo</a>.<br /> It may not even get launched in India. Nokia has stated &#8220;selected markets&#8221; in their press release. No tablet has been officially released by them in the past also here, which is bad news for Indian linux fans</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[mouse clicks in Eclipse does not work after Karmic upgrade]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after/"/>
-    <updated>2009-11-24T04:33:00-05:00</updated>
-    <id>http://sacdroid.github.com/blog/2009/11/24/mouse-clicks-in-eclipse-does-work-after</id>
-    <content type="html"><![CDATA[<div class='post'>
-After upgrade to Ubuntu Karmic, mouse clicks stopped in <a href="http://www.eclipse.org/">eclipse</a>, my favourite IDE, mainly for submit buttons. Until today I used keyboard as alternative, but it was bit frustrating. <br /><br />  This issue raised because karmic brings version 2.18 of GTK+ to the desktop. GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, the GTK+ is suitable for projects ranging from small one-off tools to complete application suites.<br /><br />Eclipse assume that they can just operate on the X windows corresponding to their GDK windows without ever telling GDK, which causes some widgets to exhibit weird behaviour. <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287307">Bug 287307</a> was filed with the Eclipse foundation and this is fixed for the upcoming 3.6 release.<br /><br />Fortunately, the GTK+ people provide a switch to turn off the client side windows. So to work around the bug with Eclipse pre-3.6, just make sure you set environment variable GDK_NATIVE_WINDOWS=1  <br /> I created simple eclipse launcher script which will set this variable.<br /><br /><pre name="code" class="cpp"><br />#!/bin/sh<br />export GDK_NATIVE_WINDOWS=1<br />/home/sachin/opt/eclipse3.5/eclipse<br /><br /></pre><br /><br />and added it to /usr/bin.<br /><br />  Happy coding!!!</div>
-<h2>Comments</h2>
-<div class='comments'>
-<div class='comment'>
-<div class='author'>Anonymous</div>
-<div class='content'>
-Thanks Sachin!!!<br />I have been puzzling over this for a long time!!!  With your help, this finally worked!!!<br />Thank you again!</div>
-</div>
-<div class='comment'>
-<div class='author'>Anonymous</div>
-<div class='content'>
-Thanks a lot. Made my day.<br /><br />Igor</div>
-</div>
-<div class='comment'>
-<div class='author'>Heryy</div>
-<div class='content'>
-Thanks&#8230;<br />Worked for me too.</div>
-</div>
-</div>
 ]]></content>
   </entry>
   
