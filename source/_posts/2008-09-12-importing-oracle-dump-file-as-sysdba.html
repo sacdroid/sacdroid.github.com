@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Importing oracle dump file as sysdba."
+date: 2008-09-12T00:11:00-07:00
+comments: false
+---
+
+<div class='post'>
+I wanted to import server dump file to my local system oracle 10g database,  I tried importing with following command on widnows command line,<br />D:\imp sys/password  file=test_stg.dmp fromuser=testusr04 touser=testusr04 <empty>commit=y<br />but it failed saying sys should be connected as sysdba,  hence  I modified it to<br />D:\imp sys/password  as sysdba file=</empty>test<empty>_stg.dmp fromuser=testusr04 touser=<empty> </empty></empty>testusr04 <empty><empty> commit=y<br />it did not work too.<br /><br />After bit of goggling I found following command which solved problem,<br /><br />D:\imp userid='sys/password@test as sysdba' file=d:\test.dmp fromuser=</empty></empty>testusr04 <empty><empty> touser=</empty></empty>testusr04<br /><empty><empty><br />Hope it helps to someone like me, who is not database expert.<br /><br />--Sachin</empty></empty></div>

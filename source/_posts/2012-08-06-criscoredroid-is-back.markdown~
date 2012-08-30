@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Criscoredroid- Live Cricket is back"
+date: 2012-08-06 16:14
+comments: true
+categories: 
+ - Live Cricket
+ - Android
+ - Google Play
+ - ActionBarSherlock
+ - HoloEverywhere
+---
+
+
+
+During last cricket world cup, I developed cricket score android application named as cricscoredroid. I had taken this application off from android market for 6 months now as there was not free score provider was available after world cup.
+
+ Cricscoredroid was very popular during cricket world cup, it had 4.5 rating in android market and was installed by more than 25k users within 2 months of its release. Reason of its popularity was its very simple and fastest in android market. Also it has some unique notification features.
+
+ Cricscoredroid is back in Google Play now with lots UI improvements. Cricscoredroid now features Android HOLO dark theme and Honeycomb styled Action Bar using <a href="http://www.holoeverywhere.com/">HoloEverywhere</a>  and <a href="http://actionbarsherlock.com/">ActionBarSherlock</a> . What this library does is that if you’re using your app in a device with Android 2.x, it gives you an ActionBar that is a copy of the real Honeycomb ActionBar, thanks to <a href="http://jakewharton.com/">Jake Wharton</a> , a guy who created this library.
+
+ It is available on  <a href="https://play.google.com/store/apps/details?id=com.samarth.cricscorereturn">Google Play</a> . 
+Use and rate it on google play!. Screenshots of cricscoredroid with new Holo Dark theme,
+
+{% img left https://dl.dropbox.com/u/43663434/screenshot-1344279841977.png %}
+
+{% img right https://dl.dropbox.com/u/43663434/screenshot-1344279861540.png %}
+
+{% img left https://dl.dropbox.com/u/43663434/screenshot-1344279980813.png %}
+
+{% img right https://dl.dropbox.com/u/43663434/screenshot-1344282509539.png %}
+
+
+<br/>
+
+
+Have fun!
+
+
+
+
+
+
+

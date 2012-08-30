@@ -1,0 +1,50 @@
+---
+layout: post
+title: "Failed to load JavaHL Library"
+date: 2012-07-26 12:27
+comments: true
+categories:
+ - java
+ - eclipse
+ - svn
+ - javahl
+ - Ubuntu 12.04
+ - subclipse
+
+---
+
+ Today after upgrading eclipse to juno(4.2) and installing subclipse 1.6, I got following error on Ubuntu 12.04 installtion,
+{% codeblock %}
+Failed to load JavaHL Library.
+    These are the errors that were encountered:
+    no libsvnjavahl-1 in java.library.path
+    no svnjavahl-1 in java.library.path
+    no svnjavahl in java.library.path
+    java.library.path = /usr/lib/jni:/lib
+{% endcodeblock %}
+
+
+I run into this error every time I upgrade eclipse as subclipse needs javahl library. Usually a fix is to install javahl from ubuntu repo,
+{% codeblock %}
+
+sudo apt-get install libsvn-java
+
+{% endcodeblock %}
+
+But this time it did not fix the issue, I got same error after restarting eclipse. 
+
+I found that javahl library location has been changed to `/usr/lib/x86_64-linux-gnu/jni` on ubuntu 64 (12.04) using find command 
+
+So updated `java.library.path` location in `ECLIPSE_HOM/eclipse.ini` file from
+{% codeblock %}
+-Djava.library.path=/usr/lib/jni
+{% endcodeblock %}
+
+to
+{% codeblock %}
+-Djava.library.path=/usr/lib/x86_64-linux-gnu/jni
+{% endcodeblock %}
+
+and that did the trick!
+
+

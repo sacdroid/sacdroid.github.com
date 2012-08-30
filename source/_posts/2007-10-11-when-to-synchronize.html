@@ -1,0 +1,9 @@
+---
+layout: post
+title: "When to Synchronize"
+date: 2007-10-11T00:26:00-07:00
+comments: false
+---
+
+<div class='post'>
+Whenever I write a class in java , First question comes to my mind,  Do I need Synchronization here.  Sometimes, when writing a class, we don't know if it is going to be used in a shared context or not. Should I add overhead of Synchronization  to this class?<br />  If you are in doubt I would prefer not to add Synchronization.  Because synchronization is too expensive in java. Even when a program contains only a single thread running on a single processor, a synchronized method call is still slower than an unsynchronized method call. If the synchronization actually requires maintaining the lock, the performance penalty is substantially greater, as there will be several thread switches and system calls required.</div>

@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Use Maven 2 to download dependency sources"
+date: 2008-10-10T00:02:00-07:00
+comments: false
+---
+
+<div class='post'>
+There are two ways to download dependency source<br /><br />1)This will generate Eclipse project files with source code attached to eclipse classpath.<br /> >maven eclipse:eclipse -downloadSource=true<br /><br /> if you also want java documentation to be<br />added to your classpath, use,<br /><br />>maven eclipse:eclipse -downloadJavadoc=true.   <br /><br />2)If you are using some other IDE, use following maven target,<br />it will download source jars at local M2 repository.<br /><br />>mvn dependency:sources<br /><br />Maven rocks!!!</div>
+<h2>Comments</h2>
+<div class='comments'>
+<div class='comment'>
+<div class='author'>Neeraj</div>
+<div class='content'>
+Don't get mislead by his mechanical engineering background.This guy has really got the ability to accomplish and contribute something great to software technology.I am sure with his own innovation and caliber, he is gonna rock the java world!!!</div>
+</div>
+</div>

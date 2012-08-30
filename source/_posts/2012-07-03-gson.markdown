@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Expected BEGIN_ARRAY but was BEGIN_OBJECT"
+date: 2012-07-03 19:54
+comments: true
+categories:
+ - GSON
+ - JSON
+ - Java
+
+---
+
+I had a problem with <a href="http://code.google.com/p/google-gson/">Google GSON </a>  deserialization. JSON data which I was trying to parse using GSON library looks like this `{"matches":{"matchId":"bla" "score" : "bla"}}` and when there is more roles available it looks like this `{"matches":[{"matchId":"bla" "score" : "bla"}{"matchId":"hihi" "score" : "hihi"}]}`. So sometimes
+"matches" data comes as "Object" or "ARRAY" format depending upon number of matches available.
+
+GSON fails as expected to parse this in to Java class which has field of type List class, When JSON data comes with matches as "Object" format, it throws exception "Expected BEGIN_ARRAY but was BEGIN_OBJECT".
+ 
+Source JSON data it self is bogus here, correct fix should be at JSON generator which should always return ARRAY format for array objects irrespective of number of objects being sent.
+
+Unfortunately I don't have access to JSON response generator, so I decided to write own GSON's TypeAdapter implementation for List type which handles this single instance case, deserializes it and then transform into an List and set it on the field, making it uniform.
+
+Following is implementation of ArrayAdapterFactory,
+ 
+
+{% include_code ArrayAdapter.java %}
+{% include_code ArrayAdapterFactory.java %}
+
+While constructing GSON instance, I assigned TypeAdapterFactory with ArrayAdapterFactory to GsonBuilder,
+
+{% codeblock %}
+Gson gson = new GsonBuilder().registerTypeAdapterFactory(new ArrayAdapterFactory()).create();
+{% endcodeblock %}
+
+
+
+
+
+
+		
+
+
+ 
