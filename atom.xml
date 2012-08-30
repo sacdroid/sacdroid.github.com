@@ -4,7 +4,7 @@
   <title><![CDATA[Techno]]></title>
   <link href="http://sacdroid.github.com/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-08-30T15:09:11-04:00</updated>
+  <updated>2012-08-30T15:10:58-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -25,17 +25,19 @@
 <p>  Garagesaledroid which lets you to find garage sales near you. It talks to appengine service which actually aggregates the sale data from various site together as result you get large database of sales in this app. Following is the list of features,</p>
 
 <p>Current features:
-1. Find garage sale near you using GPS or preferred location.
-2. Filter sale by distance (aerial), sale day, item or location.
-3. View sale details and get driving direction or navigation instructions.
-4. View sales on google maps with detailed map balloon.
-5. Aggregated large sale database.</p>
++
+-1. Find garage sale near you using GPS or preferred location.
+-2. Filter sale by distance (aerial), sale day, item or location.
+-3. View sale details and get driving direction or navigation instructions.
+-4. View sales on google maps with detailed map balloon.
+-5. Aggregated large sale database.</p>
 
 <p>Upcoming features:
-1. Save and organize Favourite sale
-2. Get Real time notifications for newly added sales.
-3. Set reminders for sale dates.
-4. and You can also suggest new feature!</p>
++
+-1. Save and organize Favourite sale
+-2. Get Real time notifications for newly added sales.
+-3. Set reminders for sale dates.
+-4. and You can also suggest new feature!</p>
 
 <p><a href="http://play.google.com/store/apps/details?id=com.samarth.garagesale">
 <img class="center" src="http://www.android.com/images/brand/get_it_on_play_logo_large.png">
