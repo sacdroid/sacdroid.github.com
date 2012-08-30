@@ -4,7 +4,7 @@
   <title><![CDATA[Category: subversion | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/subversion/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-08-30T15:23:42-04:00</updated>
+  <updated>2012-08-30T15:29:28-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -20,54 +20,69 @@
     <id>http://sacdroid.github.com/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic</id>
     <content type="html"><![CDATA[<p>Ubuntu Karmic includes 1.6.x version of Subversion but our source control server is not upgraded to 1.6. Its still in 1.5 version. Don't ask me why I am interested in older versions of things, Mainly I work with remote team and SVN server is also hosted remotely hence I'm forced to consider downgrading my version of subversion so that my local working copy wont get corrupted.<br /><br />First remove 1.6 version of svn from karmic installation,</p>
 
-<p>{% codeblock %}
-sachin@sachin-laptop:~/Utility/utilscript$ svn --version
-svn, version 1.6.5 (r38866)
-sachin@sachin-laptop:~$ sudo apt-get remove subversion
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~/Utility/utilscript$ svn --version
+</span><span class='line'>svn, version 1.6.5 (r38866)
+</span><span class='line'>sachin@sachin-laptop:~$ sudo apt-get remove subversion</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Ubuntu Januty contains Subversion 1.5 in security packages, hence add jaunt package entry to your /etc/apt/sources.list,
-{% codeblock %}
-deb http://security.ubuntu.com/ubuntu jaunty-security main
-{% endcodeblock %}</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>deb http://security.ubuntu.com/ubuntu jaunty-security main</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Check if apt-get can see 1.5 version of subversion,
-{% codeblock %}
-sachin@sachin-laptop:~$ sudo apt-cache showpkg subversion
-Package: subversion
-Versions:
-1.6.5dfsg-1ubuntu1 (/var/lib/apt/lists/in.archive.ubuntu.com_ubuntu_dists_karmic_main_binary-i386_Packages) (/var/lib/dpkg/status)
-Description Language:         File: /var/lib/apt/lists/in.archive.ubuntu.com_ubuntu_dists_karmic_main_binary-i386_Packages
-MD5: 15da1bb51fb2e9ea5e25b3a489b864d9
-1.5.4dfsg1-1ubuntu2.1 (/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_jaunty-security_main_binary-i386_Packages)
-Description Language:
-File: /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_jaunty-security_main_binary-i386_Packages
-MD5: 15da1bb51fb2e9ea5e25b3a489b864d9
-{% endcodeblock %}</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ sudo apt-cache showpkg subversion
+</span><span class='line'>Package: subversion
+</span><span class='line'>Versions:
+</span><span class='line'>1.6.5dfsg-1ubuntu1 (/var/lib/apt/lists/in.archive.ubuntu.com_ubuntu_dists_karmic_main_binary-i386_Packages) (/var/lib/dpkg/status)
+</span><span class='line'>Description Language:         File: /var/lib/apt/lists/in.archive.ubuntu.com_ubuntu_dists_karmic_main_binary-i386_Packages
+</span><span class='line'>MD5: 15da1bb51fb2e9ea5e25b3a489b864d9
+</span><span class='line'>1.5.4dfsg1-1ubuntu2.1 (/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_jaunty-security_main_binary-i386_Packages)
+</span><span class='line'>Description Language:
+</span><span class='line'>File: /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_jaunty-security_main_binary-i386_Packages
+</span><span class='line'>MD5: 15da1bb51fb2e9ea5e25b3a489b864d9</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Quick look at man pages of apt-get showed me how to specifiy revision using "=", When I  first time tried to install 1.5.4dfsg1-1ubuntu2.1, it failed,
-{% codeblock %}
-sachin@sachin-laptop:~$ sudo apt-get install subversion=1.5.4dfsg1-1ubuntu2.1
-Reading package lists... Done
-Building dependency tree
-Reading state information... Done
-Some packages could not be installed. This may mean that you have requested an impossible situation or if you are using the unstable
-distribution that some required packages have not yet been created or been moved out of Incoming. The following information may help to resolve the situation: The following packages have unmet dependencies: subversion: Depends: libsvn1 (= 1.5.4dfsg1-1ubuntu2.1) but 1.6.5dfsg-1ubuntu1 is to be installed E: Broken packages</p>
-
-<p>{% endcodeblock %}</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ sudo apt-get install subversion=1.5.4dfsg1-1ubuntu2.1
+</span><span class='line'>Reading package lists... Done
+</span><span class='line'>Building dependency tree
+</span><span class='line'>Reading state information... Done
+</span><span class='line'>Some packages could not be installed. This may mean that you have requested an impossible situation or if you are using the unstable
+</span><span class='line'>distribution that some required packages have not yet been created or been moved out of Incoming. The following information may help to resolve the situation: The following packages have unmet dependencies: subversion: Depends: libsvn1 (= 1.5.4dfsg1-1ubuntu2.1) but 1.6.5dfsg-1ubuntu1 is to be installed E: Broken packages&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>So you need to older version of libsvn1 to comply with subversion version,
-{% codeblock %}
-sachin@sachin-laptop:~$ sudo apt-get install libsvn1=1.5.4dfsg1-1ubuntu2.1
-{% endcodeblock %}
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ sudo apt-get install libsvn1=1.5.4dfsg1-1ubuntu2.1</span></code></pre></td></tr></table></div></figure></notextile></div>
 and now subversion,
 sachin@sachin-laptop:~$ sudo apt-get install subversion=1.5.4dfsg1-1ubuntu2.1
 here you go, check svn version,
-{% codeblock %}
-sachin@sachin-laptop:~$ svn --version
-version 1.5.4 (r33841)
-compiled Aug  7 2009, 01:44:11
-{% endcodeblock %}</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ svn --version
+</span><span class='line'>version 1.5.4 (r33841)
+</span><span class='line'>compiled Aug  7 2009, 01:44:11</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Happy coding...</p>
 ]]></content>

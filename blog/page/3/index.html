@@ -9,7 +9,7 @@
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="Nokia has recently released Linux based phone, N900. It uses Maemo as Linux distribution which is a very old distribution . This is very very older &hellip;">
+  <meta name="description" content="Are you wondering about what will happen to your email/chat accounts once you die? Well, I remember if you don&#8217;t use your account for some &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,43 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/11/25/what-will-happen-to-your-email-accounts/">What Will Happen to Your Email Accounts When You Die?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-25T05:40:00-05:00" pubdate data-updated="true">Nov 25<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+Are you wondering about what will happen to your email/chat accounts once you die? <br /><br />  Well, I remember if you don&#8217;t use your account for some period of time or so, then provider terminates it, and, in fact, having asked around all the majors - Gmail, Yahoo Mail, Hotmail and Twitter, that does seem to be largely the case. Here&#8217;s how it runs.,<br /><br />Gmail<br /><br />Google will terminate your account in accordance with the terms of service if you fail to login to your account for a period of nine months is the phrase I was looking for along with the fact that people can actively delete their accounts.<br /><br />Yahoo! Mail<br /><br />Yahoo! was also most accommodating. The answer was very different though. It seems, with their service, that once your name has gone, it&#8217;s gone forever. As it stands, inactive accounts are not terminated and will lie idle indefinitely.<br /><br /><br />Twitter<br /><br />Accounts that are inactive for more than 6 months may be removed without further notice.</div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -445,43 +482,6 @@ Found best &#8220;things to do after installing Ubuntu karmic&#8221; post I&#821
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/11/03/gstreamer-version-mismatch-after/">Gstreamer Version Mismatch After Upgrade to Ubuntu 9.10.</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-11-03T02:29:00-05:00" pubdate data-updated="true">Nov 3<span>rd</span>, 2009</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-Thanks/congratulations for Karmic realese to Ubuntu Dev team.<br /><br /> I was running into issues after upgrading to Ubuntu 9.10 Karmic:<br /><br /> 1) Empathy, exaile was not starting up. Issue was related to gstreamer versions.<br />  <div class="smallfont" style="margin-bottom: 2px;">Code:</div><br /><pre name="code" class="Cpp"><br />sachin@sachin-laptop:~/envista/VPN$ empathy<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstffmpeg.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstschro.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstplaybin.so': /usr/lib/gstreamer-0.10/libgstplaybin.so: undefined symbol: gst_stream_volume_get_type<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstvolume.so': /usr/lib/gstreamer-0.10/libgstvolume.so: undefined symbol: gst_stream_volume_get_type<br /><br />(empathy:30994): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstpulse.so': /usr/lib/gstreamer-0.10/libgstpulse.so: undefined symbol: gst_stream_volume_get_type<br />empathy: symbol lookup error: /usr/lib/python2.6/dist-packages/gst-0.10/gst/interfaces.so: undefined symbol: gst_stream_volume_format_get_type<br />Error re-scanning registry , child terminated by signal<br />Run 'empathy --help' to see a full list of available command line options.<br /><br />(empathy:30993): empathy-WARNING **: Error in empathy init: Error re-scanning registry , child terminated by signal<br />sachin@sachin-laptop:~/envista/VPN$ exaile <br />INFO    : Loading Exaile 0.3.0.1...<br />INFO    : Loading settings...<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstffmpeg.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstschro.so': /usr/lib/libschroedinger-1.0.so.0: undefined symbol: oil_function_class_ptr_avg2_32xn_u8<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstplaybin.so': /usr/lib/gstreamer-0.10/libgstplaybin.so: undefined symbol: gst_stream_volume_get_type<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstvolume.so': /usr/lib/gstreamer-0.10/libgstvolume.so: undefined symbol: gst_stream_volume_get_type<br /><br />(exaile.py:31000): GStreamer-WARNING **: Failed to load plugin '/usr/lib/gstreamer-0.10/libgstpulse.so': /usr/lib/gstreamer-0.10/libgstpulse.so: undefined symbol: gst_stream_volume_get_type<br />AttributeError: 'module' object has no attribute 'Element'<br />python: symbol lookup error: /usr/lib/python2.6/dist-packages/gst-0.10/gst/interfaces.so: undefined symbol: gst_stream_volume_format_get_type<br />sachin@sachin-laptop:~/envista/VPN$<br /></pre><br /><br />Reinstalling whole gstreamer packages solved issue.<br /> <br /> Remove gstreamer packages including plug ins.<br /><pre name="code" class="Cpp"><br />sudo apt-get remove gstreamer0.10-fluendo-mp3 gstreamer0.10-pitfdll gstreamer0.10-plugins-bad<br /> gstreamer0.10-plugins-bad-multiverse gstreamer0.10-plugins-base gstreamer0.10-plugins-base-apps<br /> gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-ugly-multiverse<br /></pre><br /><br />Remove references to gstreamer libs.<br /><pre name="code" class="Cpp"><br />sachin@sachin-laptop:/usr/local/lib$ sudo rm -rf libgst*<br /></pre><br /><br /> Install it back, make sure you have enabled all the source repositories. <br /><pre name="code" class="Cpp"><br />sudo apt-get install gstreamer0.10-fluendo-mp3 gstreamer0.10-pitfdll gstreamer0.10-plugins-bad <br />gstreamer0.10-plugins-bad-multiverse gstreamer0.10-plugins-base gstreamer0.10-plugins-base-apps <br />gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-ugly-multiverse<br /></pre></div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -504,6 +504,10 @@ Thanks/congratulations for Karmic realese to Ubuntu Dev team.<br /><br /> I was 
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/08/30/test/">test</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/08/30/introducing-garagesaledroid/">Introducing Garagesaledroid</a>
       </li>
     
@@ -517,10 +521,6 @@ Thanks/congratulations for Karmic realese to Ubuntu Dev team.<br /><br /> I was 
     
       <li class="post">
         <a href="/blog/2012/07/26/failed-to-load-javahl-library/">Failed to load JavaHL Library</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/03/gson/">Expected BEGIN_ARRAY but was BEGIN_OBJECT</a>
       </li>
     
   </ul>

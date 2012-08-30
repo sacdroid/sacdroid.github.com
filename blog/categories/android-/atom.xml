@@ -4,7 +4,7 @@
   <title><![CDATA[Category: android, | Techno]]></title>
   <link href="http://sacdroid.github.com/blog/categories/android-/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-08-30T15:23:42-04:00</updated>
+  <updated>2012-08-30T15:29:28-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -46,16 +46,16 @@
 
 
 <p><a href="http://play.google.com/store/apps/details?id=com.samarth.garagesale">
-{% img center http://www.android.com/images/brand/get_it_on_play_logo_large.png %}
+<img class="center" src="http://www.android.com/images/brand/get_it_on_play_logo_large.png">
 </a></p>
 
 <p>Following are some screenshots from application:</p>
 
-<p>{% img left https://dl.dropbox.com/u/43663434/garagesaledroid/ad/Screenshot_2012-08-27-17-20-53.png %}</p>
+<p><img class="left" src="https://dl.dropbox.com/u/43663434/garagesaledroid/ad/Screenshot_2012-08-27-17-20-53.png"></p>
 
-<p>{% img right https://dl.dropbox.com/u/43663434/garagesaledroid/ad/Screenshot_2012-08-27-17-21-03.png %}</p>
+<p><img class="right" src="https://dl.dropbox.com/u/43663434/garagesaledroid/ad/Screenshot_2012-08-27-17-21-03.png"></p>
 
-<p>{% img left https://dl.dropbox.com/u/43663434/garagesaledroid/ad/Screenshot_2012-08-27-17-21-36.png %}</p>
+<p><img class="left" src="https://dl.dropbox.com/u/43663434/garagesaledroid/ad/Screenshot_2012-08-27-17-21-36.png"></p>
 
 <p>Happy Shopping.</p>
 
