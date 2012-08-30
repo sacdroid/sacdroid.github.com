@@ -9,7 +9,7 @@
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="They are some interesting concepts which make java more interesting. I willpresent series of articles which will explain these concepts.Concept 1, &hellip;">
+  <meta name="description" content="Whenever I write a class in java , First question comes to my mind, Do I need Synchronization here. Sometimes, when writing a class, we don&#8217;t &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,43 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2007/10/11/when-to-synchronize/">When to Synchronize</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-10-11T03:26:00-04:00" pubdate data-updated="true">Oct 11<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='post'>
+Whenever I write a class in java , First question comes to my mind,  Do I need Synchronization here.  Sometimes, when writing a class, we don&#8217;t know if it is going to be used in a shared context or not. Should I add overhead of Synchronization  to this class?<br />  If you are in doubt I would prefer not to add Synchronization.  Because synchronization is too expensive in java. Even when a program contains only a single thread running on a single processor, a synchronized method call is still slower than an unsynchronized method call. If the synchronization actually requires maintaining the lock, the performance penalty is substantially greater, as there will be several thread switches and system calls required.</div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -160,6 +197,10 @@ class Test<br />{<br />public static void main(String[] args) {<br />Test inst_t
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/08/30/introducing-garagesaledroid/">Introducing Garagesaledroid</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/08/06/criscoredroid-is-back/">Criscoredroid- Live Cricket is back</a>
       </li>
     
@@ -173,10 +214,6 @@ class Test<br />{<br />public static void main(String[] args) {<br />Test inst_t
     
       <li class="post">
         <a href="/blog/2012/07/03/gson/">Expected BEGIN_ARRAY but was BEGIN_OBJECT</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/01/01/happy-new-year/">Happy New Year</a>
       </li>
     
   </ul>

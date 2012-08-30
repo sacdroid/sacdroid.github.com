@@ -4,7 +4,7 @@
   <title><![CDATA[Techno]]></title>
   <link href="http://sacdroid.github.com/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-08-06T17:12:02-04:00</updated>
+  <updated>2012-08-30T14:53:47-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Introducing Garagesaledroid]]></title>
+    <link href="http://sacdroid.github.com/blog/2012/08/30/introducing-garagesaledroid/"/>
+    <updated>2012-08-30T13:12:00-04:00</updated>
+    <id>http://sacdroid.github.com/blog/2012/08/30/introducing-garagesaledroid</id>
+    <content type="html"><![CDATA[<p>After I moved to United States, I found interesting concept here to sell unused items in your home, called as Garage Sale or Yard sale. The garage sale sell the used thing but it&#8217;s still good quality. You can buy something with the cheap price over there. You can save much money from buying yard sale.</p>
+
+<p> But its bit hard to find garage sale which will interesting and near to you, so I decided to use my android development skills to write app to do this which will use current GPS or user entered location to find garage sales and allow search using item names like chairs, books etc. Initial work of android application is complete and its google play now, named as &#8220;Garagesaledroid&#8221;,</p>
+
+<p>  Garagesaledroid which lets you to find garage sales near you. It talks to appengine service which actually aggregates the sale data from various site together as result you get large database of sales in this app. Following is the list of features,</p>
+
+<p>Current features:
+1. Find garage sale near you using GPS or preferred location.
+2. Filter sale by distance (aerial), sale day, item or location.
+3. View sale details and get driving direction or navigation instructions.
+4. View sales on google maps with detailed map balloon.
+5. Aggregated large sale database.</p>
+
+<p>Upcoming features:
+1. Save and organize Favourite sale
+2. Get Real time notifications for newly added sales.
+3. Set reminders for sale dates.
+4. and You can also suggest new feature!</p>
+
+<p><a href="http://play.google.com/store/apps/details?id=com.samarth.garagesale">
+  &lt;img alt=&#8221;Get it on Google Play&#8221;</p>
+
+<pre><code>   src="http://www.android.com/images/brand/get_it_on_play_logo_large.png" /&gt;
+</code></pre>
+
+<p></a></p>
+
+<p>Happy Shopping.</p>
+
+<p>Thanks,</p>
+
+<p>Sachin.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Criscoredroid- Live Cricket is back]]></title>
@@ -668,16 +708,6 @@ Great desire&#8230; really appreciate it..</div>
     <id>http://sacdroid.github.com/blog/2009/11/25/what-will-happen-to-your-email-accounts</id>
     <content type="html"><![CDATA[<div class='post'>
 Are you wondering about what will happen to your email/chat accounts once you die? <br /><br />  Well, I remember if you don&#8217;t use your account for some period of time or so, then provider terminates it, and, in fact, having asked around all the majors - Gmail, Yahoo Mail, Hotmail and Twitter, that does seem to be largely the case. Here&#8217;s how it runs.,<br /><br />Gmail<br /><br />Google will terminate your account in accordance with the terms of service if you fail to login to your account for a period of nine months is the phrase I was looking for along with the fact that people can actively delete their accounts.<br /><br />Yahoo! Mail<br /><br />Yahoo! was also most accommodating. The answer was very different though. It seems, with their service, that once your name has gone, it&#8217;s gone forever. As it stands, inactive accounts are not terminated and will lie idle indefinitely.<br /><br /><br />Twitter<br /><br />Accounts that are inactive for more than 6 months may be removed without further notice.</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Nokia's Linux based Phone, N900]]></title>
-    <link href="http://sacdroid.github.com/blog/2009/11/25/nokias-linux-based-phone-n900/"/>
-    <updated>2009-11-25T02:32:00-05:00</updated>
-    <id>http://sacdroid.github.com/blog/2009/11/25/nokias-linux-based-phone-n900</id>
-    <content type="html"><![CDATA[<div class='post'>
-Nokia has recently <a href="http://www.nokia.com/press/press-releases/showpressrelease?newsid=1337594">released</a> Linux based phone, <a href="http://en.wikipedia.org/wiki/Nokia_N900">N900</a>.<br /><br />   It uses Maemo as Linux distribution  which is a very old distribution . This is very very older to android. Checkout <a href="http://maemo.org/.">Maemo</a>.<br /> It may not even get launched in India. Nokia has stated &#8220;selected markets&#8221; in their press release. No tablet has been officially released by them in the past also here, which is bad news for Indian linux fans</div>
 ]]></content>
   </entry>
   
