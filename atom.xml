@@ -4,7 +4,7 @@
   <title><![CDATA[Techno]]></title>
   <link href="http://sacdroid.github.com/atom.xml" rel="self"/>
   <link href="http://sacdroid.github.com/"/>
-  <updated>2012-08-30T14:53:47-04:00</updated>
+  <updated>2012-08-30T15:00:44-04:00</updated>
   <id>http://sacdroid.github.com/</id>
   <author>
     <name><![CDATA[Sachin Patil]]></name>
@@ -38,12 +38,8 @@
 4. and You can also suggest new feature!</p>
 
 <p><a href="http://play.google.com/store/apps/details?id=com.samarth.garagesale">
-  &lt;img alt=&#8221;Get it on Google Play&#8221;</p>
-
-<pre><code>   src="http://www.android.com/images/brand/get_it_on_play_logo_large.png" /&gt;
-</code></pre>
-
-<p></a></p>
+<img class="center" src="http://www.android.com/images/brand/get_it_on_play_logo_large.png">
+</a></p>
 
 <p>Happy Shopping.</p>
 
