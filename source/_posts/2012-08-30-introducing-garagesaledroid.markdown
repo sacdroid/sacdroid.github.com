@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing Garagesaledroid"
-date: 2012-08-30 13:12
+date: 2012-08-30 13:15
 comments: true
 categories: android, garage, sale, yard
 ---
