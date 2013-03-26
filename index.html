@@ -9,7 +9,7 @@
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="After I moved to United States, I found interesting concept here to sell unused items in your home, called as Garage Sale or Yard sale. The garage &hellip;">
+  <meta name="description" content="Recently I am working on product where I have been assigned to some interesting charting related tasks. As part of an assignment, I needed to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,54 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/26/python-tips/">Batch Convert PNG Into SVG Using Python</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-26T01:17:00-04:00" pubdate data-updated="true">Mar 26<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/03/26/python-tips/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p> Recently I am working on product where I have been assigned to some interesting charting related tasks. As part of an assignment, I needed to convert bunch of PNGs to SVGs with embedded base64 png image as charting API I was working on written to accept SVG only so I wrote following python script which does this bulk conversion.</p>
+
+<p>File /home/sachin/envista/octopress/source/downloads/code/png2svg.py could not be found</p>
+
+<p> Basically we will be converting PNG image to base64 format string and we will be using it an SVG using the template String by string concatenation. A Just run this script in directory where you have your pngs.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-VPCF226FM:~/download/icons$ python png2svg.py</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Life is short - you need Python!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -726,108 +774,6 @@ Recently MS <a href="http://news.bbc.co.uk/2/hi/technology/8460819.stm">admitted
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic/">Install Subversion 1.5 on Ubuntu Karmic</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-01-15T01:34:00-05:00" pubdate data-updated="true">Jan 15<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">Ubuntu Karmic includes 1.6.x version of Subversion but our source control server is not upgraded to 1.6. Its still in 1.5 version. Don&#8217;t ask me why I am interested in older versions of things, Mainly I work with remote team and SVN server is also hosted remotely hence I&#8217;m forced to consider downgrading my version of subversion so that my local working copy wont get corrupted.<br /><br />First remove 1.6 version of svn from karmic installation,
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~/Utility/utilscript$ svn --version
-</span><span class='line'>svn, version 1.6.5 (r38866)
-</span><span class='line'>sachin@sachin-laptop:~$ sudo apt-get remove subversion</span></code></pre></td></tr></table></div></figure>
-
-Ubuntu Januty contains Subversion 1.5 in security packages, hence add jaunt package entry to your /etc/apt/sources.list,
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>deb http://security.ubuntu.com/ubuntu jaunty-security main</span></code></pre></td></tr></table></div></figure>
-
-Check if apt-get can see 1.5 version of subversion,
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ sudo apt-cache showpkg subversion
-</span><span class='line'>Package: subversion
-</span><span class='line'>Versions:
-</span><span class='line'>1.6.5dfsg-1ubuntu1 (/var/lib/apt/lists/in.archive.ubuntu.com_ubuntu_dists_karmic_main_binary-i386_Packages) (/var/lib/dpkg/status)
-</span><span class='line'>Description Language:         File: /var/lib/apt/lists/in.archive.ubuntu.com_ubuntu_dists_karmic_main_binary-i386_Packages
-</span><span class='line'>MD5: 15da1bb51fb2e9ea5e25b3a489b864d9
-</span><span class='line'>1.5.4dfsg1-1ubuntu2.1 (/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_jaunty-security_main_binary-i386_Packages)
-</span><span class='line'>Description Language:
-</span><span class='line'>File: /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_jaunty-security_main_binary-i386_Packages
-</span><span class='line'>MD5: 15da1bb51fb2e9ea5e25b3a489b864d9</span></code></pre></td></tr></table></div></figure>
-
-Quick look at man pages of apt-get showed me how to specifiy revision using &#8220;=&#8221;, When I  first time tried to install 1.5.4dfsg1-1ubuntu2.1, it failed,
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ sudo apt-get install subversion=1.5.4dfsg1-1ubuntu2.1
-</span><span class='line'>Reading package lists... Done
-</span><span class='line'>Building dependency tree
-</span><span class='line'>Reading state information... Done
-</span><span class='line'>Some packages could not be installed. This may mean that you have requested an impossible situation or if you are using the unstable
-</span><span class='line'>distribution that some required packages have not yet been created or been moved out of Incoming. The following information may help to resolve the situation: The following packages have unmet dependencies: subversion: Depends: libsvn1 (= 1.5.4dfsg1-1ubuntu2.1) but 1.6.5dfsg-1ubuntu1 is to be installed E: Broken packages</span></code></pre></td></tr></table></div></figure>
-
-So you need to older version of libsvn1 to comply with subversion version,
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ sudo apt-get install libsvn1=1.5.4dfsg1-1ubuntu2.1</span></code></pre></td></tr></table></div></figure>
-and now subversion,
-sachin@sachin-laptop:~$ sudo apt-get install subversion=1.5.4dfsg1-1ubuntu2.1
-here you go, check svn version,
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ svn --version
-</span><span class='line'>version 1.5.4 (r33841)
-</span><span class='line'>compiled Aug  7 2009, 01:44:11</span></code></pre></td></tr></table></div></figure>
-
-Happy coding&#8230;
-
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -850,6 +796,10 @@ Happy coding&#8230;
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/03/26/python-tips/">Batch Convert PNG into SVG using python</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/08/30/introducing-garagesaledroid/">Introducing Garagesaledroid</a>
       </li>
     
@@ -863,10 +813,6 @@ Happy coding&#8230;
     
       <li class="post">
         <a href="/blog/2012/07/26/failed-to-load-javahl-library/">Failed to load JavaHL Library</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/03/gson/">Expected BEGIN_ARRAY but was BEGIN_OBJECT</a>
       </li>
     
   </ul>
@@ -936,7 +882,7 @@ Happy coding&#8230;
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Sachin Patil -
+  Copyright &copy; 2013 - Sachin Patil -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

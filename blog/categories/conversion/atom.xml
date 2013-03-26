@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: conversion | Techno]]></title>
+  <link href="http://sacdroid.github.com/blog/categories/conversion/atom.xml" rel="self"/>
+  <link href="http://sacdroid.github.com/"/>
+  <updated>2013-03-26T01:56:51-04:00</updated>
+  <id>http://sacdroid.github.com/</id>
+  <author>
+    <name><![CDATA[Sachin Patil]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Batch Convert PNG into SVG using python]]></title>
+    <link href="http://sacdroid.github.com/blog/2013/03/26/python-tips/"/>
+    <updated>2013-03-26T01:17:00-04:00</updated>
+    <id>http://sacdroid.github.com/blog/2013/03/26/python-tips</id>
+    <content type="html"><![CDATA[<p> Recently I am working on product where I have been assigned to some interesting charting related tasks. As part of an assignment, I needed to convert bunch of PNGs to SVGs with embedded base64 png image as charting API I was working on written to accept SVG only so I wrote following python script which does this bulk conversion.</p>
+
+<p>File /home/sachin/envista/octopress/source/downloads/code/png2svg.py could not be found</p>
+
+<p> Basically we will be converting PNG image to base64 format string and we will be using it an SVG using the template String by string concatenation. A Just run this script in directory where you have your pngs.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-VPCF226FM:~/download/icons$ python png2svg.py</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Life is short - you need Python!</p>
+]]></content>
+  </entry>
+  
+</feed>

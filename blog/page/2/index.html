@@ -9,7 +9,7 @@
   <meta name="author" content="Sachin Patil">
 
   
-  <meta name="description" content="Last sunday I got mail from Google Wave team saying, &#8220;Recently, you applied for a Google Wave developer sandbox account. Yoursandbox account &hellip;">
+  <meta name="description" content="Ubuntu Karmic includes 1.6.x version of Subversion but our source control server is not upgraded to 1.6. Its still in 1.5 version. Don&#8217;t ask me &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,108 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/01/15/install-subversion-15-on-ubuntu-karmic/">Install Subversion 1.5 on Ubuntu Karmic</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-15T01:34:00-05:00" pubdate data-updated="true">Jan 15<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">Ubuntu Karmic includes 1.6.x version of Subversion but our source control server is not upgraded to 1.6. Its still in 1.5 version. Don&#8217;t ask me why I am interested in older versions of things, Mainly I work with remote team and SVN server is also hosted remotely hence I&#8217;m forced to consider downgrading my version of subversion so that my local working copy wont get corrupted.<br /><br />First remove 1.6 version of svn from karmic installation,
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~/Utility/utilscript$ svn --version
+</span><span class='line'>svn, version 1.6.5 (r38866)
+</span><span class='line'>sachin@sachin-laptop:~$ sudo apt-get remove subversion</span></code></pre></td></tr></table></div></figure>
+
+Ubuntu Januty contains Subversion 1.5 in security packages, hence add jaunt package entry to your /etc/apt/sources.list,
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>deb http://security.ubuntu.com/ubuntu jaunty-security main</span></code></pre></td></tr></table></div></figure>
+
+Check if apt-get can see 1.5 version of subversion,
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ sudo apt-cache showpkg subversion
+</span><span class='line'>Package: subversion
+</span><span class='line'>Versions:
+</span><span class='line'>1.6.5dfsg-1ubuntu1 (/var/lib/apt/lists/in.archive.ubuntu.com_ubuntu_dists_karmic_main_binary-i386_Packages) (/var/lib/dpkg/status)
+</span><span class='line'>Description Language:         File: /var/lib/apt/lists/in.archive.ubuntu.com_ubuntu_dists_karmic_main_binary-i386_Packages
+</span><span class='line'>MD5: 15da1bb51fb2e9ea5e25b3a489b864d9
+</span><span class='line'>1.5.4dfsg1-1ubuntu2.1 (/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_jaunty-security_main_binary-i386_Packages)
+</span><span class='line'>Description Language:
+</span><span class='line'>File: /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_jaunty-security_main_binary-i386_Packages
+</span><span class='line'>MD5: 15da1bb51fb2e9ea5e25b3a489b864d9</span></code></pre></td></tr></table></div></figure>
+
+Quick look at man pages of apt-get showed me how to specifiy revision using &#8220;=&#8221;, When I  first time tried to install 1.5.4dfsg1-1ubuntu2.1, it failed,
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ sudo apt-get install subversion=1.5.4dfsg1-1ubuntu2.1
+</span><span class='line'>Reading package lists... Done
+</span><span class='line'>Building dependency tree
+</span><span class='line'>Reading state information... Done
+</span><span class='line'>Some packages could not be installed. This may mean that you have requested an impossible situation or if you are using the unstable
+</span><span class='line'>distribution that some required packages have not yet been created or been moved out of Incoming. The following information may help to resolve the situation: The following packages have unmet dependencies: subversion: Depends: libsvn1 (= 1.5.4dfsg1-1ubuntu2.1) but 1.6.5dfsg-1ubuntu1 is to be installed E: Broken packages</span></code></pre></td></tr></table></div></figure>
+
+So you need to older version of libsvn1 to comply with subversion version,
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ sudo apt-get install libsvn1=1.5.4dfsg1-1ubuntu2.1</span></code></pre></td></tr></table></div></figure>
+and now subversion,
+sachin@sachin-laptop:~$ sudo apt-get install subversion=1.5.4dfsg1-1ubuntu2.1
+here you go, check svn version,
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sachin@sachin-laptop:~$ svn --version
+</span><span class='line'>version 1.5.4 (r33841)
+</span><span class='line'>compiled Aug  7 2009, 01:44:11</span></code></pre></td></tr></table></div></figure>
+
+Happy coding&#8230;
+
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -551,43 +653,6 @@ Great desire&#8230; really appreciate it..</div>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/11/25/what-will-happen-to-your-email-accounts/">What Will Happen to Your Email Accounts When You Die?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-11-25T05:40:00-05:00" pubdate data-updated="true">Nov 25<span>th</span>, 2009</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><div class='post'>
-Are you wondering about what will happen to your email/chat accounts once you die? <br /><br />  Well, I remember if you don&#8217;t use your account for some period of time or so, then provider terminates it, and, in fact, having asked around all the majors - Gmail, Yahoo Mail, Hotmail and Twitter, that does seem to be largely the case. Here&#8217;s how it runs.,<br /><br />Gmail<br /><br />Google will terminate your account in accordance with the terms of service if you fail to login to your account for a period of nine months is the phrase I was looking for along with the fact that people can actively delete their accounts.<br /><br />Yahoo! Mail<br /><br />Yahoo! was also most accommodating. The answer was very different though. It seems, with their service, that once your name has gone, it&#8217;s gone forever. As it stands, inactive accounts are not terminated and will lie idle indefinitely.<br /><br /><br />Twitter<br /><br />Accounts that are inactive for more than 6 months may be removed without further notice.</div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -612,6 +677,10 @@ Are you wondering about what will happen to your email/chat accounts once you di
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/03/26/python-tips/">Batch Convert PNG into SVG using python</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/08/30/introducing-garagesaledroid/">Introducing Garagesaledroid</a>
       </li>
     
@@ -625,10 +694,6 @@ Are you wondering about what will happen to your email/chat accounts once you di
     
       <li class="post">
         <a href="/blog/2012/07/26/failed-to-load-javahl-library/">Failed to load JavaHL Library</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/03/gson/">Expected BEGIN_ARRAY but was BEGIN_OBJECT</a>
       </li>
     
   </ul>
@@ -698,7 +763,7 @@ Are you wondering about what will happen to your email/chat accounts once you di
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Sachin Patil -
+  Copyright &copy; 2013 - Sachin Patil -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
