@@ -107,7 +107,53 @@
 
 <div class="entry-content"><p> Recently I am working on product where I have been assigned to some interesting charting related tasks. As part of an assignment, I needed to convert bunch of PNGs to SVGs with embedded base64 png image as charting API I was working on written to accept SVG only so I wrote following python script which does this bulk conversion.</p>
 
-<p>File /home/sachin/envista/octopress/source/downloads/code/png2svg.py could not be found</p>
+<figure class='code'><figcaption><span> (png2svg.py)</span> <a href='/downloads/code/png2svg.py'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='py'><span class='line'><span class="kn">import</span> <span class="nn">os</span>
+</span><span class='line'><span class="n">startSvg</span> <span class="o">=</span> <span class="s">&quot;&quot;&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;</span>
+</span><span class='line'><span class="s">&lt;!DOCTYPE svg PUBLIC &quot;-//W3C//DTD SVG 1.1//EN&quot;</span>
+</span><span class='line'><span class="s">&quot;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&quot;&gt;</span>
+</span><span class='line'><span class="s">&lt;svg version=&quot;1.1&quot;</span>
+</span><span class='line'><span class="s">xmlns=&quot;http://www.w3.org/2000/svg&quot;</span>
+</span><span class='line'><span class="s">xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;</span>
+</span><span class='line'><span class="s">width=&quot;240px&quot; height=&quot;240px&quot; viewBox=&quot;0 0 240 240&quot;&gt;</span>
+</span><span class='line'><span class="s">&quot;&quot;&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">endSvg</span> <span class="o">=</span> <span class="s">&quot;&quot;&quot;</span>
+</span><span class='line'><span class="s">&lt;/svg&gt;</span>
+</span><span class='line'><span class="s">&quot;&quot;&quot;</span>
+</span><span class='line'><span class="k">for</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s">&quot;.&quot;</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">files</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s">&quot;.png&quot;</span><span class="p">):</span>
+</span><span class='line'>      <span class="n">fIm</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">dataIm</span> <span class="o">=</span> <span class="n">fIm</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&quot;base64&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">addText</span> <span class="o">=</span> <span class="s">&#39;&lt;image xlink:href=&quot;data:image/png;base64,{0}&quot; width=&quot;20&quot; height=&quot;20&quot; x=&quot;40&quot; y=&quot;40&quot; /&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dataIm</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>      <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">files</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s">&quot;.svg&quot;</span><span class="p">,</span><span class="s">&#39;w&#39;</span><span class="p">)</span>
+</span><span class='line'>      <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="n">startSvg</span> <span class="o">+</span> <span class="n">addText</span> <span class="o">+</span> <span class="n">endSvg</span> <span class="p">)</span>
+</span><span class='line'>      <span class="k">print</span> <span class="s">&#39;Converted &#39;</span><span class="o">+</span> <span class="n">files</span> <span class="o">+</span> <span class="s">&#39; to &#39;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">files</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s">&quot;.svg&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p> Basically we will be converting PNG image to base64 format string and we will be using it an SVG using the template String by string concatenation. A Just run this script in directory where you have your pngs.</p>
 
